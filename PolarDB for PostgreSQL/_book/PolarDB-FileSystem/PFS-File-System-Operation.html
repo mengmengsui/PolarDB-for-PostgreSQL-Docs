@@ -1,0 +1,1957 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>文件系统操作 · PolarDB for PostgreSQL</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="PFS-File-Directory-Operation.html" />
+    
+    
+    <link rel="prev" href="../PFSTools.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于PolarDB for PostgreSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    PolarDB for PostgreSQL简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="../PolarDB-for-PostgreSQL/Product-Architecture.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Product-Architecture.html">
+            
+                    
+                    产品架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="../PolarDB-for-PostgreSQL/Background.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Background.html">
+            
+                    
+                    架构背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="../PolarDB-for-PostgreSQL/Overall-Architecture.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Overall-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1" data-path="../PolarDB-for-PostgreSQL/Storage-Compute-Decoupled-Arch.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Storage-Compute-Decoupled-Arch.html">
+            
+                    
+                    存储计算分离架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2" data-path="../PolarDB-for-PostgreSQL/HTAP-Architecture.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/HTAP-Architecture.html">
+            
+                    
+                    HTAP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="../PolarDB-for-PostgreSQL/Features.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Features.html">
+            
+                    
+                    功能特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="../PolarDB-for-PostgreSQL/basic-features.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/basic-features.html">
+            
+                    
+                    基本功能和特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1.1" data-path="../PolarDB-for-PostgreSQL/Flexibility.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Flexibility.html">
+            
+                    
+                    极致弹性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.2" data-path="../PolarDB-for-PostgreSQL/LogIndex.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/LogIndex.html">
+            
+                    
+                    毫秒级延迟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.3" data-path="../PolarDB-for-PostgreSQL/HTAP.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/HTAP.html">
+            
+                    
+                    HTAP能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.4" data-path="../PolarDB-for-PostgreSQL/Cloud-Native.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Cloud-Native.html">
+            
+                    
+                    云原生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.5" data-path="../PolarDB-for-PostgreSQL/Reliability-and-HA.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Reliability-and-HA.html">
+            
+                    
+                    金融级可靠性和可用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.6" data-path="../PolarDB-for-PostgreSQL/PostgreSQL-Compatibility.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/PostgreSQL-Compatibility.html">
+            
+                    
+                    PostgreSQL生态兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2" data-path="../PolarDB-for-PostgreSQL/enterprise-features.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/enterprise-features.html">
+            
+                    
+                    企业级增强特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.2.1" data-path="../PolarDB-for-PostgreSQL/Buffer-Management.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Buffer-Management.html">
+            
+                    
+                    Buffer管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.2" data-path="../PolarDB-for-PostgreSQL/DDL-Synchronization.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/DDL-Synchronization.html">
+            
+                    
+                    DDL同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.3" data-path="../PolarDB-for-PostgreSQL/CSN.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/CSN.html">
+            
+                    
+                    CSN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.4" data-path="../PolarDB-for-PostgreSQL/DataMax.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/DataMax.html">
+            
+                    
+                    DataMax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.5" data-path="../PolarDB-for-PostgreSQL/HA-with-Three-Nodes.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/HA-with-Three-Nodes.html">
+            
+                    
+                    三节点高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.6" data-path="../PolarDB-for-PostgreSQL/Parallel-Replay.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Parallel-Replay.html">
+            
+                    
+                    并行回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.7" data-path="../PolarDB-for-PostgreSQL/RO-OnlinePromote.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/RO-OnlinePromote.html">
+            
+                    
+                    RO OnlinePromote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.8" data-path="../PolarDB-for-PostgreSQL/TDE.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/TDE.html">
+            
+                    
+                    TDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.9" data-path="../PolarDB-for-PostgreSQL/WAL-Pipeline.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/WAL-Pipeline.html">
+            
+                    
+                    WAL Pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../Component.html">
+            
+                <a href="../Component.html">
+            
+                    
+                    组件介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../PolarDB-for-PostgreSQL/Quick-Start.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Quick-Start.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../PolarDB-for-PostgreSQL/Alibaba-Cloud-Service.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Alibaba-Cloud-Service.html">
+            
+                    
+                    阿里巴巴云服务部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../PolarDB-for-PostgreSQL/Standalone-Deployment.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Standalone-Deployment.html">
+            
+                    
+                    单机形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="../PolarDB-for-PostgreSQL/Local-Storage-Instance.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Local-Storage-Instance.html">
+            
+                    
+                    搭建基于单机本地存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../PolarDB-for-PostgreSQL/Cluster-Deployment.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/Cluster-Deployment.html">
+            
+                    
+                    集群形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="../PolarDB-for-PostgreSQL/NBD-Instance.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/NBD-Instance.html">
+            
+                    
+                    搭建基于NBD共享存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="../PolarDB-for-PostgreSQL/ceph-Instance.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/ceph-Instance.html">
+            
+                    
+                    搭建基于Ceph共享存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../DeployPFS.html">
+            
+                <a href="../DeployPFS.html">
+            
+                    
+                    安装部署PFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../PolarDB-for-PostgreSQL/PolarDB-Stack-Deployment.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/PolarDB-Stack-Deployment.html">
+            
+                    
+                    管控形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="../PolarDB-for-PostgreSQL/PolarDB-Stack-Instance.html">
+            
+                <a href="../PolarDB-for-PostgreSQL/PolarDB-Stack-Instance.html">
+            
+                    
+                    搭建基于PolarDB Stack共享存储的实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../PolarDB-Stack-Operator/Quick-Install.html">
+            
+                <a href="../PolarDB-Stack-Operator/Quick-Install.html">
+            
+                    
+                    一键安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" data-path="../PolarDB-Stack-Operator/Manual-Install.html">
+            
+                <a href="../PolarDB-Stack-Operator/Manual-Install.html">
+            
+                    
+                    手动安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../User-Manual.html">
+            
+                <a href="../User-Manual.html">
+            
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.html">
+            
+                <a href="../PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.html">
+            
+                    
+                    PolarDB Stack管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../PolarDB-Stack-Operator/PolarDB-Stack-Architecture.html">
+            
+                <a href="../PolarDB-Stack-Operator/PolarDB-Stack-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../PolarDB-Stack-Operator/Resource-Management.html">
+            
+                <a href="../PolarDB-Stack-Operator/Resource-Management.html">
+            
+                    
+                    资源管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../PolarDB-Stack-Operator/Create-PVC.html">
+            
+                <a href="../PolarDB-Stack-Operator/Create-PVC.html">
+            
+                    
+                    创建PVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="../PolarDB-Stack-Operator/Create-Instance-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Create-Instance-Cluster.html">
+            
+                    
+                    创建实例集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="../PolarDB-Stack-Operator/Delete-Instance-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Delete-Instance-Cluster.html">
+            
+                    
+                    删除实例集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="../PolarDB-Stack-Operator/Change-Configuration.html">
+            
+                <a href="../PolarDB-Stack-Operator/Change-Configuration.html">
+            
+                    
+                    变更配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.5" data-path="../PolarDB-Stack-Operator/Switch-RW-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Switch-RW-RO.html">
+            
+                    
+                    读写切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.6" data-path="../PolarDB-Stack-Operator/Change-Engine-Parameters.html">
+            
+                <a href="../PolarDB-Stack-Operator/Change-Engine-Parameters.html">
+            
+                    
+                    修改引擎参数（刷参）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.7" data-path="../PolarDB-Stack-Operator/Reboot-Instance.html">
+            
+                <a href="../PolarDB-Stack-Operator/Reboot-Instance.html">
+            
+                    
+                    重启实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.8" data-path="../PolarDB-Stack-Operator/Reboot-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Reboot-Cluster.html">
+            
+                    
+                    重启集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.9" data-path="../PolarDB-Stack-Operator/Update-Image-Version.html">
+            
+                <a href="../PolarDB-Stack-Operator/Update-Image-Version.html">
+            
+                    
+                    更新镜像版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.10" data-path="../PolarDB-Stack-Operator/Upgrade.html">
+            
+                <a href="../PolarDB-Stack-Operator/Upgrade.html">
+            
+                    
+                    小版本升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.11" data-path="../PolarDB-Stack-Operator/Rebuild-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Rebuild-Cluster.html">
+            
+                    
+                    完整重建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.12" data-path="../PolarDB-Stack-Operator/Add-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Add-RO.html">
+            
+                    
+                    添加RO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.13" data-path="../PolarDB-Stack-Operator/Migrate-RW.html">
+            
+                <a href="../PolarDB-Stack-Operator/Migrate-RW.html">
+            
+                    
+                    RW迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.14" data-path="../PolarDB-Stack-Operator/Migrate-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Migrate-RO.html">
+            
+                    
+                    RO迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.15" data-path="../PolarDB-Stack-Operator/Expand-Storage.html">
+            
+                <a href="../PolarDB-Stack-Operator/Expand-Storage.html">
+            
+                    
+                    存储扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.16" data-path="../PolarDB-Stack-Operator/Retry-Failed-Operation.html">
+            
+                <a href="../PolarDB-Stack-Operator/Retry-Failed-Operation.html">
+            
+                    
+                    失败重试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.17" data-path="../PolarDB-Stack-Operator/Engine-Parameters.html">
+            
+                <a href="../PolarDB-Stack-Operator/Engine-Parameters.html">
+            
+                    
+                    引擎参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../PolarDB-Stack-Operator/Lifecycle-Management.html">
+            
+                <a href="../PolarDB-Stack-Operator/Lifecycle-Management.html">
+            
+                    
+                    生命周期管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../PolarDB-Stack-Common/Stack-Lifecycle-Basic-Concept.html">
+            
+                <a href="../PolarDB-Stack-Common/Stack-Lifecycle-Basic-Concept.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="../PolarDB-Stack-Workflow/Workflow-Engine.html">
+            
+                <a href="../PolarDB-Stack-Workflow/Workflow-Engine.html">
+            
+                    
+                    工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="../PolarDB-Stack-Workflow/Use-Workflow-Engine.html">
+            
+                <a href="../PolarDB-Stack-Workflow/Use-Workflow-Engine.html">
+            
+                    
+                    使用工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../PolarDB-Stack-Storage/Shared-Storage-Management.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Management.html">
+            
+                    
+                    共享存储管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.4.1" data-path="../PolarDB-Stack-Storage/Shared-Storage-Basic-Concept.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Basic-Concept.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.2" data-path="../PolarDB-Stack-Storage/Shared-Storage-Architecture.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.3" data-path="../PolarDB-Stack-Storage/Build-API-Doc.html">
+            
+                <a href="../PolarDB-Stack-Storage/Build-API-Doc.html">
+            
+                    
+                    构建接口文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.4" data-path="../PolarDB-Stack-Storage/Other-Descriptions.html">
+            
+                <a href="../PolarDB-Stack-Storage/Other-Descriptions.html">
+            
+                    
+                    问题说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../PolarDB-Stack-Daemon/Network-Management.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Network-Management.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.5.1" data-path="../PolarDB-Stack-Daemon/Code-Structure.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Code-Structure.html">
+            
+                    
+                    代码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5.2" data-path="../PolarDB-Stack-Daemon/Daemon-Roadmap.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Daemon-Roadmap.html">
+            
+                    
+                    版本规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5.3" data-path="../PolarDB-Stack-Daemon/Build-Run-Instance.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Build-Run-Instance.html">
+            
+                    
+                    搭建和运行实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../PolarDB-ClusterManager/Cluster-Management.html">
+            
+                <a href="../PolarDB-ClusterManager/Cluster-Management.html">
+            
+                    
+                    集群管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.6.1" data-path="../PolarDB-ClusterManager/ClusterManager-Code-Structure.html">
+            
+                <a href="../PolarDB-ClusterManager/ClusterManager-Code-Structure.html">
+            
+                    
+                    代码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6.2" data-path="../PolarDB-ClusterManager/ClusterManager-Install-Deploy.html">
+            
+                <a href="../PolarDB-ClusterManager/ClusterManager-Install-Deploy.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../PolarDB-NodeAgent/PolarDB-NodeAgent.html">
+            
+                <a href="../PolarDB-NodeAgent/PolarDB-NodeAgent.html">
+            
+                    
+                    监控采集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../PolarDB-NodeAgent/Architecture.html">
+            
+                <a href="../PolarDB-NodeAgent/Architecture.html">
+            
+                    
+                    基本架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../PolarDB-NodeAgent/Install.html">
+            
+                <a href="../PolarDB-NodeAgent/Install.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../PolarDB-NodeAgent/Configuration.html">
+            
+                <a href="../PolarDB-NodeAgent/Configuration.html">
+            
+                    
+                    采集配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../PolarDB-NodeAgent/Metrics.html">
+            
+                <a href="../PolarDB-NodeAgent/Metrics.html">
+            
+                    
+                    指标说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../PolarDB-ImageBuilder/PolarDB-ImageBuilder.html">
+            
+                <a href="../PolarDB-ImageBuilder/PolarDB-ImageBuilder.html">
+            
+                    
+                    构建镜像
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../PolarDB-ImageBuilder/Principle.html">
+            
+                <a href="../PolarDB-ImageBuilder/Principle.html">
+            
+                    
+                    基本原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../PolarDB-ImageBuilder/Build-Image.html">
+            
+                <a href="../PolarDB-ImageBuilder/Build-Image.html">
+            
+                    
+                    本地构建镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../PolarDB-ImageBuilder/Image-Functions.html">
+            
+                <a href="../PolarDB-ImageBuilder/Image-Functions.html">
+            
+                    
+                    镜像功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Best-Practices/Best-Practices.html">
+            
+                <a href="../Best-Practices/Best-Practices.html">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Best-Practices/Deploy-Instance-with-Three-Nodes.html">
+            
+                <a href="../Best-Practices/Deploy-Instance-with-Three-Nodes.html">
+            
+                    
+                    部署开源PolarDB for PostgreSQL三节点实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Best-Practices/Accelerate-TPC-H-with-HTAP.html">
+            
+                <a href="../Best-Practices/Accelerate-TPC-H-with-HTAP.html">
+            
+                    
+                    利用PolarDB HTAP加速TPC-H
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Tools.html">
+            
+                <a href="../Tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../PFSTools.html">
+            
+                <a href="../PFSTools.html">
+            
+                    
+                    PFS工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.5.1.1" data-path="PFS-File-System-Operation.html">
+            
+                <a href="PFS-File-System-Operation.html">
+            
+                    
+                    文件系统操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="PFS-File-Directory-Operation.html">
+            
+                <a href="PFS-File-Directory-Operation.html">
+            
+                    
+                    文件目录操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1" data-path="PFS-Parameter-Description.html">
+            
+                <a href="PFS-Parameter-Description.html">
+            
+                    
+                    参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.2" data-path="PFS-Common-Operation.html">
+            
+                <a href="PFS-Common-Operation.html">
+            
+                    
+                    通用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.3" data-path="PFS-File-Operation.html">
+            
+                <a href="PFS-File-Operation.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.4" data-path="PFS-Directory-Operation.html">
+            
+                <a href="PFS-Directory-Operation.html">
+            
+                    
+                    目录操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Contributing/Contribute-to-Community.html">
+            
+                <a href="../Contributing/Contribute-to-Community.html">
+            
+                    
+                    社区贡献
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../Contributing/Code-of-Conduct.html">
+            
+                <a href="../Contributing/Code-of-Conduct.html">
+            
+                    
+                    贡献者盟约行为守则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../Contributing/How-to-Contribute.html">
+            
+                <a href="../Contributing/How-to-Contribute.html">
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Contributing/Style.html">
+            
+                <a href="../Contributing/Style.html">
+            
+                    
+                    编码风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../Contributing/Contact-Us.html">
+            
+                <a href="../Contributing/Contact-Us.html">
+            
+                    
+                    联系我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Software-License.html">
+            
+                <a href="../Software-License.html">
+            
+                    
+                    软件许可说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Acknowledgments.html">
+            
+                <a href="../Acknowledgments.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://polardbpg.com">
+            
+                    
+                    官方网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >文件系统操作</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x64CD;&#x4F5C;">&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x64CD;&#x4F5C;</h1>
+<h2 id="&#x6982;&#x89C8;">&#x6982;&#x89C8;</h2>
+<table>
+<thead>
+<tr>
+<th>&#x64CD;&#x4F5C;(command)</th>
+<th>&#x529F;&#x80FD;</th>
+<th>&#x9009;&#x9879;(options)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#%20mkfs">mkfs</a></td>
+<td>&#x521B;&#x5EFA;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;</td>
+<td><code>-u</code>&#xFF1A;&#x6700;&#x5927;&#x5199;&#x5B9E;&#x4F8B;&#x6570;&#x3002;<br><code>-l</code>&#xFF1A;journal&#x6587;&#x4EF6;&#x5927;&#x5C0F;&#x3002;<br><code>-f</code>&#xFF1A;&#x5F3A;&#x5236;&#x683C;&#x5F0F;&#x5316;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="#%20growfs">growfs</a></td>
+<td>&#x683C;&#x5F0F;&#x5316;&#x65B0;&#x6269;&#x5BB9;&#x7684;chunk</td>
+<td><code>-o</code>&#xFF1A;&#x6269;&#x5BB9;&#x524D;chunk&#x6570;&#x3002;<br><code>-n</code>&#xFF1A;&#x6269;&#x5BB9;&#x540E;chunk&#x6570;&#x3002;<br><code>-f</code>&#xFF1A;&#x5F3A;&#x5236;&#x683C;&#x5F0F;&#x5316;&#x3002;</td>
+</tr>
+<tr>
+<td><a href="#%20info">info</a></td>
+<td>&#x6253;&#x5370;&#x5143;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x60C5;&#x51B5;</td>
+<td>&#x65E0;</td>
+</tr>
+<tr>
+<td><a href="#%20dumpfs">dumpfs</a></td>
+<td>&#x8BFB;&#x53D6;superblock&#xFF0C;&#x68C0;&#x67E5;chunk header&#x548C;metaobj</td>
+<td><code>-m</code>&#xFF1A;dump meta data (&#x9ED8;&#x8BA4;dump ck hdr)<br><code>-t</code>&#xFF1A;meta data type&#x3002;<br><code>-c</code>&#xFF1A;chunk id&#x3002;<br><code>-o</code>&#xFF1A;metaobj id &#x3002;</td>
+</tr>
+<tr>
+<td><a href="#%20dumple">dumple</a></td>
+<td>&#x8BFB;&#x53D6;journal&#x4E2D;&#x7684;log entry&#x5185;&#x5BB9;</td>
+<td><code>-a</code>&#xFF1A;&#x904D;&#x5386;&#x6574;&#x4E2A;journal&#x3002;<br><code>-t</code>&#xFF1A;txid&#x3002;<br><code>-b</code>&#xFF1A;btno&#x3002;<br><code>-d</code>&#xFF1A;deno&#x3002;<br><code>-i</code>&#xFF1A;ino&#x3002;</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mkfs">mkfs</h2>
+<ul>
+<li>&#x529F;&#x80FD;&#x63CF;&#x8FF0;&#xFF1A;&#x5728;&#x6307;&#x5B9A;&#x7684;&#x78C1;&#x76D8;&#x8BBE;&#x5907;&#x4E0A;&#x683C;&#x5F0F;&#x5316;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x3002;</li>
+<li>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A; <ul>
+<li><code>-u</code>&#xFF1A;&#x6700;&#x5927;&#x5B9E;&#x4F8B;&#x4E2A;&#x6570;&#xFF0C;&#x9ED8;&#x8BA4;&#x662F;3&#xFF0C;&#x6700;&#x5927;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;255&#xFF0C;&#x53EF;&#x9009;&#x3002;</li>
+<li><code>-f</code>&#xFF1A;&#x5F3A;&#x5236;&#x6267;&#x884C;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x53EF;&#x9009;&#x3002;</li>
+</ul>
+</li>
+<li>&#x793A;&#x4F8B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x683C;&#x5F0F;&#x5316;nvme1n1</span>
+<span class="hljs-comment"># &#x53C2;&#x6570;&quot;-C disk&quot;&#x8868;&#x793A;&#x6B64;&#x6B21;&#x64CD;&#x4F5C;&#x7684;&#x662F;&#x672C;&#x5730;&#x78C1;&#x76D8;&#x8BBE;&#x5907;, nvme1n1&#x662F;&#x672C;&#x5730;&#x7684;&#x4E00;&#x5757;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x540D;&#x3002;</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk mkfs nvme1n1
+
+<span class="hljs-comment"># &#x5982;&#x679C;&#x63D0;&#x793A;&#x201C;already formatted&#x201D;&#x5BFC;&#x81F4;mkfs&#x5931;&#x8D25;&#xFF0C;&#x786E;&#x8BA4;mkfs&#x64CD;&#x4F5C;&#x5B89;&#x5168;&#x540E;&#xFF0C;&#x6DFB;&#x52A0;&apos;-f&apos;&#x6807;&#x5FD7;</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk mkfs <span class="hljs-_">-f</span> nvme1n1
+
+<span class="hljs-comment"># &#x683C;&#x5F0F;&#x5316;nvme1n1&#xFF0C;&#x5B9E;&#x4F8B;&#x6570;10</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk mkfs -u 10 nvme1n1
+</code></pre>
+<h2 id="growfs">growfs</h2>
+<ul>
+<li>&#x529F;&#x80FD;&#x63CF;&#x8FF0;&#xFF1A;&#x683C;&#x5F0F;&#x5316;&#x6269;&#x5BB9;&#x540E;&#x7684;&#x65B0;chunk [old, new)</li>
+<li>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A; <ul>
+<li><code>-o</code>&#xFF1A;&#x683C;&#x5F0F;&#x5316;&#x524D;&#x7684;chunk&#x6570;&#x3002;</li>
+<li><code>-n</code>&#xFF1A;&#x683C;&#x5F0F;&#x5316;&#x540E;&#x7684;chunk&#x6570;&#x3002;</li>
+<li><code>-f</code>&#xFF1A;&#x5F3A;&#x5236;&#x6267;&#x884C;&#x683C;&#x5F0F;&#x5316;&#xFF0C;&#x53EF;&#x9009;&#x3002;</li>
+</ul>
+</li>
+<li>&#x793A;&#x4F8B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x78C1;&#x76D8;&#x8BBE;&#x5907; nvme1n1&#x5927;&#x5C0F;&#x4ECE;10GB&#x6269;&#x6210;30GB&#x540E;&#xFF0C;&#x683C;&#x5F0F;&#x5316;&#x65B0;chunk [1, 3)</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk growfs -o 1 -n 3 nvme1n1
+
+<span class="hljs-comment"># &#x5982;&#x679C;&#x63D0;&#x793A;&#x201C;already formatted&#x201D;&#x5BFC;&#x81F4;growfs&#x5931;&#x8D25;&#xFF0C;&#x786E;&#x8BA4;growfs&#x64CD;&#x4F5C;&#x5B89;&#x5168;&#x540E;&#xFF0C;&#x6DFB;&#x52A0;&apos;-f&apos;&#x6807;&#x5FD7;</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk growfs -o 1 -n 3 <span class="hljs-_">-f</span> nvme1n1
+</code></pre>
+<h2 id="info">info</h2>
+<ul>
+<li>&#x529F;&#x80FD;&#x63CF;&#x8FF0;&#xFF1A;&#x6253;&#x5370;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x5143;&#x6570;&#x636E;&#x4FE1;&#x606F;&#x3002; <ul>
+<li>&#x6253;&#x5370;PFS&#x6574;&#x4F53;&#x5143;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x60C5;&#x51B5;&#xFF1A;&#x6253;&#x5370;&#x6DF1;&#x5EA6;&#x4E3A;1&#x3002;</li>
+</ul>
+</li>
+<li>&#x793A;&#x4F8B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-comment">#&#x6253;&#x5370;&#x78C1;&#x76D8; nvme1n1&#x4E2D;&#x6587;&#x4EF6;&#x7CFB;&#x7EDF;&#x7684;&#x5143;&#x6570;&#x636E;&#x4FE1;&#x606F;</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk info nvme1n1
+Blktag Info:
+ (0)allocnode: id 0, <span class="hljs-built_in">shift</span> 0, nchild=3, nall 7680, nfree 1897, next 0
+Direntry Info:
+ (0)allocnode: id 0, <span class="hljs-built_in">shift</span> 0, nchild=3, nall 6144, nfree 5974, next 0
+Inode Info:
+ (0)allocnode: id 0, <span class="hljs-built_in">shift</span> 0, nchild=3, nall 6144, nfree 5974, next 0
+ <span class="hljs-comment">#nchild&#x662F;chunk&#x4E2A;&#x6570;&#xFF0C;&#x78C1;&#x76D8;&#x603B;&#x5BB9;&#x91CF;=nchild*10GB&#xFF0C;nvme1n1&#x6709;30GB</span>
+ <span class="hljs-comment">#&#x78C1;&#x76D8;&#x7A7A;&#x95F2;block&#x5BB9;&#x91CF;=1897*4MB</span>
+</code></pre>
+<h2 id="dumpfs">dumpfs</h2>
+<ul>
+<li>&#x529F;&#x80FD;&#x63CF;&#x8FF0;&#xFF1A;&#x6253;&#x5370;superblock&#x5185;&#x5143;&#x6570;&#x636E;&#x3002;</li>
+<li>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A; <ul>
+<li><code>-m</code>&#xFF1A;&#x6253;&#x5370;meta&#xFF0C;&#x672A;&#x6307;&#x5B9A;&#x5219;&#x6253;&#x5370;chunk header</li>
+<li><code>-t</code>&#xFF1A;&#x6307;&#x5B9A;metaobj&#x7C7B;&#x578B;&#xFF0C;1/2/3&#x5206;&#x522B;&#x5BF9;&#x5E94;bt/de/in</li>
+<li><code>-c</code>&#xFF1A;&#x6307;&#x5B9A;chunk id</li>
+<li><code>-o</code>&#xFF1A;&#x6307;&#x5B9A;metaobj number</li>
+</ul>
+</li>
+<li>&#x793A;&#x4F8B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x6253;&#x5370;nvme1n1&#x7684;&#x6240;&#x6709;chunk header&#x4EE5;&#x53CA;&#x5143;&#x6570;&#x636E;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk dumpfs nvme1n1
+chunk 0:
+    ck_magic   0x5046534348
+    ck_chunksize 10737418240
+    ck_blksize 4194304
+    ck_sectsize 4096
+    ck_number  0
+    ck_nchunk  3
+    ck_checksum 2628069786
+    ck_physet[MT_BLKTAG].ms_nsect 80
+    ck_physet[MT_DIRENTRY].ms_nsect 64
+    ck_physet[MT_INODE].ms_nsect 64
+    ck_physet[MT_BLKTAG].ms_sectbda 0x1000
+    ck_physet[MT_DIRENTRY].ms_sectbda 0x51000
+    ck_physet[MT_INODE].ms_sectbda 0x91000
+&#x2026;&#x2026;&#x2026;&#x2026;
+<span class="hljs-built_in">type</span>    free    used    total
+blktag  7668    12      7680
+dentry  6141    3       6144
+inode   6141    3       6144
+
+<span class="hljs-comment"># &#x8BFB;&#x53D6;nvme1n1&#x7684;metaobj&#x5143;&#x6570;&#x636E;&#xFF0C;&#x6307;&#x5B9A;chunk0&#xFF0C;&#x4E14;metaobj number&#x4E3A;1&#x7684;inode</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk dumpfs -m -c 0 -t 3 -o 1 nvme1n1
+ mo_<span class="hljs-built_in">type</span>    inode
+ mo_number  1
+ mo_checksum 3315235856
+ mo_used    1
+ mo_version 0
+ mo_head    1
+ mo_tail    1
+  <span class="hljs-keyword">in</span>_<span class="hljs-built_in">type</span>    1
+  <span class="hljs-keyword">in</span>_deno    1
+  <span class="hljs-keyword">in</span>_flags   0
+  <span class="hljs-keyword">in</span>_nlink   1
+  <span class="hljs-keyword">in</span>_nblock  1
+  <span class="hljs-keyword">in</span>_size    4194304
+  <span class="hljs-keyword">in</span>_atime   0
+  <span class="hljs-keyword">in</span>_ctime   1551271708
+  <span class="hljs-keyword">in</span>_mtime   1551271708
+</code></pre>
+<h2 id="dumple">dumple</h2>
+<ul>
+<li>&#x529F;&#x80FD;&#x63CF;&#x8FF0;&#xFF1A;&#x6253;&#x5370;journal&#x5185;log entry&#x6570;&#x636E;&#x3002;</li>
+<li>&#x53C2;&#x6570;&#x8BF4;&#x660E;&#xFF1A; <ul>
+<li><code>-a</code>&#xFF1A;&#x904D;&#x5386;journal&#x4E2D;&#x6240;&#x6709;&#x53EF;&#x89C1;&#x7684;log entry&#xFF08;&#x9ED8;&#x8BA4;&#x53EA;&#x904D;&#x5386;&#x5F53;&#x524D;&#x6709;&#x6548;&#x7684;log entry&#xFF09;</li>
+<li><code>-t</code>&#xFF1A;&#x6307;&#x5B9A;&#x7279;&#x5B9A;&#x7684;txid</li>
+<li><code>-b</code>&#xFF1A;&#x6307;&#x5B9A;blocktag metaobj number</li>
+<li><code>-d</code>&#xFF1A;&#x6307;&#x5B9A;direntry metaobj number</li>
+<li><code>-i</code>&#xFF1A;&#x6307;&#x5B9A;inode metaobj number</li>
+</ul>
+</li>
+<li>&#x793A;&#x4F8B;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-bash"><span class="hljs-comment"># &#x6253;&#x5370;nvme1n1&#x4E2D;journal&#x7684;&#x6240;&#x6709;log entry&#x5185;&#x5BB9;&#xFF0C;&#x5305;&#x62EC;&#x5DF2;&#x88AB;trim&#x7684;le&#x9879;</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk dumple <span class="hljs-_">-a</span> nvme1n1
+ le_txid    1
+ le_lsn     1
+ le_sector_bda 10737750016
+ le_obj_idx 0
+ le_checksum 3912500790
+ le_more    1
+  mo_<span class="hljs-built_in">type</span>    direntry
+  mo_number  2048
+  mo_checksum 1467810822
+  mo_used    1
+  mo_version 0
+  mo_next    0
+  mo_prev    2
+    de_dirino  0
+    de_ino     2048
+    de_name    largefile
+...
+ le_txid    2
+ le_lsn     6
+ le_sector_bda 10738012160
+ le_obj_idx 0
+ le_checksum 278390252
+ le_more    0
+  mo_<span class="hljs-built_in">type</span>    inode
+  mo_number  2048
+  mo_checksum 3233154735
+  mo_used    1
+  mo_version 0
+  mo_head    528385
+  mo_tail    528385
+    <span class="hljs-keyword">in</span>_<span class="hljs-built_in">type</span>    1
+    <span class="hljs-keyword">in</span>_deno    2048
+    <span class="hljs-keyword">in</span>_flags   0
+    <span class="hljs-keyword">in</span>_nlink   1
+    <span class="hljs-keyword">in</span>_nblock  1
+    <span class="hljs-keyword">in</span>_size    0
+    <span class="hljs-keyword">in</span>_atime   0
+    <span class="hljs-keyword">in</span>_ctime   1551337605
+    <span class="hljs-keyword">in</span>_mtime   1551337605
+[PFS_LOG] Mar  6 15:25:42.498594 INF [82650] number of <span class="hljs-built_in">log</span> entries hit: 6 / 2097152 (all <span class="hljs-keyword">in</span> journal)
+
+<span class="hljs-comment"># &#x904D;&#x5386;nvme1n1&#x4E2D;journal&#x7684;&#x6709;&#x6548;log entry&#xFF0C;&#x5E76;&#x4E14;&#x7B5B;&#x9009;&#x51FA;txid&#x4E3A;2&#xFF0C;metaobj number&#x4E3A;2048&#x7684;inode&#x7684;le&#x9879;</span>
+<span class="hljs-variable">$sudo</span> pfs -C disk dumple -t 2 -i 2048 nvme1n1
+ le_txid    2
+ le_lsn     6
+ le_sector_bda 10738012160
+ le_obj_idx 0
+ le_checksum 278390252
+ le_more    0
+  mo_<span class="hljs-built_in">type</span>    inode
+  mo_number  2048
+  mo_checksum 3233154735
+  mo_used    1
+  mo_version 0
+  mo_head    528385
+  mo_tail    528385
+    <span class="hljs-keyword">in</span>_<span class="hljs-built_in">type</span>    1
+    <span class="hljs-keyword">in</span>_deno    2048
+    <span class="hljs-keyword">in</span>_flags   0
+    <span class="hljs-keyword">in</span>_nlink   1
+    <span class="hljs-keyword">in</span>_nblock  1
+    <span class="hljs-keyword">in</span>_size    0
+    <span class="hljs-keyword">in</span>_atime   0
+    <span class="hljs-keyword">in</span>_ctime   1551337605
+    <span class="hljs-keyword">in</span>_mtime   1551337605
+[PFS_LOG] Mar  6 15:32:03.101423 INF [105651] number of <span class="hljs-built_in">log</span> entries hit: 1 / 6 (valid)
+</code></pre>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../PFSTools.html" class="navigation navigation-prev " aria-label="Previous page: PFS工具">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="PFS-File-Directory-Operation.html" class="navigation navigation-next " aria-label="Next page: 文件目录操作">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"文件系统操作","level":"1.5.1.1","depth":3,"next":{"title":"文件目录操作","level":"1.5.1.2","depth":3,"path":"PolarDB-FileSystem/PFS-File-Directory-Operation.md","ref":"PolarDB-FileSystem/PFS-File-Directory-Operation.md","articles":[{"title":"参数说明","level":"1.5.1.2.1","depth":4,"path":"PolarDB-FileSystem/PFS-Parameter-Description.md","ref":"PolarDB-FileSystem/PFS-Parameter-Description.md","articles":[]},{"title":"通用操作","level":"1.5.1.2.2","depth":4,"path":"PolarDB-FileSystem/PFS-Common-Operation.md","ref":"PolarDB-FileSystem/PFS-Common-Operation.md","articles":[]},{"title":"文件操作","level":"1.5.1.2.3","depth":4,"path":"PolarDB-FileSystem/PFS-File-Operation.md","ref":"PolarDB-FileSystem/PFS-File-Operation.md","articles":[]},{"title":"目录操作","level":"1.5.1.2.4","depth":4,"path":"PolarDB-FileSystem/PFS-Directory-Operation.md","ref":"PolarDB-FileSystem/PFS-Directory-Operation.md","articles":[]}]},"previous":{"title":"PFS工具","level":"1.5.1","depth":2,"path":"PFSTools.md","ref":"PFSTools.md","articles":[{"title":"文件系统操作","level":"1.5.1.1","depth":3,"path":"PolarDB-FileSystem/PFS-File-System-Operation.md","ref":"PolarDB-FileSystem/PFS-File-System-Operation.md","articles":[]},{"title":"文件目录操作","level":"1.5.1.2","depth":3,"path":"PolarDB-FileSystem/PFS-File-Directory-Operation.md","ref":"PolarDB-FileSystem/PFS-File-Directory-Operation.md","articles":[{"title":"参数说明","level":"1.5.1.2.1","depth":4,"path":"PolarDB-FileSystem/PFS-Parameter-Description.md","ref":"PolarDB-FileSystem/PFS-Parameter-Description.md","articles":[]},{"title":"通用操作","level":"1.5.1.2.2","depth":4,"path":"PolarDB-FileSystem/PFS-Common-Operation.md","ref":"PolarDB-FileSystem/PFS-Common-Operation.md","articles":[]},{"title":"文件操作","level":"1.5.1.2.3","depth":4,"path":"PolarDB-FileSystem/PFS-File-Operation.md","ref":"PolarDB-FileSystem/PFS-File-Operation.md","articles":[]},{"title":"目录操作","level":"1.5.1.2.4","depth":4,"path":"PolarDB-FileSystem/PFS-Directory-Operation.md","ref":"PolarDB-FileSystem/PFS-Directory-Operation.md","articles":[]}]}]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","code","expandable-chapters-small","page-toc-button","-sharing","-font-settings","-search","-lunr","auto-scroll-table@git+https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"hide-element":{"elements":[".toggle-dropdown",".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PolarDB for PostgreSQL","gitbook":"*"},"file":{"path":"PolarDB-FileSystem/PFS-File-System-Operation.md","mtime":"2022-01-11T06:56:59.067Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-22T14:36:40.387Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

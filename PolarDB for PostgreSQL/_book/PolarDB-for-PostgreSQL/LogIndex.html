@@ -1,0 +1,1801 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>毫秒级延迟 · PolarDB for PostgreSQL</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HTAP.html" />
+    
+    
+    <link rel="prev" href="Flexibility.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于PolarDB for PostgreSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    PolarDB for PostgreSQL简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="Product-Architecture.html">
+            
+                <a href="Product-Architecture.html">
+            
+                    
+                    产品架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="Background.html">
+            
+                <a href="Background.html">
+            
+                    
+                    架构背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="Overall-Architecture.html">
+            
+                <a href="Overall-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1" data-path="Storage-Compute-Decoupled-Arch.html">
+            
+                <a href="Storage-Compute-Decoupled-Arch.html">
+            
+                    
+                    存储计算分离架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2" data-path="HTAP-Architecture.html">
+            
+                <a href="HTAP-Architecture.html">
+            
+                    
+                    HTAP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Features.html">
+            
+                <a href="Features.html">
+            
+                    
+                    功能特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="basic-features.html">
+            
+                <a href="basic-features.html">
+            
+                    
+                    基本功能和特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1.1" data-path="Flexibility.html">
+            
+                <a href="Flexibility.html">
+            
+                    
+                    极致弹性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.3.1.2" data-path="LogIndex.html">
+            
+                <a href="LogIndex.html">
+            
+                    
+                    毫秒级延迟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.3" data-path="HTAP.html">
+            
+                <a href="HTAP.html">
+            
+                    
+                    HTAP能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.4" data-path="Cloud-Native.html">
+            
+                <a href="Cloud-Native.html">
+            
+                    
+                    云原生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.5" data-path="Reliability-and-HA.html">
+            
+                <a href="Reliability-and-HA.html">
+            
+                    
+                    金融级可靠性和可用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.6" data-path="PostgreSQL-Compatibility.html">
+            
+                <a href="PostgreSQL-Compatibility.html">
+            
+                    
+                    PostgreSQL生态兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2" data-path="enterprise-features.html">
+            
+                <a href="enterprise-features.html">
+            
+                    
+                    企业级增强特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.2.1" data-path="Buffer-Management.html">
+            
+                <a href="Buffer-Management.html">
+            
+                    
+                    Buffer管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.2" data-path="DDL-Synchronization.html">
+            
+                <a href="DDL-Synchronization.html">
+            
+                    
+                    DDL同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.3" data-path="CSN.html">
+            
+                <a href="CSN.html">
+            
+                    
+                    CSN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.4" data-path="DataMax.html">
+            
+                <a href="DataMax.html">
+            
+                    
+                    DataMax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.5" data-path="HA-with-Three-Nodes.html">
+            
+                <a href="HA-with-Three-Nodes.html">
+            
+                    
+                    三节点高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.6" data-path="Parallel-Replay.html">
+            
+                <a href="Parallel-Replay.html">
+            
+                    
+                    并行回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.7" data-path="RO-OnlinePromote.html">
+            
+                <a href="RO-OnlinePromote.html">
+            
+                    
+                    RO OnlinePromote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.8" data-path="TDE.html">
+            
+                <a href="TDE.html">
+            
+                    
+                    TDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.9" data-path="WAL-Pipeline.html">
+            
+                <a href="WAL-Pipeline.html">
+            
+                    
+                    WAL Pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../Component.html">
+            
+                <a href="../Component.html">
+            
+                    
+                    组件介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Quick-Start.html">
+            
+                <a href="Quick-Start.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Alibaba-Cloud-Service.html">
+            
+                <a href="Alibaba-Cloud-Service.html">
+            
+                    
+                    阿里巴巴云服务部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Standalone-Deployment.html">
+            
+                <a href="Standalone-Deployment.html">
+            
+                    
+                    单机形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="Local-Storage-Instance.html">
+            
+                <a href="Local-Storage-Instance.html">
+            
+                    
+                    搭建基于单机本地存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Cluster-Deployment.html">
+            
+                <a href="Cluster-Deployment.html">
+            
+                    
+                    集群形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="NBD-Instance.html">
+            
+                <a href="NBD-Instance.html">
+            
+                    
+                    搭建基于NBD共享存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="ceph-Instance.html">
+            
+                <a href="ceph-Instance.html">
+            
+                    
+                    搭建基于Ceph共享存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../DeployPFS.html">
+            
+                <a href="../DeployPFS.html">
+            
+                    
+                    安装部署PFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="PolarDB-Stack-Deployment.html">
+            
+                <a href="PolarDB-Stack-Deployment.html">
+            
+                    
+                    管控形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="PolarDB-Stack-Instance.html">
+            
+                <a href="PolarDB-Stack-Instance.html">
+            
+                    
+                    搭建基于PolarDB Stack共享存储的实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../PolarDB-Stack-Operator/Quick-Install.html">
+            
+                <a href="../PolarDB-Stack-Operator/Quick-Install.html">
+            
+                    
+                    一键安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" data-path="../PolarDB-Stack-Operator/Manual-Install.html">
+            
+                <a href="../PolarDB-Stack-Operator/Manual-Install.html">
+            
+                    
+                    手动安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../User-Manual.html">
+            
+                <a href="../User-Manual.html">
+            
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.html">
+            
+                <a href="../PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.html">
+            
+                    
+                    PolarDB Stack管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../PolarDB-Stack-Operator/PolarDB-Stack-Architecture.html">
+            
+                <a href="../PolarDB-Stack-Operator/PolarDB-Stack-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../PolarDB-Stack-Operator/Resource-Management.html">
+            
+                <a href="../PolarDB-Stack-Operator/Resource-Management.html">
+            
+                    
+                    资源管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../PolarDB-Stack-Operator/Create-PVC.html">
+            
+                <a href="../PolarDB-Stack-Operator/Create-PVC.html">
+            
+                    
+                    创建PVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="../PolarDB-Stack-Operator/Create-Instance-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Create-Instance-Cluster.html">
+            
+                    
+                    创建实例集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="../PolarDB-Stack-Operator/Delete-Instance-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Delete-Instance-Cluster.html">
+            
+                    
+                    删除实例集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="../PolarDB-Stack-Operator/Change-Configuration.html">
+            
+                <a href="../PolarDB-Stack-Operator/Change-Configuration.html">
+            
+                    
+                    变更配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.5" data-path="../PolarDB-Stack-Operator/Switch-RW-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Switch-RW-RO.html">
+            
+                    
+                    读写切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.6" data-path="../PolarDB-Stack-Operator/Change-Engine-Parameters.html">
+            
+                <a href="../PolarDB-Stack-Operator/Change-Engine-Parameters.html">
+            
+                    
+                    修改引擎参数（刷参）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.7" data-path="../PolarDB-Stack-Operator/Reboot-Instance.html">
+            
+                <a href="../PolarDB-Stack-Operator/Reboot-Instance.html">
+            
+                    
+                    重启实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.8" data-path="../PolarDB-Stack-Operator/Reboot-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Reboot-Cluster.html">
+            
+                    
+                    重启集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.9" data-path="../PolarDB-Stack-Operator/Update-Image-Version.html">
+            
+                <a href="../PolarDB-Stack-Operator/Update-Image-Version.html">
+            
+                    
+                    更新镜像版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.10" data-path="../PolarDB-Stack-Operator/Upgrade.html">
+            
+                <a href="../PolarDB-Stack-Operator/Upgrade.html">
+            
+                    
+                    小版本升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.11" data-path="../PolarDB-Stack-Operator/Rebuild-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Rebuild-Cluster.html">
+            
+                    
+                    完整重建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.12" data-path="../PolarDB-Stack-Operator/Add-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Add-RO.html">
+            
+                    
+                    添加RO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.13" data-path="../PolarDB-Stack-Operator/Migrate-RW.html">
+            
+                <a href="../PolarDB-Stack-Operator/Migrate-RW.html">
+            
+                    
+                    RW迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.14" data-path="../PolarDB-Stack-Operator/Migrate-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Migrate-RO.html">
+            
+                    
+                    RO迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.15" data-path="../PolarDB-Stack-Operator/Expand-Storage.html">
+            
+                <a href="../PolarDB-Stack-Operator/Expand-Storage.html">
+            
+                    
+                    存储扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.16" data-path="../PolarDB-Stack-Operator/Retry-Failed-Operation.html">
+            
+                <a href="../PolarDB-Stack-Operator/Retry-Failed-Operation.html">
+            
+                    
+                    失败重试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.17" data-path="../PolarDB-Stack-Operator/Engine-Parameters.html">
+            
+                <a href="../PolarDB-Stack-Operator/Engine-Parameters.html">
+            
+                    
+                    引擎参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../PolarDB-Stack-Operator/Lifecycle-Management.html">
+            
+                <a href="../PolarDB-Stack-Operator/Lifecycle-Management.html">
+            
+                    
+                    生命周期管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../PolarDB-Stack-Common/Stack-Lifecycle-Basic-Concept.html">
+            
+                <a href="../PolarDB-Stack-Common/Stack-Lifecycle-Basic-Concept.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="../PolarDB-Stack-Workflow/Workflow-Engine.html">
+            
+                <a href="../PolarDB-Stack-Workflow/Workflow-Engine.html">
+            
+                    
+                    工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="../PolarDB-Stack-Workflow/Use-Workflow-Engine.html">
+            
+                <a href="../PolarDB-Stack-Workflow/Use-Workflow-Engine.html">
+            
+                    
+                    使用工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../PolarDB-Stack-Storage/Shared-Storage-Management.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Management.html">
+            
+                    
+                    共享存储管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.4.1" data-path="../PolarDB-Stack-Storage/Shared-Storage-Basic-Concept.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Basic-Concept.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.2" data-path="../PolarDB-Stack-Storage/Shared-Storage-Architecture.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.3" data-path="../PolarDB-Stack-Storage/Build-API-Doc.html">
+            
+                <a href="../PolarDB-Stack-Storage/Build-API-Doc.html">
+            
+                    
+                    构建接口文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.4" data-path="../PolarDB-Stack-Storage/Other-Descriptions.html">
+            
+                <a href="../PolarDB-Stack-Storage/Other-Descriptions.html">
+            
+                    
+                    问题说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../PolarDB-Stack-Daemon/Network-Management.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Network-Management.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.5.1" data-path="../PolarDB-Stack-Daemon/Code-Structure.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Code-Structure.html">
+            
+                    
+                    代码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5.2" data-path="../PolarDB-Stack-Daemon/Daemon-Roadmap.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Daemon-Roadmap.html">
+            
+                    
+                    版本规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5.3" data-path="../PolarDB-Stack-Daemon/Build-Run-Instance.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Build-Run-Instance.html">
+            
+                    
+                    搭建和运行实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../PolarDB-ClusterManager/Cluster-Management.html">
+            
+                <a href="../PolarDB-ClusterManager/Cluster-Management.html">
+            
+                    
+                    集群管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.6.1" data-path="../PolarDB-ClusterManager/ClusterManager-Code-Structure.html">
+            
+                <a href="../PolarDB-ClusterManager/ClusterManager-Code-Structure.html">
+            
+                    
+                    代码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6.2" data-path="../PolarDB-ClusterManager/ClusterManager-Install-Deploy.html">
+            
+                <a href="../PolarDB-ClusterManager/ClusterManager-Install-Deploy.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../PolarDB-NodeAgent/PolarDB-NodeAgent.html">
+            
+                <a href="../PolarDB-NodeAgent/PolarDB-NodeAgent.html">
+            
+                    
+                    监控采集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../PolarDB-NodeAgent/Architecture.html">
+            
+                <a href="../PolarDB-NodeAgent/Architecture.html">
+            
+                    
+                    基本架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../PolarDB-NodeAgent/Install.html">
+            
+                <a href="../PolarDB-NodeAgent/Install.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../PolarDB-NodeAgent/Configuration.html">
+            
+                <a href="../PolarDB-NodeAgent/Configuration.html">
+            
+                    
+                    采集配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../PolarDB-NodeAgent/Metrics.html">
+            
+                <a href="../PolarDB-NodeAgent/Metrics.html">
+            
+                    
+                    指标说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../PolarDB-ImageBuilder/PolarDB-ImageBuilder.html">
+            
+                <a href="../PolarDB-ImageBuilder/PolarDB-ImageBuilder.html">
+            
+                    
+                    构建镜像
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../PolarDB-ImageBuilder/Principle.html">
+            
+                <a href="../PolarDB-ImageBuilder/Principle.html">
+            
+                    
+                    基本原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../PolarDB-ImageBuilder/Build-Image.html">
+            
+                <a href="../PolarDB-ImageBuilder/Build-Image.html">
+            
+                    
+                    本地构建镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../PolarDB-ImageBuilder/Image-Functions.html">
+            
+                <a href="../PolarDB-ImageBuilder/Image-Functions.html">
+            
+                    
+                    镜像功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Best-Practices/Best-Practices.html">
+            
+                <a href="../Best-Practices/Best-Practices.html">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Best-Practices/Deploy-Instance-with-Three-Nodes.html">
+            
+                <a href="../Best-Practices/Deploy-Instance-with-Three-Nodes.html">
+            
+                    
+                    部署开源PolarDB for PostgreSQL三节点实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Best-Practices/Accelerate-TPC-H-with-HTAP.html">
+            
+                <a href="../Best-Practices/Accelerate-TPC-H-with-HTAP.html">
+            
+                    
+                    利用PolarDB HTAP加速TPC-H
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Tools.html">
+            
+                <a href="../Tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../PFSTools.html">
+            
+                <a href="../PFSTools.html">
+            
+                    
+                    PFS工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../PolarDB-FileSystem/PFS-File-System-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-System-Operation.html">
+            
+                    
+                    文件系统操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../PolarDB-FileSystem/PFS-File-Directory-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-Directory-Operation.html">
+            
+                    
+                    文件目录操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1" data-path="../PolarDB-FileSystem/PFS-Parameter-Description.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Parameter-Description.html">
+            
+                    
+                    参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.2" data-path="../PolarDB-FileSystem/PFS-Common-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Common-Operation.html">
+            
+                    
+                    通用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.3" data-path="../PolarDB-FileSystem/PFS-File-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-Operation.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.4" data-path="../PolarDB-FileSystem/PFS-Directory-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Directory-Operation.html">
+            
+                    
+                    目录操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Contributing/Contribute-to-Community.html">
+            
+                <a href="../Contributing/Contribute-to-Community.html">
+            
+                    
+                    社区贡献
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../Contributing/Code-of-Conduct.html">
+            
+                <a href="../Contributing/Code-of-Conduct.html">
+            
+                    
+                    贡献者盟约行为守则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../Contributing/How-to-Contribute.html">
+            
+                <a href="../Contributing/How-to-Contribute.html">
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Contributing/Style.html">
+            
+                <a href="../Contributing/Style.html">
+            
+                    
+                    编码风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../Contributing/Contact-Us.html">
+            
+                <a href="../Contributing/Contact-Us.html">
+            
+                    
+                    联系我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Software-License.html">
+            
+                <a href="../Software-License.html">
+            
+                    
+                    软件许可说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Acknowledgments.html">
+            
+                <a href="../Acknowledgments.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://polardbpg.com">
+            
+                    
+                    官方网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >毫秒级延迟</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x6BEB;&#x79D2;&#x7EA7;&#x5EF6;&#x8FDF;">&#x6BEB;&#x79D2;&#x7EA7;&#x5EF6;&#x8FDF;</h1>
+<h2 id="&#x80CC;&#x666F;&#x4ECB;&#x7ECD;">&#x80CC;&#x666F;&#x4ECB;&#x7ECD;</h2>
+<p>PolarDB &#x91C7;&#x7528;&#x4E86;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E00;&#x5199;&#x591A;&#x8BFB;&#x67B6;&#x6784;&#xFF0C;&#x8BFB;&#x5199;&#x8282;&#x70B9; RW &#x548C;&#x591A;&#x4E2A;&#x53EA;&#x8BFB;&#x8282;&#x70B9; RO &#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4EFD;&#x5B58;&#x50A8;&#xFF0C;&#x8BFB;&#x5199;&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x8BFB;&#x5199;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E2D;&#x7684;&#x6570;&#x636E;&#xFF1B;&#x53EA;&#x8BFB;&#x8282;&#x70B9;&#x4EC5;&#x80FD;&#x5404;&#x81EA;&#x901A;&#x8FC7;&#x56DE;&#x653E;&#x65E5;&#x5FD7;&#xFF0C;&#x4ECE;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E2D;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#xFF0C;&#x800C;&#x4E0D;&#x80FD;&#x5199;&#x5165;&#xFF0C;&#x53EA;&#x8BFB;&#x8282;&#x70B9; RO &#x901A;&#x8FC7;&#x5185;&#x5B58;&#x540C;&#x6B65;&#x6765;&#x7EF4;&#x62A4;&#x6570;&#x636E;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x53EA;&#x8BFB;&#x8282;&#x70B9;&#x53EF;&#x540C;&#x65F6;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x8BFB;&#x5199;&#x5206;&#x79BB;&#x4E0E;&#x8D1F;&#x8F7D;&#x5747;&#x8861;&#xFF0C;&#x5728;&#x8BFB;&#x5199;&#x8282;&#x70B9;&#x5F02;&#x5E38; crash &#x65F6;&#xFF0C;&#x53EF;&#x5C06;&#x53EA;&#x8BFB;&#x8282;&#x70B9;&#x63D0;&#x5347;&#x4E3A;&#x8BFB;&#x5199;&#x8282;&#x70B9;&#xFF0C;&#x4FDD;&#x8BC1;&#x96C6;&#x7FA4;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x3002;&#x57FA;&#x672C;&#x67B6;&#x6784;&#x56FE;&#x5982;&#x4E0B;&#x6240;&#x793A;&#xFF1A;</p>
+<p><img src="pic/49_LogIndex_1.png" alt="image.png"></p>
+<p>&#x4F20;&#x7EDF; share nothing &#x7684;&#x67B6;&#x6784;&#x4E0B;&#xFF0C;&#x53EA;&#x8BFB;&#x8282;&#x70B9; RO &#x6709;&#x81EA;&#x5DF1;&#x7684;&#x5185;&#x5B58;&#x53CA;&#x5B58;&#x50A8;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x63A5;&#x6536; RW &#x8282;&#x70B9;&#x7684; WAL &#x65E5;&#x5FD7;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#x5373;&#x53EF;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x5982;&#x679C;&#x9700;&#x8981;&#x56DE;&#x653E;&#x7684;&#x6570;&#x636E;&#x9875;&#x4E0D;&#x5728; Buffer Pool &#x4E2D;&#xFF0C;&#x9700;&#x5C06;&#x5176;&#x4ECE;&#x5B58;&#x50A8;&#x6587;&#x4EF6;&#x4E2D;&#x8BFB;&#x81F3; Buffer Pool &#x4E2D;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#xFF0C;&#x4ECE;&#x800C;&#x5E26;&#x6765; CacheMiss &#x7684;&#x6210;&#x672C;&#xFF0C;&#x4E14;&#x6301;&#x7EED;&#x6027;&#x7684;&#x56DE;&#x653E;&#x4F1A;&#x5E26;&#x6765;&#x8F83;&#x9891;&#x7E41;&#x7684; Buffer Pool &#x6DD8;&#x6C70;&#x95EE;&#x9898;&#x3002;</p>
+<p><img src="pic/50_LogIndex_2.png" alt="image.png"></p>
+<p>&#x6B64;&#x5916;&#xFF0C;RW &#x8282;&#x70B9;&#x591A;&#x4E2A;&#x4E8B;&#x52A1;&#x4E4B;&#x95F4;&#x53EF;&#x5E76;&#x884C;&#x6267;&#x884C;&#xFF0C;RO &#x8282;&#x70B9;&#x5219;&#x9700;&#x4F9D;&#x7167; WAL &#x65E5;&#x5FD7;&#x7684;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x8FDB;&#x884C;&#x4E32;&#x884C;&#x56DE;&#x653E;&#xFF0C;&#x5BFC;&#x81F4; RO &#x56DE;&#x653E;&#x901F;&#x5EA6;&#x8F83;&#x6162;&#xFF0C;&#x4E0E; RW &#x8282;&#x70B9;&#x7684;&#x5EF6;&#x8FDF;&#x9010;&#x6B65;&#x589E;&#x5927;&#x3002;</p>
+<p><img src="pic/51_LogIndex_3.png" alt="image.png"></p>
+<p>&#x4E0E;&#x4F20;&#x7EDF; share nothing &#x67B6;&#x6784;&#x4E0D;&#x540C;&#xFF0C;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E00;&#x5199;&#x591A;&#x8BFB;&#x67B6;&#x6784;&#x4E0B; RO &#x8282;&#x70B9;&#x53EF;&#x76F4;&#x63A5;&#x4ECE;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E0A;&#x83B7;&#x53D6;&#x9700;&#x8981;&#x56DE;&#x653E;&#x7684; WAL &#x65E5;&#x5FD7;&#x3002;&#x82E5;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E0A;&#x7684;&#x6570;&#x636E;&#x9875;&#x662F;&#x6700;&#x65B0;&#x7684;&#xFF0C;&#x90A3;&#x4E48; RO &#x53EF;&#x76F4;&#x63A5;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x9875;&#x800C;&#x4E0D;&#x9700;&#x8981;&#x518D;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#x3002;</p>
+<p>PolarDB &#x57FA;&#x4E8E; RW &#x8282;&#x70B9;&#x4E0E; RO &#x8282;&#x70B9;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x8FD9;&#x4E00;&#x7279;&#x6027;&#xFF0C;&#x8BBE;&#x8BA1;&#x4E86; LogIndex &#x673A;&#x5236;&#x6765;&#x52A0;&#x901F; RO &#x8282;&#x70B9;&#x7684;&#x5185;&#x5B58;&#x540C;&#x6B65;&#x548C;&#x65E5;&#x5FD7;&#x56DE;&#x653E;&#xFF0C;&#x964D;&#x4F4E; RO &#x8282;&#x70B9;&#x4E0E; RW &#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x5EF6;&#x8FDF;&#xFF0C;&#x786E;&#x4FDD;&#x4E86; RO &#x8282;&#x70B9;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x4E0E;&#x53EF;&#x7528;&#x6027;&#x3002;&#x9664;&#x4E86;&#x5B9E;&#x73B0; RO &#x8282;&#x70B9;&#x7684;&#x5185;&#x5B58;&#x540C;&#x6B65;&#xFF0C;&#x57FA;&#x4E8E; LogIndex &#x673A;&#x5236;&#x8FD8;&#x53EF;&#x5B9E;&#x73B0; <a href="RO-OnlinePromote.html">RO &#x8282;&#x70B9;&#x7684; Online Promote</a>&#xFF0C;&#x53EF;&#x52A0;&#x901F; RW &#x8282;&#x70B9;&#x5F02;&#x5E38;&#x5D29;&#x6E83;&#x65F6;&#xFF0C;RO &#x8282;&#x70B9;&#x63D0;&#x5347;&#x4E3A; RW &#x8282;&#x70B9;&#x7684;&#x901F;&#x5EA6;&#xFF0C;&#x4ECE;&#x800C;&#x6784;&#x5EFA;&#x8BA1;&#x7B97;&#x8282;&#x70B9;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#xFF0C;&#x5B9E;&#x73B0;&#x670D;&#x52A1;&#x7684;&#x5FEB;&#x901F;&#x6062;&#x590D;&#x3002;</p>
+<h2 id="ro-&#x5185;&#x5B58;&#x540C;&#x6B65;&#x67B6;&#x6784;">RO &#x5185;&#x5B58;&#x540C;&#x6B65;&#x67B6;&#x6784;</h2>
+<p>LogIndex &#x4E2D;&#x4FDD;&#x5B58;&#x4E86;&#x6570;&#x636E;&#x9875;&#x4E0E;&#x4FEE;&#x6539;&#x8BE5;&#x6570;&#x636E;&#x9875;&#x7684;&#x6240;&#x6709; LSN &#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#xFF0C;&#x57FA;&#x4E8E; LogIndex &#x53EF;&#x5FEB;&#x901F;&#x83B7;&#x53D6;&#x5230;&#x4FEE;&#x6539;&#x67D0;&#x4E2A;&#x6570;&#x636E;&#x9875;&#x7684;&#x6240;&#x6709; LSN&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x5C06;&#x8BE5;&#x6570;&#x636E;&#x9875;&#x5BF9;&#x5E94;&#x65E5;&#x5FD7;&#x7684;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#x5EF6;&#x8FDF;&#x5230;&#x771F;&#x6B63;&#x8BBF;&#x95EE;&#x8BE5;&#x6570;&#x636E;&#x9875;&#x7684;&#x65F6;&#x523B;&#x8FDB;&#x884C;&#x3002;LogIndex &#x673A;&#x5236;&#x4E0B; RO &#x5185;&#x5B58;&#x540C;&#x6B65;&#x7684;&#x67B6;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="pic/52_LogIndex_4.png" alt="image.png"></p>
+<p>RW / RO&#x7684;&#x76F8;&#x5173;&#x6D41;&#x7A0B;&#x76F8;&#x8F83;&#x4F20;&#x7EDF; share nothing &#x67B6;&#x6784;&#x4E0B;&#x6709;&#x5982;&#x4E0B;&#x533A;&#x522B;&#xFF1A;</p>
+<ul>
+<li>&#x8BFB;&#x5199;&#x8282;&#x70B9; RW &#x4E0E;&#x53EA;&#x8BFB;&#x8282;&#x70B9; RO &#x4E4B;&#x95F4;&#x4E0D;&#x518D;&#x4F20;&#x8F93;&#x5B8C;&#x6574;&#x7684; WAL &#x65E5;&#x5FD7;&#xFF0C;&#x4EC5;&#x4F20;&#x8F93; WAL meta&#xFF0C;&#x51CF;&#x5C11;&#x7F51;&#x7EDC;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x91CF;&#xFF0C;&#x964D;&#x4F4E;&#x4E86; RO &#x4E0E; RW &#x8282;&#x70B9;&#x7684;&#x5EF6;&#x8FDF;&#xFF1B;</li>
+<li>&#x8BFB;&#x5199;&#x8282;&#x70B9; RW &#x4F9D;&#x636E; WAL meta &#x751F;&#x6210; LogIndex &#x5199;&#x5165; LogIndex Memory Table &#x4E2D;&#xFF0C;LogIndex Memory Table &#x5199;&#x6EE1;&#x4E4B;&#x540E;&#x843D;&#x76D8;&#xFF0C;&#x4FDD;&#x5B58;&#x81F3;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x7684; LogIndex Table &#x4E2D;&#xFF0C;&#x5DF2;&#x843D;&#x76D8;&#x7684; LogIndex Memory Table &#x53EF;&#x4EE5;&#x88AB;&#x590D;&#x7528;&#xFF1B;</li>
+<li>&#x8BFB;&#x5199;&#x8282;&#x70B9; RW &#x901A;&#x8FC7; LogIndex Meta &#x6587;&#x4EF6;&#x4FDD;&#x8BC1; LogIndex Memory Table I/O &#x64CD;&#x4F5C;&#x7684;&#x539F;&#x5B50;&#x6027;&#xFF0C;LogIndex Memory Table &#x843D;&#x76D8;&#x540E;&#x4F1A;&#x66F4;&#x65B0; LogIndex Meta &#x6587;&#x4EF6;&#xFF0C;&#x843D;&#x76D8;&#x7684;&#x540C;&#x65F6;&#x8FD8;&#x4F1A;&#x751F;&#x6210; Bloom Data&#xFF0C;&#x901A;&#x8FC7; Bloom Data &#x53EF;&#x5FEB;&#x901F;&#x68C0;&#x7D22;&#x7279;&#x5B9A; Page &#x662F;&#x5426;&#x5B58;&#x5728;&#x4E8E;&#x67D0; LogIndex Table &#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x5FFD;&#x7565;&#x4E0D;&#x5FC5;&#x626B;&#x63CF;&#x7684; LogIndex Table &#x63D0;&#x5347;&#x6548;&#x7387;&#xFF1B;</li>
+<li>&#x53EA;&#x8BFB;&#x8282;&#x70B9; RO &#x63A5;&#x6536; RW &#x6240;&#x53D1;&#x9001;&#x7684; WAL Meta&#xFF0C;&#x5E76;&#x57FA;&#x4E8E; WAL Meta &#x5728;&#x5185;&#x5B58;&#x4E2D;&#x751F;&#x6210;&#x76F8;&#x5E94;&#x7684; LogIndex&#xFF0C;&#x540C;&#x6837;&#x5199;&#x5165;&#x5176;&#x5185;&#x5B58;&#x7684; LogIndex Memory Table &#x4E2D;&#xFF0C;&#x540C;&#x65F6;&#x5C06; WAL Meta &#x5BF9;&#x5E94;&#x5DF2;&#x5B58;&#x5728;&#x4E8E; Buffer Pool &#x4E2D;&#x7684;&#x9875;&#x9762;&#x6807;&#x8BB0;&#x4E3A; Outdate&#xFF0C;&#x8BE5;&#x9636;&#x6BB5; RO &#x8282;&#x70B9;&#x5E76;&#x4E0D;&#x8FDB;&#x884C;&#x771F;&#x6B63;&#x7684;&#x65E5;&#x5FD7;&#x56DE;&#x653E;&#xFF0C;&#x65E0;&#x6570;&#x636E; I/O &#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x53BB;&#x9664; cache miss &#x7684;&#x6210;&#x672C;&#xFF1B;</li>
+<li>&#x53EA;&#x8BFB;&#x8282;&#x70B9; RO &#x57FA;&#x4E8E; WAL Meta &#x751F;&#x6210; LogIndex &#x540E;&#x5373;&#x53EF;&#x63A8;&#x8FDB;&#x56DE;&#x653E;&#x4F4D;&#x70B9;&#xFF0C;&#x65E5;&#x5FD7;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#x88AB;&#x4EA4;&#x7531;&#x80CC;&#x666F;&#x8FDB;&#x7A0B;&#x53CA;&#x771F;&#x6B63;&#x8BBF;&#x95EE;&#x8BE5;&#x9875;&#x9762;&#x7684; backend &#x8FDB;&#x7A0B;&#x6267;&#x884C;&#xFF0C;&#x7531;&#x6B64; RO &#x8282;&#x70B9;&#x4E5F;&#x53EF;&#x5B9E;&#x73B0;&#x65E5;&#x5FD7;&#x7684;&#x5E76;&#x884C;&#x56DE;&#x653E;&#xFF1B;</li>
+<li>&#x53EA;&#x8BFB;&#x8282;&#x70B9; RO &#x751F;&#x6210;&#x7684; LogIndex Memory Table &#x4E0D;&#x4F1A;&#x843D;&#x76D8;&#xFF0C;&#x5176;&#x57FA;&#x4E8E; LogIndex Meta &#x6587;&#x4EF6;&#x5224;&#x65AD;&#x5DF2;&#x6EE1;&#x7684; LogIndex Memory Table &#x662F;&#x5426;&#x5728; RW &#x8282;&#x70B9;&#x5DF2;&#x843D;&#x76D8;&#xFF0C;&#x5DF2;&#x843D;&#x76D8;&#x7684; LogIndex Memory Table &#x53EF;&#x88AB;&#x590D;&#x7528;&#xFF0C;&#x5F53; RW &#x8282;&#x70B9;&#x5224;&#x65AD;&#x5B58;&#x50A8;&#x4E0A;&#x7684; LogIndex Table &#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x65F6;&#x53EF;&#x5C06;&#x76F8;&#x5E94;&#x7684; LogIndex Table Truncate&#x3002;</li>
+</ul>
+<p>PolarDB &#x901A;&#x8FC7;&#x4EC5;&#x4F20;&#x8F93; WAL Meta &#x964D;&#x4F4E; RW &#x4E0E; RO &#x4E4B;&#x95F4;&#x7684;&#x5EF6;&#x8FDF;&#xFF0C;&#x901A;&#x8FC7; LogIndex &#x5B9E;&#x73B0; WAL &#x65E5;&#x5FD7;&#x7684;&#x5EF6;&#x8FDF;&#x56DE;&#x653E; + &#x5E76;&#x884C;&#x56DE;&#x653E;&#x4EE5;&#x52A0;&#x901F; RO &#x7684;&#x56DE;&#x653E;&#x901F;&#x5EA6;&#xFF0C;&#x4EE5;&#x4E0B;&#x5219;&#x5BF9;&#x8FD9;&#x4E24;&#x70B9;&#x8FDB;&#x884C;&#x8BE6;&#x7EC6;&#x4ECB;&#x7ECD;&#x3002;</p>
+<h2 id="wal-meta">WAL Meta</h2>
+<p>WAL &#x65E5;&#x5FD7;&#x53C8;&#x79F0;&#x4E3A; XLOG Record&#xFF0C;&#x5982;&#x4E0B;&#x56FE;&#xFF0C;&#x6BCF;&#x4E2A; XLOG Record &#x7531;&#x4E24;&#x90E8;&#x5206;&#x7EC4;&#x6210;&#xFF1A;</p>
+<ul>
+<li>&#x901A;&#x7528;&#x7684;&#x9996;&#x90E8;&#x90E8;&#x5206; general header portion&#xFF1A;&#x8BE5;&#x90E8;&#x5206;&#x5373;&#x4E3A; XLogRecord &#x7ED3;&#x6784;&#x4F53;&#xFF0C;&#x56FA;&#x5B9A;&#x957F;&#x5EA6;&#x3002;&#x4E3B;&#x8981;&#x7528;&#x4E8E;&#x5B58;&#x653E;&#x8BE5;&#x6761; XLOG Record &#x7684;&#x901A;&#x7528;&#x4FE1;&#x606F;&#xFF0C;&#x5982; XLOG Record &#x7684;&#x957F;&#x5EA6;&#x3001;&#x751F;&#x6210;&#x8BE5;&#x6761; XLOG Record &#x7684;&#x4E8B;&#x52A1; ID&#x3001;&#x8BE5;&#x6761; XLOG Record &#x5BF9;&#x5E94;&#x7684;&#x8D44;&#x6E90;&#x7BA1;&#x7406;&#x5668;&#x7C7B;&#x578B;&#x7B49;;</li>
+<li>&#x6570;&#x636E;&#x90E8;&#x5206; data portion&#xFF1A;&#x8BE5;&#x90E8;&#x5206;&#x53C8;&#x53EF;&#x4EE5;&#x5212;&#x5206;&#x4E3A;&#x9996;&#x90E8;&#x548C;&#x6570;&#x636E;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x5176;&#x4E2D;&#x9996;&#x90E8;&#x90E8;&#x5206; header part &#x5305;&#x542B; 0&#xFF5E;N &#x4E2A; XLogRecordBlockHeader &#x7ED3;&#x6784;&#x4F53;&#x53CA; 0&#xFF5E;1 &#x4E2A; XLogRecordDataHeader[Short|Long] &#x7ED3;&#x6784;&#x4F53;&#x3002;&#x6570;&#x636E;&#x90E8;&#x5206; data part &#x5219;&#x5305;&#x542B; block data &#x53CA; main data&#x3002;&#x6BCF;&#x4E00;&#x4E2A; XLogRecordBlockHeader &#x5BF9;&#x5E94;&#x6570;&#x636E;&#x90E8;&#x5206;&#x7684;&#x4E00;&#x4E2A; Block data&#xFF0C;XLogRecordDataHeader[Short|Long] &#x5219;&#x4E0E;&#x6570;&#x636E;&#x90E8;&#x5206;&#x7684; main data &#x5BF9;&#x5E94;&#x3002;</li>
+</ul>
+<p><img src="pic/53_LogIndex_5.png" alt="wal meta.png"></p>
+<p>&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x8BFB;&#x5199;&#x8282;&#x70B9; RW &#x4E0E;&#x53EA;&#x8BFB;&#x8282;&#x70B9; RO &#x4E4B;&#x95F4;&#x65E0;&#x9700;&#x4F20;&#x8F93;&#x5B8C;&#x6574;&#x7684; WAL &#x65E5;&#x5FD7;&#xFF0C;&#x4EC5;&#x4F20;&#x8F93; WAL Meta &#x6570;&#x636E;&#xFF0C;WAL Meta &#x5373;&#x4E3A;&#x4E0A;&#x56FE;&#x4E2D;&#x7684; general header portion + header part + main data&#xFF0C;RO &#x8282;&#x70B9;&#x53EF;&#x57FA;&#x4E8E; WAL Meta &#x4ECE;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E0A;&#x8BFB;&#x53D6;&#x5B8C;&#x6574;&#x7684; WAL &#x65E5;&#x5FD7;&#x5185;&#x5BB9;&#x3002;&#x8BE5;&#x673A;&#x5236;&#x4E0B;&#xFF0C;RW &#x4E0E; RO &#x4E4B;&#x95F4;&#x4F20;&#x8F93; WAL Meta &#x7684;&#x6D41;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="pic/54_LogIndex_6.png" alt="wal meta&#x4F20;&#x8F93;.png"></p>
+<ol>
+<li>&#x5F53; RW &#x8282;&#x70B9;&#x4E2D;&#x7684;&#x4E8B;&#x52A1;&#x5BF9;&#x5176;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x4FEE;&#x6539;&#x65F6;&#xFF0C;&#x4F1A;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684; WAL &#x65E5;&#x5FD7;&#x5E76;&#x5C06;&#x5176;&#x5199;&#x5165; WAL Buffer&#xFF0C;&#x540C;&#x65F6;&#x62F7;&#x8D1D;&#x5BF9;&#x5E94;&#x7684; WAL meta &#x6570;&#x636E;&#x81F3;&#x5185;&#x5B58;&#x4E2D;&#x7684; WAL Meta queue &#x4E2D;&#xFF1B;</li>
+<li>&#x540C;&#x6B65;&#x6D41;&#x590D;&#x5236;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x65F6;&#x4F1A;&#x5148;&#x5C06; WAL Buffer &#x4E2D;&#x5BF9;&#x5E94;&#x7684; WAL &#x65E5;&#x5FD7; flush &#x5230;&#x78C1;&#x76D8;&#xFF0C;&#x6B64;&#x540E;&#x4F1A;&#x5524;&#x9192; WalSender &#x8FDB;&#x7A0B;&#xFF1B;</li>
+<li>WalSender &#x8FDB;&#x7A0B;&#x53D1;&#x73B0;&#x6709;&#x65B0;&#x7684;&#x65E5;&#x5FD7;&#x53EF;&#x4EE5;&#x53D1;&#x9001;&#xFF0C;&#x5219;&#x4ECE; WAL Meta queue &#x4E2D;&#x8BFB;&#x53D6;&#x5BF9;&#x5E94;&#x7684; WAL Meta&#xFF0C;&#x901A;&#x8FC7;&#x5DF2;&#x5EFA;&#x7ACB;&#x7684;&#x6D41;&#x590D;&#x5236;&#x8FDE;&#x63A5;&#x53D1;&#x9001;&#x5230;&#x5BF9;&#x7AEF;&#x7684; RO&#xFF1B;</li>
+<li>RO &#x7684; WalReceiver &#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230;&#x65B0;&#x7684;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x4E4B;&#x540E;&#xFF0C;&#x5C06;&#x5176; push &#x5230;&#x5185;&#x5B58;&#x7684; WAL Meta queue &#x4E2D;&#xFF0C;&#x540C;&#x65F6;&#x901A;&#x77E5; Startup &#x8FDB;&#x7A0B;&#x6709;&#x65B0;&#x7684;&#x65E5;&#x5FD7;&#x5230;&#x8FBE;&#xFF1B;</li>
+<li>Startup &#x4ECE; WAL Meta queue &#x4E2D;&#x8BFB;&#x53D6;&#x5BF9;&#x5E94;&#x7684; meta &#x6570;&#x636E;&#xFF0C;&#x89E3;&#x6790;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684; LogIndex memtable &#x5373;&#x53EF;&#x3002;</li>
+</ol>
+<p>RW &#x4E0E; RO &#x8282;&#x70B9;&#x7684;&#x6D41;&#x590D;&#x5236;&#x4E0D;&#x4F20;&#x8F93;&#x5177;&#x4F53;&#x7684; payload &#x6570;&#x636E;&#xFF0C;&#x51CF;&#x5C11;&#x4E86;&#x7F51;&#x7EDC;&#x6570;&#x636E;&#x4F20;&#x8F93;&#x91CF;&#xFF1B;&#x6B64;&#x5916;&#xFF0C;RW &#x8282;&#x70B9;&#x7684; WalSender &#x8FDB;&#x7A0B;&#x4ECE;&#x5185;&#x5B58;&#x4E2D;&#x7684; WAL Meta queue &#x4E2D;&#x83B7;&#x53D6; WAL Meta &#x4FE1;&#x606F;&#xFF0C;RO &#x8282;&#x70B9;&#x7684; WalReceiver &#x8FDB;&#x7A0B;&#x63A5;&#x6536;&#x5230; WAL Meta &#x540E;&#x4E5F;&#x540C;&#x6837;&#x5C06;&#x5176;&#x4FDD;&#x5B58;&#x81F3;&#x5185;&#x5B58;&#x7684; WAL Meta queue &#x4E2D;&#xFF0C;&#x76F8;&#x8F83;&#x4E8E;&#x4F20;&#x7EDF;&#x4E3B;&#x5907;&#x6A21;&#x5F0F;&#x51CF;&#x5C11;&#x4E86;&#x65E5;&#x5FD7;&#x53D1;&#x9001;&#x53CA;&#x63A5;&#x6536;&#x7684;&#x78C1;&#x76D8; I/O &#x8FC7;&#x7A0B;&#xFF0C;&#x4ECE;&#x800C;&#x63D0;&#x5347;&#x4F20;&#x8F93;&#x901F;&#x5EA6;&#xFF0C;&#x964D;&#x4F4E; RW &#x4E0E; RO &#x4E4B;&#x95F4;&#x7684;&#x5EF6;&#x8FDF;&#x3002;</p>
+<h2 id="logindex">LogIndex</h2>
+<h3 id="&#x5185;&#x5B58;&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x5185;&#x5B58;&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<p>LogIndex &#x5B9E;&#x8D28;&#x4E3A;&#x4E00;&#x4E2A; HashTable &#x7ED3;&#x6784;&#xFF0C;&#x5176; key &#x4E3A; PageTag&#xFF0C;&#x53EF;&#x6807;&#x8BC6;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x6570;&#x636E;&#x9875;&#xFF0C;&#x5176; value &#x5373;&#x4E3A;&#x4FEE;&#x6539;&#x8BE5; page &#x7684;&#x6240;&#x6709; LSN&#x3002;LogIndex &#x7684;&#x5185;&#x5B58;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x9664;&#x4E86; Memtable ID&#x3001;Memtable &#x4FDD;&#x5B58;&#x7684;&#x6700;&#x5927; LSN&#x3001;&#x6700;&#x5C0F; LSN &#x7B49;&#x4FE1;&#x606F;&#xFF0C;LogIndex Memtable &#x4E2D;&#x8FD8;&#x5305;&#x542B;&#x4E86;&#x4E09;&#x4E2A;&#x6570;&#x7EC4;&#xFF0C;&#x5206;&#x522B;&#x4E3A;&#xFF1A;</p>
+<ul>
+<li>HashTable&#xFF1A;HashTable &#x6570;&#x7EC4;&#x8BB0;&#x5F55;&#x4E86;&#x67D0;&#x4E2A; Page &#x4E0E;&#x4FEE;&#x6539;&#x8BE5; Page &#x7684; LSN List &#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#xFF0C;HashTable &#x6570;&#x7EC4;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x6210;&#x5458;&#x6307;&#x5411; Segment &#x6570;&#x7EC4;&#x4E2D;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684; LogIndex Item&#xFF1B;</li>
+<li>Segment&#xFF1A;Segment &#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x4E3A;&#x4E00;&#x4E2A; LogIndex Item&#xFF0C;LogIndex Item &#x6709;&#x4E24;&#x79CD;&#x7ED3;&#x6784;&#xFF0C;&#x5373;&#x4E0B;&#x56FE;&#x4E2D;&#x7684; Item Head &#x548C; Item Seg&#xFF0C;Item Head &#x4E3A;&#x67D0;&#x4E2A; Page &#x5BF9;&#x5E94;&#x7684; LSN &#x94FE;&#x8868;&#x7684;&#x5934;&#x90E8;&#xFF0C;Item Seg &#x5219;&#x4E3A;&#x8BE5; LSN &#x94FE;&#x8868;&#x7684;&#x540E;&#x7EED;&#x8282;&#x70B9;&#x3002;Item Head &#x4E2D;&#x7684; Page TAG &#x7528;&#x4E8E;&#x8BB0;&#x5F55;&#x5355;&#x4E2A; Page &#x7684;&#x5143;&#x4FE1;&#x606F;&#xFF0C;&#x5176; Next Seg &#x548C; Tail Seg &#x5219;&#x5206;&#x522B;&#x6307;&#x5411;&#x540E;&#x7EED;&#x8282;&#x70B9;&#x548C;&#x5C3E;&#x8282;&#x70B9;&#xFF0C;Item Seg &#x5B58;&#x50A8;&#x7740;&#x6307;&#x5411;&#x4E0A;&#x4E00;&#x8282;&#x70B9; Prev Seg &#x548C;&#x540E;&#x7EED;&#x8282;&#x70B9; Next Seg &#x7684;&#x6307;&#x9488;&#x3002;Item Head &#x548C; Item Seg &#x4E2D;&#x4FDD;&#x5B58;&#x7684; Suffix LSN &#x4E0E; LogIndex Memtable &#x4E2D;&#x4FDD;&#x5B58;&#x7684; Prefix LSN &#x53EF;&#x6784;&#x6210;&#x4E00;&#x4E2A;&#x5B8C;&#x6574;&#x7684; LSN&#xFF0C;&#x907F;&#x514D;&#x4E86;&#x91CD;&#x590D;&#x5B58;&#x50A8; Prefix LSN &#x5E26;&#x6765;&#x7684;&#x7A7A;&#x95F4;&#x6D6A;&#x8D39;&#x3002;&#x5F53;&#x4E0D;&#x540C; Page TAG &#x8BA1;&#x7B97;&#x5230; HashTable &#x7684;&#x540C;&#x4E00;&#x4F4D;&#x7F6E;&#x65F6;&#xFF0C;&#x901A;&#x8FC7; Item Head &#x4E2D;&#x7684; Next Item &#x6307;&#x5411;&#x4E0B;&#x4E00;&#x4E2A;&#x5177;&#x6709;&#x76F8;&#x540C; hash &#x503C;&#x7684; Page&#xFF0C;&#x4EE5;&#x6B64;&#x89E3;&#x51B3;&#x54C8;&#x5E0C;&#x51B2;&#x7A81;&#xFF1B;</li>
+<li>Index Order&#xFF1A;Index Order &#x6570;&#x7EC4;&#x8BB0;&#x5F55;&#x4E86; LogIndex &#x6DFB;&#x52A0;&#x5230; LogIndex Memtable &#x7684;&#x987A;&#x5E8F;&#xFF0C;&#x8BE5;&#x6570;&#x7EC4;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x5360;&#x636E; 2 &#x4E2A;&#x5B57;&#x8282;&#x3002;&#x6BCF;&#x4E2A;&#x6210;&#x5458;&#x7684;&#x540E; 12bit &#x5BF9;&#x5E94; Segment &#x6570;&#x7EC4;&#x7684;&#x4E00;&#x4E2A;&#x4E0B;&#x6807;&#xFF0C;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684; LogIndex Item&#xFF0C;&#x524D; 4bit &#x5219;&#x5BF9;&#x5E94; LogIndex Item &#x4E2D; Suffix LSN &#x6570;&#x7EC4;&#x7684;&#x4E00;&#x4E2A;&#x4E0B;&#x6807;&#xFF0C;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5177;&#x4F53;&#x7684; Suffix LSN&#xFF0C;&#x901A;&#x8FC7; Index Order &#x53EF;&#x65B9;&#x4FBF;&#x5730;&#x83B7;&#x53D6;&#x63D2;&#x5165;&#x5230;&#x8BE5; LogIndex Memtable &#x7684;&#x6240;&#x6709; LSN &#x53CA;&#x67D0;&#x4E2A; LSN &#x4E0E;&#x5176;&#x5BF9;&#x5E94;&#x4FEE;&#x6539;&#x7684;&#x5168;&#x90E8; Page &#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;&#x3002;</li>
+</ul>
+<p><img src="pic/55_LogIndex_7.png" alt="logindex.png"></p>
+<p>&#x5185;&#x5B58;&#x4E2D;&#x4FDD;&#x5B58;&#x7684; LogIndex Memtable &#x53C8;&#x53EF;&#x5206;&#x4E3A; Active LogIndex Memtable &#x548C; Inactive LogIndex Memtable&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x57FA;&#x4E8E; WAL Meta &#x6570;&#x636E;&#x751F;&#x6210;&#x7684; LogIndex &#x8BB0;&#x5F55;&#x4F1A;&#x5199;&#x5165; Active LogIndex Memtable&#xFF0C;Active LogIndex Memtable &#x5199;&#x6EE1;&#x540E;&#x4F1A;&#x8F6C;&#x4E3A; Inactive LogIndex Memtable&#xFF0C;&#x5E76;&#x91CD;&#x65B0;&#x7533;&#x8BF7;&#x4E00;&#x4E2A;&#x65B0;&#x7684; Active LogIndex Memtable&#xFF0C;Inactive LogIndex Memtable &#x53EF;&#x76F4;&#x63A5;&#x843D;&#x76D8;&#xFF0C;&#x843D;&#x76D8;&#x540E;&#x7684; Inactive LogIndex Memtable &#x53EF;&#x518D;&#x6B21;&#x8F6C;&#x4E3A; Active LogIndex Memtable&#x3002;</p>
+<p><img src="pic/56_LogIndex_8.png" alt="image.png"></p>
+<h3 id="&#x78C1;&#x76D8;&#x6570;&#x636E;&#x7ED3;&#x6784;">&#x78C1;&#x76D8;&#x6570;&#x636E;&#x7ED3;&#x6784;</h3>
+<p>&#x78C1;&#x76D8;&#x4E0A;&#x4FDD;&#x5B58;&#x4E86;&#x82E5;&#x5E72;&#x4E2A; LogIndex Table&#xFF0C;LogIndex Table &#x4E0E; LogIndex Memtable &#x7ED3;&#x6784;&#x7C7B;&#x4F3C;&#xFF0C;&#x4E00;&#x4E2A; LogIndex Table &#x53EF;&#x5305;&#x542B; 64 &#x4E2A; LogIndex Memtable&#xFF0C;Inactive LogIndex Memtable &#x843D;&#x76D8;&#x7684;&#x540C;&#x65F6;&#x4F1A;&#x751F;&#x6210;&#x5176;&#x5BF9;&#x5E94;&#x7684; Bloom Filter&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x5355;&#x4E2A; Bloom Filter &#x7684;&#x5927;&#x5C0F;&#x4E3A; 4096 &#x5B57;&#x8282;&#xFF0C;Bloom Filter &#x8BB0;&#x5F55;&#x4E86;&#x8BE5; Inactive LogIndex Memtable &#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x5982;&#x4FDD;&#x5B58;&#x7684;&#x6700;&#x5C0F; LSN&#x3001;&#x6700;&#x5927; LSN&#x3001;&#x8BE5; Memtable &#x4E2D;&#x6240;&#x6709; Page &#x5728; bloom filter bit array &#x4E2D;&#x7684;&#x6620;&#x5C04;&#x503C;&#x7B49;&#x3002;&#x901A;&#x8FC7; Bloom Filter &#x53EF;&#x5FEB;&#x901F;&#x5224;&#x65AD;&#x67D0;&#x4E2A; Page &#x662F;&#x5426;&#x5B58;&#x5728;&#x4E8E;&#x5BF9;&#x5E94;&#x7684; LogIndex Table &#x4E2D;&#xFF0C;&#x4ECE;&#x800C;&#x53EF;&#x5FFD;&#x7565;&#x65E0;&#x9700;&#x626B;&#x63CF;&#x7684; LogIndex Table &#x4EE5;&#x52A0;&#x901F;&#x68C0;&#x7D22;&#x3002;</p>
+<p><img src="pic/57_LogIndex_9.png" alt="image.png"></p>
+<p>&#x5F53; Inactive LogIndex MemTable &#x6210;&#x529F;&#x843D;&#x76D8;&#x540E;&#xFF0C;LogIndex Meta &#x6587;&#x4EF6;&#x4E5F;&#x88AB;&#x66F4;&#x65B0;&#xFF0C;&#x8BE5;&#x6587;&#x4EF6;&#x53EF;&#x4FDD;&#x8BC1; LogIndex Memtable &#x6587;&#x4EF6; I/O &#x64CD;&#x4F5C;&#x7684;&#x539F;&#x5B50;&#x6027;&#x3002;&#x5982;&#x4E0B;&#xFF0C;LogIndex Meta &#x6587;&#x4EF6;&#x4FDD;&#x5B58;&#x4E86;&#x5F53;&#x524D;&#x78C1;&#x76D8;&#x4E0A;&#x6700;&#x5C0F; LogIndex Table &#x53CA;&#x6700;&#x5927; LogIndex Memtable &#x7684;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#xFF0C;&#x5176; Start LSN &#x8BB0;&#x5F55;&#x4E86;&#x5F53;&#x524D;&#x5DF2;&#x843D;&#x76D8;&#x7684;&#x6240;&#x6709; LogIndex MemTable &#x4E2D;&#x6700;&#x5927;&#x7684; LSN&#x3002;&#x82E5; Flush LogIndex MemTable &#x65F6;&#x53D1;&#x751F;&#x90E8;&#x5206;&#x5199;&#xFF0C;&#x7CFB;&#x7EDF;&#x4F1A;&#x4ECE; LogIndex Meta &#x8BB0;&#x5F55;&#x7684; Start LSN &#x5F00;&#x59CB;&#x89E3;&#x6790;&#x65E5;&#x5FD7;&#xFF0C;&#x5982;&#x6B64;&#x90E8;&#x5206;&#x5199;&#x820D;&#x5F03;&#x7684; LogIndex &#x8BB0;&#x5F55;&#x4E5F;&#x4F1A;&#x91CD;&#x65B0;&#x751F;&#x6210;&#xFF0C;&#x4FDD;&#x8BC1;&#x4E86;&#x5176; I/O &#x64CD;&#x4F5C;&#x7684;&#x539F;&#x5B50;&#x6027;&#x3002;</p>
+<p><img src="pic/58_LogIndex_10.png" alt="image.png"></p>
+<p>&#x7531; <a href="Buffer_Management.md">Buffer &#x7BA1;&#x7406;</a> &#x53EF;&#x77E5;&#xFF0C;&#x4E00;&#x81F4;&#x6027;&#x4F4D;&#x70B9;&#x4E4B;&#x524D;&#x7684;&#x6240;&#x6709; WAL &#x65E5;&#x5FD7;&#x4FEE;&#x6539;&#x7684;&#x6570;&#x636E;&#x9875;&#x5747;&#x5DF2;&#x6301;&#x4E45;&#x5316;&#x5230;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E2D;&#xFF0C;RO &#x8282;&#x70B9;&#x65E0;&#x9700;&#x56DE;&#x653E;&#x8BE5;&#x4F4D;&#x70B9;&#x4E4B;&#x524D;&#x7684; WAL &#x65E5;&#x5FD7;&#xFF0C;&#x6545; LogIndex Table &#x4E2D;&#x5C0F;&#x4E8E;&#x4E00;&#x81F4;&#x6027;&#x4F4D;&#x70B9;&#x7684; LSN &#x5747;&#x53EF;&#x6E05;&#x9664;&#x3002;RW &#x636E;&#x6B64; Truncate &#x6389;&#x5B58;&#x50A8;&#x4E0A;&#x4E0D;&#x518D;&#x4F7F;&#x7528;&#x7684; LogIndex Table&#xFF0C;&#x5728;&#x52A0;&#x901F; RO &#x56DE;&#x653E;&#x6548;&#x7387;&#x7684;&#x540C;&#x65F6;&#x8FD8;&#x53EF;&#x51CF;&#x5C11; LogIndex Table &#x5360;&#x7528;&#x7684;&#x7A7A;&#x95F4;&#x3002;</p>
+<h2 id="&#x65E5;&#x5FD7;&#x56DE;&#x653E;">&#x65E5;&#x5FD7;&#x56DE;&#x653E;</h2>
+<h3 id="&#x5EF6;&#x8FDF;&#x56DE;&#x653E;">&#x5EF6;&#x8FDF;&#x56DE;&#x653E;</h3>
+<p>LogIndex &#x673A;&#x5236;&#x4E0B;&#xFF0C;RO &#x8282;&#x70B9;&#x7684; Startup &#x8FDB;&#x7A0B;&#x57FA;&#x4E8E;&#x63A5;&#x6536;&#x5230;&#x7684; WAL Meta &#x751F;&#x6210; LogIndex&#xFF0C;&#x540C;&#x65F6;&#x5C06;&#x8BE5; WAL Meta &#x5BF9;&#x5E94;&#x7684;&#x5DF2;&#x5B58;&#x5728;&#x4E8E; Buffer Pool &#x4E2D;&#x7684;&#x9875;&#x9762;&#x6807;&#x8BB0;&#x4E3A; Outdate &#x540E;&#x5373;&#x53EF;&#x63A8;&#x8FDB;&#x56DE;&#x653E;&#x4F4D;&#x70B9;&#xFF0C;Startup &#x8FDB;&#x7A0B;&#x672C;&#x8EAB;&#x5E76;&#x4E0D;&#x5BF9;&#x65E5;&#x5FD7;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#xFF0C;&#x65E5;&#x5FD7;&#x7684;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#x4EA4;&#x7531;&#x80CC;&#x666F;&#x56DE;&#x653E;&#x8FDB;&#x7A0B;&#x53CA;&#x771F;&#x6B63;&#x8BBF;&#x95EE;&#x8BE5;&#x9875;&#x9762;&#x7684; Backend &#x8FDB;&#x7A0B;&#x8FDB;&#x884C;&#xFF0C;&#x56DE;&#x653E;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x5176;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li>&#x80CC;&#x666F;&#x56DE;&#x653E;&#x8FDB;&#x7A0B;&#x6309;&#x7167;WAL&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#xFF0C;&#x6839;&#x636E;&#x8981;&#x56DE;&#x653E;&#x7684; LSN &#x68C0;&#x7D22; LogIndex Memtable &#x53CA; LogIndex Table&#xFF0C;&#x83B7;&#x53D6;&#x8BE5; LSN &#x4FEE;&#x6539;&#x7684; Page List&#xFF0C;&#x82E5;&#x67D0;&#x4E2A; Page &#x5B58;&#x5728;&#x4E8E; Buffer Pool &#x4E2D;&#x5219;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#xFF0C;&#x5426;&#x5219;&#x76F4;&#x63A5;&#x8DF3;&#x8FC7;&#x3002;&#x80CC;&#x666F;&#x56DE;&#x653E;&#x8FDB;&#x7A0B;&#x6309;&#x7167; LSN &#x7684;&#x987A;&#x5E8F;&#x9010;&#x6B65;&#x63A8;&#x8FDB; Buffer Pool &#x4E2D;&#x7684;&#x9875;&#x9762;&#x4F4D;&#x70B9;&#xFF0C;&#x907F;&#x514D;&#x5355;&#x4E2A; Page &#x9700;&#x8981;&#x56DE;&#x653E;&#x7684; LSN &#x6570;&#x91CF;&#x5806;&#x79EF;&#x592A;&#x591A;&#xFF1B;</li>
+<li>Backend &#x8FDB;&#x7A0B;&#x5219;&#x4EC5;&#x5BF9;&#x5176;&#x5B9E;&#x9645;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x7684; Page &#x8FDB;&#x884C;&#x56DE;&#x653E;&#xFF0C;&#x5F53; Backend &#x8FDB;&#x7A0B;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x4E00;&#x4E2A; Page &#x65F6;&#xFF0C;&#x5982;&#x679C;&#x8BE5; Page &#x5728; Buffer Pool &#x4E2D;&#x4E0D;&#x5B58;&#x5728;&#xFF0C;&#x5219;&#x5C06;&#x8BE5; Page &#x8BFB;&#x5230; Buffer Pool &#x540E;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#xFF1B;&#x5982;&#x679C;&#x8BE5; Page &#x5DF2;&#x7ECF;&#x5728; Buffer Pool &#x4E2D;&#x4E14;&#x6807;&#x8BB0;&#x4E3A; outdate&#xFF0C;&#x5219;&#x5C06;&#x8BE5; Page &#x56DE;&#x653E;&#x5230;&#x6700;&#x65B0;&#x3002;Backend &#x8FDB;&#x7A0B;&#x4F9D;&#x636E; Page TAG &#x5BF9; LogIndex Memtable &#x53CA; LogIndex Table &#x8FDB;&#x884C;&#x68C0;&#x7D22;&#xFF0C;&#x6309;&#x5E8F;&#x751F;&#x6210;&#x4E0E;&#x8BE5; Page &#x76F8;&#x5173;&#x7684; LSN List&#xFF0C;&#x57FA;&#x4E8E; LSN List &#x4ECE;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E2D;&#x8BFB;&#x53D6;&#x5B8C;&#x6574;&#x7684; WAL &#x65E5;&#x5FD7;&#x6765;&#x5BF9;&#x8BE5; Page &#x8FDB;&#x884C;&#x56DE;&#x653E;&#x3002;</li>
+</ul>
+<p><img src="pic/59_LogIndex_11.png" alt="image.png"></p>
+<p>&#x4E3A;&#x964D;&#x4F4E;&#x56DE;&#x653E;&#x65F6;&#x8BFB;&#x53D6;&#x78C1;&#x76D8; WAL &#x65E5;&#x5FD7;&#x5E26;&#x6765;&#x7684;&#x6027;&#x80FD;&#x635F;&#x8017;&#xFF0C;&#x540C;&#x65F6;&#x6DFB;&#x52A0;&#x4E86; XLOG Buffer &#x7528;&#x4E8E;&#x7F13;&#x5B58;&#x8BFB;&#x53D6;&#x7684; WAL &#x65E5;&#x5FD7;&#x3002;&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x539F;&#x59CB;&#x65B9;&#x5F0F;&#x4E0B;&#x76F4;&#x63A5;&#x4ECE;&#x78C1;&#x76D8;&#x4E0A;&#x7684; WAL Segment File &#x4E2D;&#x8BFB;&#x53D6; WAL &#x65E5;&#x5FD7;&#xFF0C;&#x6DFB;&#x52A0; XLog Page Buffer &#x540E;&#xFF0C;&#x4F1A;&#x5148;&#x4ECE; XLog Buffer &#x4E2D;&#x8BFB;&#x53D6;&#xFF0C;&#x82E5;&#x6240;&#x9700; WAL &#x65E5;&#x5FD7;&#x4E0D;&#x5728; XLog Buffer &#x4E2D;&#xFF0C;&#x5219;&#x4ECE;&#x78C1;&#x76D8;&#x4E0A;&#x8BFB;&#x53D6;&#x5BF9;&#x5E94;&#x7684; WAL Page &#x5230; Buffer &#x4E2D;&#xFF0C;&#x7136;&#x540E;&#x518D;&#x5C06;&#x5176;&#x62F7;&#x8D1D;&#x81F3; XLogReaderState&#x7684;readBuf &#x4E2D;&#xFF1B;&#x82E5;&#x5DF2;&#x5728; Buffer &#x4E2D;&#xFF0C;&#x5219;&#x76F4;&#x63A5;&#x5C06;&#x5176;&#x62F7;&#x8D1D;&#x81F3; XLogReaderState &#x7684; readBuf &#x4E2D;&#xFF0C;&#x4EE5;&#x6B64;&#x51CF;&#x5C11;&#x56DE;&#x653E; WAL &#x65E5;&#x5FD7;&#x65F6;&#x7684; I/O &#x6B21;&#x6570;&#xFF0C;&#x4ECE;&#x800C;&#x8FDB;&#x4E00;&#x6B65;&#x52A0;&#x901F;&#x65E5;&#x5FD7;&#x56DE;&#x653E;&#x7684;&#x901F;&#x5EA6;&#x3002;</p>
+<p><img src="pic/60_LogIndex_12.png" alt="image.png"></p>
+<h3 id="mini-transaction">Mini Transaction</h3>
+<p>&#x4E0E;&#x4F20;&#x7EDF; share nothing &#x67B6;&#x6784;&#x4E0B;&#x7684;&#x65E5;&#x5FD7;&#x56DE;&#x653E;&#x4E0D;&#x540C;&#xFF0C;LogIndex &#x673A;&#x5236;&#x4E0B;&#xFF0C;Startup &#x8FDB;&#x7A0B;&#x89E3;&#x6790; WAL Meta &#x751F;&#x6210; LogIndex &#x4E0E; Backend &#x8FDB;&#x7A0B;&#x57FA;&#x4E8E; LogIndex &#x5BF9; Page &#x8FDB;&#x884C;&#x56DE;&#x653E;&#x7684;&#x64CD;&#x4F5C;&#x662F;&#x5E76;&#x884C;&#x7684;&#xFF0C;&#x4E14;&#x5404;&#x4E2A; Backend &#x8FDB;&#x7A0B;&#x4EC5;&#x5BF9;&#x5176;&#x9700;&#x8981;&#x8BBF;&#x95EE;&#x7684; Page &#x8FDB;&#x884C;&#x56DE;&#x653E;&#x3002;&#x7531;&#x4E8E;&#x4E00;&#x6761; XLog Record &#x53EF;&#x80FD;&#x4F1A;&#x5BF9;&#x591A;&#x4E2A; Page &#x8FDB;&#x884C;&#x4FEE;&#x6539;&#xFF0C;&#x4EE5;&#x7D22;&#x5F15;&#x5206;&#x88C2;&#x4E3A;&#x4F8B;&#xFF0C;&#x5176;&#x6D89;&#x53CA;&#x5BF9; Page_0&#x3001;Page_1 &#x7684;&#x4FEE;&#x6539;&#xFF0C;&#x4E14;&#x5176;&#x5BF9; Page_0 &#x53CA; Page_1 &#x7684;&#x4FEE;&#x6539;&#x4E3A;&#x4E00;&#x4E2A;&#x539F;&#x5B50;&#x64CD;&#x4F5C;&#xFF0C;&#x5373;&#x4FEE;&#x6539;&#x8981;&#x4E48;&#x5168;&#x90E8;&#x53EF;&#x89C1;&#xFF0C;&#x8981;&#x4E48;&#x5168;&#x90E8;&#x4E0D;&#x53EF;&#x89C1;&#x3002;&#x9488;&#x5BF9;&#x6B64;&#xFF0C;&#x8BBE;&#x8BA1;&#x4E86; mini transaction &#x9501;&#x673A;&#x5236;&#x4EE5;&#x4FDD;&#x8BC1; Backend &#x8FDB;&#x7A0B;&#x56DE;&#x653E;&#x8FC7;&#x7A0B;&#x4E2D;&#x5185;&#x5B58;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;</p>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x65E0; mini transaction lock &#x65F6;&#xFF0C;Startup &#x8FDB;&#x7A0B;&#x5BF9; WAL Meta &#x8FDB;&#x884C;&#x89E3;&#x6790;&#x5E76;&#x6309;&#x5E8F;&#x5C06;&#x5F53;&#x524D; LSN &#x63D2;&#x5165;&#x5230;&#x5404;&#x4E2A; Page &#x5BF9;&#x5E94;&#x7684; LSN List &#x4E2D;&#x3002;&#x82E5; Startup &#x8FDB;&#x7A0B;&#x5B8C;&#x6210;&#x5BF9; Page_0 LSN List &#x7684;&#x66F4;&#x65B0;&#xFF0C;&#x4F46;&#x5C1A;&#x672A;&#x5B8C;&#x6210;&#x5BF9; Page_1 LSN List &#x7684;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;Backend_0 &#x548C; Backend_1 &#x5206;&#x522B;&#x5BF9; Page_0 &#x53CA; Page_1 &#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;Backend_0 &#x548C; Backend_1 &#x5206;&#x522B;&#x57FA;&#x4E8E; Page &#x5BF9;&#x5E94;&#x7684; LSN List &#x8FDB;&#x884C;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#xFF0C;Page_0 &#x88AB;&#x56DE;&#x653E;&#x81F3; LSN_N + 1 &#x5904;&#xFF0C;Page_1 &#x88AB;&#x56DE;&#x653E;&#x81F3; LSN_N &#x5904;&#xFF0C;&#x53EF;&#x89C1;&#x6B64;&#x65F6; Buffer Pool &#x4E2D;&#x4E24;&#x4E2A; Page &#x5BF9;&#x5E94;&#x7684;&#x7248;&#x672C;&#x5E76;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x4ECE;&#x800C;&#x5BFC;&#x81F4;&#x76F8;&#x5E94;&#x5185;&#x5B58;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x4E0D;&#x4E00;&#x81F4;&#x3002;</p>
+<p><img src="pic/61_LogIndex_13.png" alt="image.png"></p>
+<p>Mini transaction &#x9501;&#x673A;&#x5236;&#x4E0B;&#xFF0C;&#x5BF9; Page_0 &#x53CA; Page_1 LSN List &#x7684;&#x66F4;&#x65B0;&#x88AB;&#x89C6;&#x4E3A;&#x4E00;&#x4E2A; mini transaction&#x3002;Startup &#x8FDB;&#x7A0B;&#x66F4;&#x65B0; Page &#x5BF9;&#x5E94;&#x7684; LSN List &#x65F6;&#xFF0C;&#x9700;&#x5148;&#x83B7;&#x53D6;&#x8BE5; Page &#x7684; mini transaction lock&#xFF0C;&#x5982;&#x4E0B;&#x5148;&#x83B7;&#x53D6; Page_0 &#x5BF9;&#x5E94;&#x7684; mtr lock&#xFF0C;&#x83B7;&#x53D6; Page mtr lock &#x7684;&#x987A;&#x5E8F;&#x4E0E;&#x56DE;&#x653E;&#x65F6;&#x7684;&#x987A;&#x5E8F;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x66F4;&#x65B0;&#x5B8C; Page_0 &#x53CA; Page_1 LSN List &#x540E;&#x518D;&#x91CA;&#x653E; Page_0 &#x5BF9;&#x5E94;&#x7684; mtr lock&#x3002;Backend &#x8FDB;&#x7A0B;&#x57FA;&#x4E8E; LogIndex &#x5BF9;&#x7279;&#x5B9A; Page &#x8FDB;&#x884C;&#x56DE;&#x653E;&#x65F6;&#xFF0C;&#x82E5;&#x8BE5; Page &#x5BF9;&#x5E94;&#x5728; Startup &#x8FDB;&#x7A0B;&#x4ECD;&#x5904;&#x4E8E;&#x4E00;&#x4E2A; mini transaction &#x4E2D;&#xFF0C;&#x5219;&#x540C;&#x6837;&#x9700;&#x5148;&#x83B7;&#x53D6;&#x8BE5; Page &#x5BF9;&#x5E94;&#x7684; mtr lock &#x540E;&#x518D;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#x3002;&#x6545;&#x82E5; Startup &#x8FDB;&#x7A0B;&#x5B8C;&#x6210;&#x5BF9; Page_0 LSN List &#x7684;&#x66F4;&#x65B0;&#xFF0C;&#x4F46;&#x5C1A;&#x672A;&#x5B8C;&#x6210;&#x5BF9; Page_1 LSN List &#x7684;&#x66F4;&#x65B0;&#x65F6;&#xFF0C;Backend_0 &#x548C; Backend_1 &#x5206;&#x522B;&#x5BF9; Page_0 &#x53CA; Page_1 &#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;&#x6B64;&#x65F6; Backend_0 &#x9700;&#x7B49;&#x5F85; LSN List &#x66F4;&#x65B0;&#x5B8C;&#x6BD5;&#x5E76;&#x91CA;&#x653E; Page_0 mtr lock &#x4E4B;&#x540E;&#x624D;&#x53EF;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#xFF0C;&#x800C;&#x91CA;&#x653E; Page_0 mtr lock &#x65F6; Page_1 &#x7684; LSN List &#x5DF2;&#x5B8C;&#x6210;&#x66F4;&#x65B0;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x4E86;&#x5185;&#x5B58;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x7684;&#x539F;&#x5B50;&#x4FEE;&#x6539;&#x3002;</p>
+<p><img src="pic/62_LogIndex_14.png" alt="mini trans.png"></p>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="Flexibility.html" class="navigation navigation-prev " aria-label="Previous page: 极致弹性">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HTAP.html" class="navigation navigation-next " aria-label="Next page: HTAP能力">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"毫秒级延迟","level":"1.1.3.1.2","depth":4,"next":{"title":"HTAP能力","level":"1.1.3.1.3","depth":4,"path":"PolarDB-for-PostgreSQL/HTAP.md","ref":"PolarDB-for-PostgreSQL/HTAP.md","articles":[]},"previous":{"title":"极致弹性","level":"1.1.3.1.1","depth":4,"path":"PolarDB-for-PostgreSQL/Flexibility.md","ref":"PolarDB-for-PostgreSQL/Flexibility.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","code","expandable-chapters-small","page-toc-button","-sharing","-font-settings","-search","-lunr","auto-scroll-table@git+https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"hide-element":{"elements":[".toggle-dropdown",".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PolarDB for PostgreSQL","gitbook":"*"},"file":{"path":"PolarDB-for-PostgreSQL/LogIndex.md","mtime":"2022-05-09T09:10:16.110Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-22T14:36:40.387Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

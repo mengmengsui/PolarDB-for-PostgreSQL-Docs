@@ -1,0 +1,1977 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>DataMax · PolarDB for PostgreSQL</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="HA-with-Three-Nodes.html" />
+    
+    
+    <link rel="prev" href="CSN.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于PolarDB for PostgreSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    PolarDB for PostgreSQL简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="Product-Architecture.html">
+            
+                <a href="Product-Architecture.html">
+            
+                    
+                    产品架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="Background.html">
+            
+                <a href="Background.html">
+            
+                    
+                    架构背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="Overall-Architecture.html">
+            
+                <a href="Overall-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1" data-path="Storage-Compute-Decoupled-Arch.html">
+            
+                <a href="Storage-Compute-Decoupled-Arch.html">
+            
+                    
+                    存储计算分离架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2" data-path="HTAP-Architecture.html">
+            
+                <a href="HTAP-Architecture.html">
+            
+                    
+                    HTAP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Features.html">
+            
+                <a href="Features.html">
+            
+                    
+                    功能特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="basic-features.html">
+            
+                <a href="basic-features.html">
+            
+                    
+                    基本功能和特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1.1" data-path="Flexibility.html">
+            
+                <a href="Flexibility.html">
+            
+                    
+                    极致弹性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.2" data-path="LogIndex.html">
+            
+                <a href="LogIndex.html">
+            
+                    
+                    毫秒级延迟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.3" data-path="HTAP.html">
+            
+                <a href="HTAP.html">
+            
+                    
+                    HTAP能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.4" data-path="Cloud-Native.html">
+            
+                <a href="Cloud-Native.html">
+            
+                    
+                    云原生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.5" data-path="Reliability-and-HA.html">
+            
+                <a href="Reliability-and-HA.html">
+            
+                    
+                    金融级可靠性和可用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.6" data-path="PostgreSQL-Compatibility.html">
+            
+                <a href="PostgreSQL-Compatibility.html">
+            
+                    
+                    PostgreSQL生态兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2" data-path="enterprise-features.html">
+            
+                <a href="enterprise-features.html">
+            
+                    
+                    企业级增强特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.2.1" data-path="Buffer-Management.html">
+            
+                <a href="Buffer-Management.html">
+            
+                    
+                    Buffer管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.2" data-path="DDL-Synchronization.html">
+            
+                <a href="DDL-Synchronization.html">
+            
+                    
+                    DDL同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.3" data-path="CSN.html">
+            
+                <a href="CSN.html">
+            
+                    
+                    CSN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.3.2.4" data-path="DataMax.html">
+            
+                <a href="DataMax.html">
+            
+                    
+                    DataMax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.5" data-path="HA-with-Three-Nodes.html">
+            
+                <a href="HA-with-Three-Nodes.html">
+            
+                    
+                    三节点高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.6" data-path="Parallel-Replay.html">
+            
+                <a href="Parallel-Replay.html">
+            
+                    
+                    并行回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.7" data-path="RO-OnlinePromote.html">
+            
+                <a href="RO-OnlinePromote.html">
+            
+                    
+                    RO OnlinePromote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.8" data-path="TDE.html">
+            
+                <a href="TDE.html">
+            
+                    
+                    TDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.9" data-path="WAL-Pipeline.html">
+            
+                <a href="WAL-Pipeline.html">
+            
+                    
+                    WAL Pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../Component.html">
+            
+                <a href="../Component.html">
+            
+                    
+                    组件介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Quick-Start.html">
+            
+                <a href="Quick-Start.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Alibaba-Cloud-Service.html">
+            
+                <a href="Alibaba-Cloud-Service.html">
+            
+                    
+                    阿里巴巴云服务部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Standalone-Deployment.html">
+            
+                <a href="Standalone-Deployment.html">
+            
+                    
+                    单机形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="Local-Storage-Instance.html">
+            
+                <a href="Local-Storage-Instance.html">
+            
+                    
+                    搭建基于单机本地存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Cluster-Deployment.html">
+            
+                <a href="Cluster-Deployment.html">
+            
+                    
+                    集群形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="NBD-Instance.html">
+            
+                <a href="NBD-Instance.html">
+            
+                    
+                    搭建基于NBD共享存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="ceph-Instance.html">
+            
+                <a href="ceph-Instance.html">
+            
+                    
+                    搭建基于Ceph共享存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../DeployPFS.html">
+            
+                <a href="../DeployPFS.html">
+            
+                    
+                    安装部署PFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="PolarDB-Stack-Deployment.html">
+            
+                <a href="PolarDB-Stack-Deployment.html">
+            
+                    
+                    管控形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="PolarDB-Stack-Instance.html">
+            
+                <a href="PolarDB-Stack-Instance.html">
+            
+                    
+                    搭建基于PolarDB Stack共享存储的实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../PolarDB-Stack-Operator/Quick-Install.html">
+            
+                <a href="../PolarDB-Stack-Operator/Quick-Install.html">
+            
+                    
+                    一键安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" data-path="../PolarDB-Stack-Operator/Manual-Install.html">
+            
+                <a href="../PolarDB-Stack-Operator/Manual-Install.html">
+            
+                    
+                    手动安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../User-Manual.html">
+            
+                <a href="../User-Manual.html">
+            
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.html">
+            
+                <a href="../PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.html">
+            
+                    
+                    PolarDB Stack管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../PolarDB-Stack-Operator/PolarDB-Stack-Architecture.html">
+            
+                <a href="../PolarDB-Stack-Operator/PolarDB-Stack-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../PolarDB-Stack-Operator/Resource-Management.html">
+            
+                <a href="../PolarDB-Stack-Operator/Resource-Management.html">
+            
+                    
+                    资源管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../PolarDB-Stack-Operator/Create-PVC.html">
+            
+                <a href="../PolarDB-Stack-Operator/Create-PVC.html">
+            
+                    
+                    创建PVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="../PolarDB-Stack-Operator/Create-Instance-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Create-Instance-Cluster.html">
+            
+                    
+                    创建实例集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="../PolarDB-Stack-Operator/Delete-Instance-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Delete-Instance-Cluster.html">
+            
+                    
+                    删除实例集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="../PolarDB-Stack-Operator/Change-Configuration.html">
+            
+                <a href="../PolarDB-Stack-Operator/Change-Configuration.html">
+            
+                    
+                    变更配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.5" data-path="../PolarDB-Stack-Operator/Switch-RW-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Switch-RW-RO.html">
+            
+                    
+                    读写切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.6" data-path="../PolarDB-Stack-Operator/Change-Engine-Parameters.html">
+            
+                <a href="../PolarDB-Stack-Operator/Change-Engine-Parameters.html">
+            
+                    
+                    修改引擎参数（刷参）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.7" data-path="../PolarDB-Stack-Operator/Reboot-Instance.html">
+            
+                <a href="../PolarDB-Stack-Operator/Reboot-Instance.html">
+            
+                    
+                    重启实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.8" data-path="../PolarDB-Stack-Operator/Reboot-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Reboot-Cluster.html">
+            
+                    
+                    重启集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.9" data-path="../PolarDB-Stack-Operator/Update-Image-Version.html">
+            
+                <a href="../PolarDB-Stack-Operator/Update-Image-Version.html">
+            
+                    
+                    更新镜像版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.10" data-path="../PolarDB-Stack-Operator/Upgrade.html">
+            
+                <a href="../PolarDB-Stack-Operator/Upgrade.html">
+            
+                    
+                    小版本升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.11" data-path="../PolarDB-Stack-Operator/Rebuild-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Rebuild-Cluster.html">
+            
+                    
+                    完整重建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.12" data-path="../PolarDB-Stack-Operator/Add-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Add-RO.html">
+            
+                    
+                    添加RO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.13" data-path="../PolarDB-Stack-Operator/Migrate-RW.html">
+            
+                <a href="../PolarDB-Stack-Operator/Migrate-RW.html">
+            
+                    
+                    RW迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.14" data-path="../PolarDB-Stack-Operator/Migrate-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Migrate-RO.html">
+            
+                    
+                    RO迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.15" data-path="../PolarDB-Stack-Operator/Expand-Storage.html">
+            
+                <a href="../PolarDB-Stack-Operator/Expand-Storage.html">
+            
+                    
+                    存储扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.16" data-path="../PolarDB-Stack-Operator/Retry-Failed-Operation.html">
+            
+                <a href="../PolarDB-Stack-Operator/Retry-Failed-Operation.html">
+            
+                    
+                    失败重试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.17" data-path="../PolarDB-Stack-Operator/Engine-Parameters.html">
+            
+                <a href="../PolarDB-Stack-Operator/Engine-Parameters.html">
+            
+                    
+                    引擎参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../PolarDB-Stack-Operator/Lifecycle-Management.html">
+            
+                <a href="../PolarDB-Stack-Operator/Lifecycle-Management.html">
+            
+                    
+                    生命周期管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../PolarDB-Stack-Common/Stack-Lifecycle-Basic-Concept.html">
+            
+                <a href="../PolarDB-Stack-Common/Stack-Lifecycle-Basic-Concept.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="../PolarDB-Stack-Workflow/Workflow-Engine.html">
+            
+                <a href="../PolarDB-Stack-Workflow/Workflow-Engine.html">
+            
+                    
+                    工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="../PolarDB-Stack-Workflow/Use-Workflow-Engine.html">
+            
+                <a href="../PolarDB-Stack-Workflow/Use-Workflow-Engine.html">
+            
+                    
+                    使用工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../PolarDB-Stack-Storage/Shared-Storage-Management.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Management.html">
+            
+                    
+                    共享存储管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.4.1" data-path="../PolarDB-Stack-Storage/Shared-Storage-Basic-Concept.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Basic-Concept.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.2" data-path="../PolarDB-Stack-Storage/Shared-Storage-Architecture.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.3" data-path="../PolarDB-Stack-Storage/Build-API-Doc.html">
+            
+                <a href="../PolarDB-Stack-Storage/Build-API-Doc.html">
+            
+                    
+                    构建接口文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.4" data-path="../PolarDB-Stack-Storage/Other-Descriptions.html">
+            
+                <a href="../PolarDB-Stack-Storage/Other-Descriptions.html">
+            
+                    
+                    问题说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../PolarDB-Stack-Daemon/Network-Management.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Network-Management.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.5.1" data-path="../PolarDB-Stack-Daemon/Code-Structure.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Code-Structure.html">
+            
+                    
+                    代码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5.2" data-path="../PolarDB-Stack-Daemon/Daemon-Roadmap.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Daemon-Roadmap.html">
+            
+                    
+                    版本规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5.3" data-path="../PolarDB-Stack-Daemon/Build-Run-Instance.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Build-Run-Instance.html">
+            
+                    
+                    搭建和运行实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../PolarDB-ClusterManager/Cluster-Management.html">
+            
+                <a href="../PolarDB-ClusterManager/Cluster-Management.html">
+            
+                    
+                    集群管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.6.1" data-path="../PolarDB-ClusterManager/ClusterManager-Code-Structure.html">
+            
+                <a href="../PolarDB-ClusterManager/ClusterManager-Code-Structure.html">
+            
+                    
+                    代码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6.2" data-path="../PolarDB-ClusterManager/ClusterManager-Install-Deploy.html">
+            
+                <a href="../PolarDB-ClusterManager/ClusterManager-Install-Deploy.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../PolarDB-NodeAgent/PolarDB-NodeAgent.html">
+            
+                <a href="../PolarDB-NodeAgent/PolarDB-NodeAgent.html">
+            
+                    
+                    监控采集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../PolarDB-NodeAgent/Architecture.html">
+            
+                <a href="../PolarDB-NodeAgent/Architecture.html">
+            
+                    
+                    基本架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../PolarDB-NodeAgent/Install.html">
+            
+                <a href="../PolarDB-NodeAgent/Install.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../PolarDB-NodeAgent/Configuration.html">
+            
+                <a href="../PolarDB-NodeAgent/Configuration.html">
+            
+                    
+                    采集配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../PolarDB-NodeAgent/Metrics.html">
+            
+                <a href="../PolarDB-NodeAgent/Metrics.html">
+            
+                    
+                    指标说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../PolarDB-ImageBuilder/PolarDB-ImageBuilder.html">
+            
+                <a href="../PolarDB-ImageBuilder/PolarDB-ImageBuilder.html">
+            
+                    
+                    构建镜像
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../PolarDB-ImageBuilder/Principle.html">
+            
+                <a href="../PolarDB-ImageBuilder/Principle.html">
+            
+                    
+                    基本原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../PolarDB-ImageBuilder/Build-Image.html">
+            
+                <a href="../PolarDB-ImageBuilder/Build-Image.html">
+            
+                    
+                    本地构建镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../PolarDB-ImageBuilder/Image-Functions.html">
+            
+                <a href="../PolarDB-ImageBuilder/Image-Functions.html">
+            
+                    
+                    镜像功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Best-Practices/Best-Practices.html">
+            
+                <a href="../Best-Practices/Best-Practices.html">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Best-Practices/Deploy-Instance-with-Three-Nodes.html">
+            
+                <a href="../Best-Practices/Deploy-Instance-with-Three-Nodes.html">
+            
+                    
+                    部署开源PolarDB for PostgreSQL三节点实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Best-Practices/Accelerate-TPC-H-with-HTAP.html">
+            
+                <a href="../Best-Practices/Accelerate-TPC-H-with-HTAP.html">
+            
+                    
+                    利用PolarDB HTAP加速TPC-H
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Tools.html">
+            
+                <a href="../Tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../PFSTools.html">
+            
+                <a href="../PFSTools.html">
+            
+                    
+                    PFS工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../PolarDB-FileSystem/PFS-File-System-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-System-Operation.html">
+            
+                    
+                    文件系统操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../PolarDB-FileSystem/PFS-File-Directory-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-Directory-Operation.html">
+            
+                    
+                    文件目录操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1" data-path="../PolarDB-FileSystem/PFS-Parameter-Description.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Parameter-Description.html">
+            
+                    
+                    参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.2" data-path="../PolarDB-FileSystem/PFS-Common-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Common-Operation.html">
+            
+                    
+                    通用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.3" data-path="../PolarDB-FileSystem/PFS-File-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-Operation.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.4" data-path="../PolarDB-FileSystem/PFS-Directory-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Directory-Operation.html">
+            
+                    
+                    目录操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Contributing/Contribute-to-Community.html">
+            
+                <a href="../Contributing/Contribute-to-Community.html">
+            
+                    
+                    社区贡献
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../Contributing/Code-of-Conduct.html">
+            
+                <a href="../Contributing/Code-of-Conduct.html">
+            
+                    
+                    贡献者盟约行为守则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../Contributing/How-to-Contribute.html">
+            
+                <a href="../Contributing/How-to-Contribute.html">
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Contributing/Style.html">
+            
+                <a href="../Contributing/Style.html">
+            
+                    
+                    编码风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../Contributing/Contact-Us.html">
+            
+                <a href="../Contributing/Contact-Us.html">
+            
+                    
+                    联系我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Software-License.html">
+            
+                <a href="../Software-License.html">
+            
+                    
+                    软件许可说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Acknowledgments.html">
+            
+                <a href="../Acknowledgments.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://polardbpg.com">
+            
+                    
+                    官方网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >DataMax</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="datamax">DataMax</h1>
+<h2 id="&#x529F;&#x80FD;&#x7B80;&#x4ECB;">&#x529F;&#x80FD;&#x7B80;&#x4ECB;</h2>
+<p>&#x5728;&#x9AD8;&#x53EF;&#x7528;&#x7684;&#x573A;&#x666F;&#x4E2D;&#xFF0C;&#x4E3A;&#x4FDD;&#x8BC1;&#x65E0;&#x6570;&#x636E;&#x4E22;&#x5931;&#xFF0C;&#x4E3B;&#x5E93;&#x548C;&#x5907;&#x5E93;&#x4E4B;&#x95F4;&#x9700;&#x914D;&#x7F6E;&#x4E3A;&#x540C;&#x6B65;&#x590D;&#x5236;&#x6A21;&#x5F0F;&#x3002;&#x4F46;&#x5F53;&#x4E24;&#x8005;&#x8DDD;&#x79BB;&#x8F83;&#x8FDC;&#x65F6;&#xFF0C;&#x540C;&#x6B65;&#x590D;&#x5236;&#x7684;&#x65B9;&#x5F0F;&#x4F1A;&#x5B58;&#x5728;&#x8F83;&#x5927;&#x5EF6;&#x8FDF;&#xFF0C;&#x4ECE;&#x800C;&#x5BF9;&#x4E3B;&#x5E93;&#x7684;&#x6027;&#x80FD;&#x5E26;&#x6765;&#x8F83;&#x5927;&#x5F71;&#x54CD;&#xFF1B;&#x5F02;&#x6B65;&#x590D;&#x5236;&#x5BF9;&#x4E3B;&#x5E93;&#x7684;&#x6027;&#x80FD;&#x5F71;&#x54CD;&#x8F83;&#x5C0F;&#xFF0C;&#x4F46;&#x5176;&#x4F1A;&#x5E26;&#x6765;&#x4E0D;&#x540C;&#x7A0B;&#x5EA6;&#x7684;&#x6570;&#x636E;&#x4E22;&#x5931;&#x3002;</p>
+<p>PolarDB&#x91C7;&#x7528;&#x4E86;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x4E00;&#x5199;&#x591A;&#x8BFB;&#x67B6;&#x6784;&#xFF0C;&#x53EF;&#x540C;&#x65F6;&#x63D0;&#x4F9B;AZ&#x5185;/&#x8DE8;AZ/&#x8DE8;&#x57DF;&#x7EA7;&#x522B;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x3002;&#x4E3A;&#x4E86;&#x51CF;&#x5C11;&#x65E5;&#x5FD7;&#x540C;&#x6B65;&#x5BF9;&#x4E3B;&#x8282;&#x70B9;&#x7684;&#x5F71;&#x54CD;&#xFF0C;PolarDB&#x5F15;&#x5165;&#x4E86;DataMax&#x8282;&#x70B9;&#xFF0C;&#x5728;&#x8FDB;&#x884C;&#x8DE8;AZ&#x751A;&#x81F3;&#x662F;&#x8DE8;&#x57DF;&#x7684;&#x540C;&#x6B65;&#x573A;&#x666F;&#x65F6;&#xFF0C;DataMax&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x505A;&#x4E3A;&#x4E3B;&#x5E93;&#x7684;&#x65E5;&#x5FD7;&#x4E2D;&#x8F6C;&#x8282;&#x70B9;&#xFF0C;&#x5728;&#x4EE5;&#x8F83;&#x4F4E;&#x6210;&#x672C;&#x5B9E;&#x73B0;&#x96F6;&#x6570;&#x636E;&#x4E22;&#x5931;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x964D;&#x4F4E;&#x65E5;&#x5FD7;&#x540C;&#x6B65;&#x5BF9;&#x4E3B;&#x8282;&#x70B9;&#x7684;&#x5F71;&#x54CD;&#x3002;</p>
+<h2 id="&#x5B9E;&#x73B0;&#x539F;&#x7406;">&#x5B9E;&#x73B0;&#x539F;&#x7406;</h2>
+<h3 id="datamax&#x9AD8;&#x53EF;&#x7528;&#x67B6;&#x6784;">DataMax&#x9AD8;&#x53EF;&#x7528;&#x67B6;&#x6784;</h3>
+<p>PolarDB&#x57FA;&#x4E8E;&#x7269;&#x7406;&#x6D41;&#x590D;&#x5236;&#x5B9E;&#x73B0;&#x4E3B;&#x5E93;&#x4E0E;&#x5907;&#x5E93;&#x4E4B;&#x95F4;&#x7684;&#x6570;&#x636E;&#x540C;&#x6B65;&#xFF0C;&#x4E3B;&#x5E93;&#x4E0E;&#x5907;&#x5E93;&#x7684;&#x6D41;&#x590D;&#x5236;&#x6A21;&#x5F0F;&#x5305;&#x542B;&#x540C;&#x6B65;&#x53CA;&#x5F02;&#x6B65;&#x4E24;&#x79CD;&#xFF1A;</p>
+<ul>
+<li><p>&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#xFF1A;&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x4E3B;&#x5E93;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x4EC5;&#x9700;&#x7B49;&#x5F85;&#x5BF9;&#x5E94;&#x65E5;&#x5FD7;&#x5199;&#x5165;&#x672C;&#x5730;&#x78C1;&#x76D8;&#x6587;&#x4EF6;&#x4E2D;&#x540E;&#xFF0C;&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x4E4B;&#x540E;&#x7684;&#x63D0;&#x4EA4;&#x64CD;&#x4F5C;&#xFF0C;&#x5907;&#x5E93;&#x7684;&#x72B6;&#x6001;&#x5BF9;&#x4E3B;&#x5E93;&#x7684;&#x6027;&#x80FD;&#x65E0;&#x5F71;&#x54CD;&#x3002;&#x4F46;&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#x4E0B;&#x65E0;&#x6CD5;&#x4FDD;&#x8BC1;RPO=0&#xFF0C;&#x5907;&#x5E93;&#x76F8;&#x8F83;&#x4E3B;&#x5E93;&#x5B58;&#x5728;&#x4E00;&#x5B9A;&#x7684;&#x5EF6;&#x8FDF;&#xFF0C;&#x82E5;&#x4E3B;&#x5E93;&#x6240;&#x5728;&#x7684;&#x96C6;&#x7FA4;&#x51FA;&#x73B0;&#x6545;&#x969C;&#xFF0C;&#x6B64;&#x65F6;&#x5207;&#x6362;&#x81F3;&#x5907;&#x5E93;&#x53EF;&#x80FD;&#x5B58;&#x5728;&#x6570;&#x636E;&#x4E22;&#x5931;&#x3002;</p>
+</li>
+<li><p>&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#xFF1A;&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#x5305;&#x542B;&#x4E0D;&#x540C;&#x7684;&#x7EA7;&#x522B;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;<code>synchronous_commit</code>&#x53C2;&#x6570;&#x8FDB;&#x884C;&#x8BBE;&#x7F6E;&#xFF0C;&#x5305;&#x62EC;&#xFF1A;</p>
+<ul>
+<li><p>remote_write&#xFF1A;&#x8BE5;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x4E3B;&#x5E93;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x9700;&#x7B49;&#x5F85;&#x5BF9;&#x5E94;&#x65E5;&#x5FD7;&#x5199;&#x5165;&#x4E3B;&#x5E93;&#x78C1;&#x76D8;&#x6587;&#x4EF6;&#x53CA;&#x5907;&#x5E93;&#x7684;&#x7CFB;&#x7EDF;&#x7F13;&#x5B58;&#x4E2D;&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#x4E4B;&#x540E;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+<li><p>on&#xFF1A;&#x8BE5;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x4E3B;&#x5E93;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x9700;&#x7B49;&#x5F85;&#x5BF9;&#x5E94;&#x65E5;&#x5FD7;&#x90FD;&#x5DF2;&#x5199;&#x5165;&#x4E3B;&#x5E93;&#x53CA;&#x5907;&#x5E93;&#x7684;&#x78C1;&#x76D8;&#x6587;&#x4EF6;&#x4E2D;&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#x4E4B;&#x540E;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+<li><p>remote_apply&#xFF1A;&#x8BE5;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x4E3B;&#x5E93;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x9700;&#x7B49;&#x5F85;&#x5BF9;&#x5E94;&#x65E5;&#x5FD7;&#x5199;&#x5165;&#x4E3B;&#x5E93;&#x53CA;&#x5907;&#x5E93;&#x7684;&#x78C1;&#x76D8;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x540C;&#x65F6;&#x5907;&#x5E93;&#x5DF2;&#x7ECF;&#x56DE;&#x653E;&#x5B8C;&#x5BF9;&#x5E94;&#x65E5;&#x5FD7;&#x4F7F;&#x5176;&#x5BF9;&#x5907;&#x5E93;&#x4E0A;&#x7684;&#x67E5;&#x8BE2;&#x53EF;&#x89C1;&#x540E;&#xFF0C;&#x624D;&#x80FD;&#x8FDB;&#x884C;&#x4E4B;&#x540E;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x64CD;&#x4F5C;&#x3002;</p>
+</li>
+</ul>
+</li>
+</ul>
+<p>&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#x4FDD;&#x8BC1;&#x4E86;&#x4E3B;&#x5E93;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x64CD;&#x4F5C;&#x9700;&#x7B49;&#x5F85;&#x5907;&#x5E93;&#x63A5;&#x6536;&#x5230;&#x5BF9;&#x5E94;&#x7684;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x4E4B;&#x540E;&#x624D;&#x53EF;&#x6267;&#x884C;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;&#x4E86;&#x4E3B;&#x5E93;&#x4E0E;&#x5907;&#x5E93;&#x4E4B;&#x95F4;&#x7684;&#x96F6;&#x6570;&#x636E;&#x4E22;&#x5931;&#xFF0C;&#x53EF;&#x4FDD;&#x8BC1;RPO=0&#x3002;&#x4F46;&#x540C;&#x65F6;&#xFF0C;&#x8BE5;&#x6A21;&#x5F0F;&#x4E0B;&#x4E3B;&#x5E93;&#x7684;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x64CD;&#x4F5C;&#x4F9D;&#x8D56;&#x5907;&#x5E93;&#x7684;&#x65E5;&#x5FD7;&#x63A5;&#x6536;&#x7ED3;&#x679C;&#xFF0C;&#x56E0;&#x6B64;&#x82E5;&#x4E3B;&#x5907;&#x4E4B;&#x95F4;&#x8DDD;&#x79BB;&#x8F83;&#x8FDC;&#x5BFC;&#x81F4;&#x4F20;&#x8F93;&#x5EF6;&#x8FDF;&#x8F83;&#x5927;&#x65F6;&#xFF0C;&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#x4F1A;&#x5BF9;&#x4E3B;&#x5E93;&#x7684;&#x6027;&#x80FD;&#x5E26;&#x6765;&#x5F71;&#x54CD;&#xFF1B;&#x6781;&#x7AEF;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x82E5;&#x5907;&#x5E93;&#x5F02;&#x5E38;crash&#xFF0C;&#x6B64;&#x65F6;&#x4E3B;&#x5E93;&#x5219;&#x4F1A;&#x4E00;&#x76F4;&#x963B;&#x585E;&#x5728;&#x7B49;&#x5F85;&#x5907;&#x5E93;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x5BFC;&#x81F4;&#x65E0;&#x6CD5;&#x6B63;&#x5E38;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;</p>
+<p>&#x9488;&#x5BF9;&#x4F20;&#x7EDF;&#x4E3B;&#x5907;&#x6A21;&#x5F0F;&#x4E0B;&#x540C;&#x6B65;&#x590D;&#x5236;&#x5BF9;&#x4E3B;&#x5E93;&#x6027;&#x80FD;&#x5F71;&#x54CD;&#x8F83;&#x5927;&#x7684;&#x95EE;&#x9898;&#xFF0C;PolarDB&#x65B0;&#x589E;DataMax&#x8282;&#x70B9;&#x7528;&#x4E8E;&#x5B9E;&#x73B0;&#x8FDC;&#x7A0B;&#x540C;&#x6B65;&#xFF0C;&#x8BE5;&#x79CD;&#x6A21;&#x5F0F;&#x4E0B;&#x5176;&#x5BF9;&#x5E94;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x67B6;&#x6784;&#x5982;&#x4E0B;&#x6240;&#x793A;&#x3002;</p>
+<p><img src="pic/53-DataMax-HA-Architecture.png" alt="DataMax HA Architecture" width="900"></p>
+<p>&#x5176;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li><p>&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x96C6;&#x7FA4;&#x90E8;&#x7F72;&#x5728;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#x5185;&#xFF0C;&#x4E0D;&#x540C;&#x7684;&#x96C6;&#x7FA4;&#x4E4B;&#x95F4;&#x4E92;&#x4E3A;&#x707E;&#x5907;&#xFF0C;&#x4E3B;&#x5907;&#x6A21;&#x5F0F;&#x4FDD;&#x8BC1;&#x8DE8;AZ/&#x8DE8;&#x57DF;&#x7EA7;&#x522B;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x3002;</p>
+</li>
+<li><p>&#x5355;&#x4E2A;&#x96C6;&#x7FA4;&#x5185;&#x4E3A;&#x4E00;&#x5199;&#x591A;&#x8BFB;&#x67B6;&#x6784;&#xFF0C;&#x8BFB;&#x5199;&#x8282;&#x70B9;&#x5171;&#x4EAB;&#x540C;&#x4E00;&#x4EFD;&#x5B58;&#x50A8;&#xFF0C;&#x6709;&#x6548;&#x964D;&#x4F4E;&#x5B58;&#x50A8;&#x6210;&#x672C;&#xFF0C;&#x540C;&#x65F6;&#x53EA;&#x8BFB;&#x8282;&#x70B9;&#x8FD8;&#x53EF;&#x5B9E;&#x73B0;&#x5355;&#x4E2A;AZ&#x5185;&#x8BA1;&#x7B97;&#x8282;&#x70B9;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x3002;</p>
+</li>
+<li><p>DataMax&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x90E8;&#x7F72;&#x5728;&#x540C;&#x4E00;&#x4E2A;&#x53EF;&#x7528;&#x533A;&#x5185;&#xFF0C;&#x5177;&#x4F53;&#xFF1A;</p>
+<ul>
+<li><p>DataMax&#x8282;&#x70B9;&#x53EA;&#x63A5;&#x6536;&#x5E76;&#x4FDD;&#x5B58;&#x4E3B;&#x8282;&#x70B9;&#x7684;WAL&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x5E76;&#x4E0D;&#x5BF9;&#x65E5;&#x5FD7;&#x8FDB;&#x884C;&#x56DE;&#x653E;&#x64CD;&#x4F5C;&#xFF0C;&#x4E0D;&#x4E0E;RW&#x8282;&#x70B9;&#x5171;&#x4EAB;&#x6570;&#x636E;&#x6587;&#x4EF6;&#xFF0C;&#x964D;&#x4F4E;&#x5B58;&#x50A8;&#x6210;&#x672C;&#x3002;</p>
+</li>
+<li><p>DataMax&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x6570;&#x636E;&#x4E0D;&#x5171;&#x4EAB;&#xFF0C;&#x4E24;&#x8005;&#x7684;&#x5B58;&#x50A8;&#x8BBE;&#x5907;&#x5F7C;&#x6B64;&#x9694;&#x79BB;&#xFF0C;&#x4EE5;&#x9632;&#x6B62;&#x8BA1;&#x7B97;&#x96C6;&#x7FA4;&#x5B58;&#x50A8;&#x5F02;&#x5E38;&#x5BFC;&#x81F4;&#x7684;RW&#x8282;&#x70B9;&#x4E0E;DataMax&#x8282;&#x70B9;&#x4FDD;&#x5B58;&#x7684;&#x65E5;&#x5FD7;&#x90FD;&#x4E22;&#x5931;&#x3002;</p>
+</li>
+<li><p>DataMax&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x4E3A;&#x540C;&#x6B65;&#x590D;&#x5236;&#x6A21;&#x5F0F;&#xFF0C;&#x786E;&#x4FDD;RPO=0&#xFF0C;DataMax&#x8282;&#x70B9;&#x90E8;&#x7F72;&#x5728;&#x8DDD;&#x79BB;RW&#x8282;&#x70B9;&#x8F83;&#x8FD1;&#x7684;&#x533A;&#x57DF;&#xFF0C;&#x901A;&#x5E38;&#x4E0E;RW&#x8282;&#x70B9;&#x4F4D;&#x4E8E;&#x540C;&#x4E00;&#x53EF;&#x7528;&#x533A;&#xFF0C;&#x4EE5;&#x51CF;&#x5C0F;&#x65E5;&#x5FD7;&#x540C;&#x6B65;&#x5BF9;RW&#x8282;&#x70B9;&#x5E26;&#x6765;&#x7684;&#x6027;&#x80FD;&#x5F71;&#x54CD;&#x3002;</p>
+</li>
+<li><p>DataMax&#x8282;&#x70B9;&#x5C06;&#x5176;&#x81EA;&#x8EAB;&#x63A5;&#x6536;&#x65E5;&#x5FD7;&#x53D1;&#x9001;&#x81F3;&#x5176;&#x4ED6;&#x53EF;&#x7528;&#x533A;&#x7684;Standby&#x8282;&#x70B9;&#xFF0C;Standby&#x8282;&#x70B9;&#x63A5;&#x6536;&#x5E76;&#x56DE;&#x653E;DataMax&#x8282;&#x70B9;&#x7684;&#x65E5;&#x5FD7;&#x5B9E;&#x73B0;&#x4E0E;RW&#x8282;&#x70B9;&#x7684;&#x8FDC;&#x7A0B;&#x6570;&#x636E;&#x540C;&#x6B65;&#xFF0C;Standby&#x8282;&#x70B9;&#x4E0E;DataMax&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x53EF;&#x8BBE;&#x7F6E;&#x4E3A;&#x5F02;&#x6B65;&#x6D41;&#x590D;&#x5236;&#x6A21;&#x5F0F;&#xFF0C;&#x901A;&#x8FC7;DataMax&#x8282;&#x70B9;&#x53EF;&#x5206;&#x6D41;RW&#x8282;&#x70B9;&#x5411;&#x591A;&#x4E2A;&#x5907;&#x4EFD;&#x6570;&#x636E;&#x5E93;&#x4F20;&#x8F93;&#x65E5;&#x5FD7;&#x7684;&#x5F00;&#x9500;&#x3002;</p>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="datamax&#x5B9E;&#x73B0;">DataMax&#x5B9E;&#x73B0;</h3>
+<p>DataMax&#x662F;&#x4E00;&#x79CD;&#x65B0;&#x7684;&#x8282;&#x70B9;&#x5F62;&#x5F0F;&#xFF0C;&#x7528;&#x6237;&#x901A;&#x8FC7;&#x914D;&#x7F6E;&#x6587;&#x4EF6;&#x6807;&#x8BC6;&#x5F53;&#x524D;&#x8282;&#x70B9;&#x662F;&#x5426;&#x4E3A;DataMax&#x8282;&#x70B9;&#x3002;DataMax&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;Startup&#x8FDB;&#x7A0B;&#x5728;&#x56DE;&#x653E;&#x5B8C;DataMax&#x8282;&#x70B9;&#x81EA;&#x8EAB;&#x65E5;&#x5FD7;&#x4E4B;&#x540E;&#xFF0C;&#x4ECE;PM_HOT_STANDBY&#x8FDB;&#x5165;&#x5230;PM_DATAMAX&#x6A21;&#x5F0F;&#x3002;PM_DATAMAX&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;Startup&#x8FDB;&#x7A0B;&#x4EC5;&#x8FDB;&#x884C;&#x76F8;&#x5173;&#x4FE1;&#x53F7;&#x53CA;&#x72B6;&#x6001;&#x7684;&#x5904;&#x7406;&#xFF0C;&#x5E76;&#x901A;&#x77E5;Postmaster&#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x6D41;&#x590D;&#x5236;&#xFF0C;Startup&#x8FDB;&#x7A0B;&#x4E0D;&#x518D;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x56DE;&#x653E;&#x7684;&#x64CD;&#x4F5C;&#xFF0C;&#x56E0;&#x6B64;DataMax&#x8282;&#x70B9;&#x4E0D;&#x4F1A;&#x4FDD;&#x5B58;RW&#x8282;&#x70B9;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#xFF0C;&#x4ECE;&#x800C;&#x964D;&#x4F4E;&#x4E86;&#x5B58;&#x50A8;&#x6210;&#x672C;&#x3002;</p>
+<p><img src="pic/54-DataMax-Implementation-1.png" alt="DataMax Implementation" width="900"></p>
+<p>&#x5982;&#x4E0A;&#x56FE;&#x6240;&#x793A;&#xFF0C;DataMax&#x8282;&#x70B9;&#x901A;&#x8FC7;WalReceiver&#x8FDB;&#x7A0B;&#x5411;RW&#x8282;&#x70B9;&#x53D1;&#x8D77;&#x6D41;&#x590D;&#x5236;&#x8BF7;&#x6C42;&#xFF0C;&#x63A5;&#x6536;&#x5E76;&#x4FDD;&#x5B58;RW&#x8282;&#x70B9;&#x53D1;&#x9001;&#x7684;WAL&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x540C;&#x65F6;&#x901A;&#x8FC7;WalSender&#x8FDB;&#x7A0B;&#x5C06;&#x6240;&#x63A5;&#x6536;&#x7684;RW WAL&#x65E5;&#x5FD7;&#x53D1;&#x9001;&#x7ED9;&#x5F02;&#x5730;&#x7684;Standby&#x8282;&#x70B9;&#xFF0C;Standby&#x8282;&#x70B9;&#x63A5;&#x6536;&#x5230;WAL&#x65E5;&#x5FD7;&#x540E;&#xFF0C;&#x901A;&#x77E5;&#x5176;Startup&#x8FDB;&#x7A0B;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x56DE;&#x653E;&#xFF0C;&#x4ECE;&#x800C;&#x5B9E;&#x73B0;Standby&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x7684;&#x6570;&#x636E;&#x540C;&#x6B65;&#x3002;</p>
+<p>DataMax&#x4E0B;&#x65B0;&#x589E;&#x4E86;polar_datamax&#x76EE;&#x5F55;&#x6587;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x4FDD;&#x5B58;&#x6240;&#x63A5;&#x6536;&#x7684;RW WAL&#x65E5;&#x5FD7;&#xFF0C;DataMax&#x8282;&#x70B9;&#x81EA;&#x8EAB;&#x7684;WAL&#x65E5;&#x5FD7;&#x4ECD;&#x4FDD;&#x5B58;&#x5728;&#x539F;&#x59CB;&#x76EE;&#x5F55;&#x4E0B;&#xFF0C;&#x4E24;&#x8005;&#x7684;WAL&#x65E5;&#x5FD7;&#x4E0D;&#x4F1A;&#x76F8;&#x4E92;&#x8986;&#x76D6;&#xFF0C;DataMax&#x4E5F;&#x53EF;&#x4EE5;&#x6709;&#x81EA;&#x8EAB;&#x7684;&#x72EC;&#x6709;&#x6570;&#x636E;&#x3002;&#x7531;&#x4E8E;DataMax&#x8282;&#x70B9;&#x4E0D;&#x4F1A;&#x56DE;&#x653E;RW&#x8282;&#x70B9;&#x7684;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#xFF0C;&#x5728;DataMax&#x8282;&#x70B9;&#x56E0;&#x4E3A;&#x5F02;&#x5E38;&#x539F;&#x56E0;&#x9700;&#x8981;&#x91CD;&#x542F;&#x6062;&#x590D;&#x65F6;&#x5C31;&#x6709;&#x4E86;&#x65E5;&#x5FD7;&#x8D77;&#x59CB;&#x4F4D;&#x70B9;&#x7684;&#x95EE;&#x9898;&#x3002;DataMax&#x8282;&#x70B9;&#x901A;&#x8FC7;Meta&#x5143;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x5B58;&#x50A8;&#x76F8;&#x5173;&#x7684;&#x4F4D;&#x70B9;&#x4FE1;&#x606F;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x786E;&#x8BA4;&#x8FD0;&#x884C;&#x7684;&#x8D77;&#x59CB;&#x4F4D;&#x70B9;&#xFF0C;&#x5177;&#x4F53;&#xFF1A;</p>
+<ul>
+<li>&#x521D;&#x59CB;&#x5316;&#x90E8;&#x7F72;&#xFF0C;&#x5728;&#x5168;&#x65B0;&#x90E8;&#x7F72;&#x6216;&#x8005;DataMax&#x8282;&#x70B9;&#x91CD;&#x642D;&#x7684;&#x573A;&#x666F;&#x4E0B;&#xFF0C;&#x6B64;&#x65F6;&#x6CA1;&#x6709;&#x5B58;&#x91CF;&#x7684;&#x4F4D;&#x70B9;&#x4FE1;&#x606F;&#xFF0C;&#x5728;&#x8BF7;&#x6C42;&#x6D41;&#x590D;&#x5236;&#x7684;&#x65F6;&#x5019;&#x9700;&#x8981;&#x8868;&#x660E;&#x81EA;&#x5DF1;&#x662F;DataMax&#x8282;&#x70B9;&#xFF0C;&#x540C;&#x65F6;&#x8FD8;&#x989D;&#x5916;&#x4F20;&#x9012;InvalidXLogRecPtr&#x4F4D;&#x70B9;&#x8868;&#x660E;&#x5176;&#x9700;&#x8981;&#x4ECE;RW&#x8282;&#x70B9;&#x5F53;&#x524D;&#x6700;&#x65E7;&#x7684;&#x4F4D;&#x70B9;&#x5F00;&#x59CB;&#x8BF7;&#x6C42;&#xFF0C;RW&#x8282;&#x70B9;&#x5728;&#x6536;&#x5230;InvalidRecPtr&#x7684;&#x6D41;&#x590D;&#x5236;&#x8BF7;&#x6C42;&#x4E4B;&#x540E;&#xFF0C;&#x4F1A;&#x5F00;&#x59CB;&#x4ECE;&#x5F53;&#x524D;&#x6700;&#x65E7;&#x7684;&#x5B8C;&#x6574;&#x7684;WAL segment file&#x5F00;&#x59CB;&#x53D1;&#x9001;WAL&#x65E5;&#x5FD7;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x8BF7;&#x6C42;&#x6D41;&#x590D;&#x5236;&#x7684;slot&#x7684;restart_lsn&#x8BBE;&#x7F6E;&#x4E3A;&#x8BE5;&#x4F4D;&#x70B9;&#x3002;</li>
+<li>&#x5F02;&#x5E38;&#x6062;&#x590D;&#xFF0C;&#x4ECE;&#x5B58;&#x50A8;&#x4E0A;&#x8BFB;&#x53D6;&#x5143;&#x6570;&#x636E;&#x6587;&#x4EF6;&#xFF0C;&#x786E;&#x8BA4;&#x4F4D;&#x70B9;&#x4FE1;&#x606F;&#x540E;&#x4EE5;&#x8BE5;&#x4F4D;&#x70B9;&#x4E3A;&#x8D77;&#x70B9;&#x8BF7;&#x6C42;&#x6D41;&#x590D;&#x5236;&#x3002;</li>
+</ul>
+<p><img src="pic/55-DataMax-Implementation-2.png" alt="DataMax Implementation 2" width="500"></p>
+<h3 id="datamax&#x4E0B;&#x7684;&#x96C6;&#x7FA4;&#x9AD8;&#x53EF;&#x7528;">DataMax&#x4E0B;&#x7684;&#x96C6;&#x7FA4;&#x9AD8;&#x53EF;&#x7528;</h3>
+<p>&#x5982;&#x4E0B;&#x56FE;&#x6240;&#x793A;&#xFF0C;&#x589E;&#x52A0;DataMax&#x8282;&#x70B9;&#x540E;&#xFF0C;&#x82E5;RW&#x8282;&#x70B9;&#x4E0E;RO&#x8282;&#x70B9;&#x540C;&#x65F6;&#x5F02;&#x5E38;&#xFF0C;&#x6216;&#x5B58;&#x50A8;&#x65E0;&#x6CD5;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x65F6;&#xFF0C;&#x5219;&#x53EF;&#x5C06;&#x4F4D;&#x4E8E;&#x4E0D;&#x540C;&#x53EF;&#x7528;&#x533A;&#x7684;Standby&#x8282;&#x70B9;&#x63D0;&#x5347;&#x4E3A;RW&#x8282;&#x70B9;&#xFF0C;&#x4FDD;&#x8BC1;&#x670D;&#x52A1;&#x7684;&#x53EF;&#x7528;&#x6027;&#x3002;&#x5728;&#x5C06;Standby&#x8282;&#x70B9;&#x63D0;&#x5347;&#x4E3A;RW&#x8282;&#x70B9;&#x5E76;&#x5411;&#x5916;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x4E4B;&#x524D;&#xFF0C;&#x4F1A;&#x786E;&#x8BA4;Standby&#x8282;&#x70B9;&#x662F;&#x5426;&#x5DF2;&#x4ECE;DataMax&#x8282;&#x70B9;&#x62C9;&#x53D6;&#x5B8C;&#x6BD5;&#x6240;&#x6709;&#x65E5;&#x5FD7;&#xFF0C;&#x5F85;Standby&#x8282;&#x70B9;&#x83B7;&#x53D6;&#x5B8C;&#x6240;&#x6709;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#x4E4B;&#x540E;&#x624D;&#x4F1A;&#x5C06;&#x5176;&#x63D0;&#x5347;&#x4E3A;RW&#x8282;&#x70B9;&#xFF0C;&#x7531;&#x4E8E;DataMax&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x4E3A;&#x540C;&#x6B65;&#x590D;&#x5236;&#xFF0C;&#x56E0;&#x6B64;&#x53EF;&#x4FDD;&#x8BC1;&#x8BE5;&#x573A;&#x666F;&#x4E0B;RPO=0&#x3002;</p>
+<p>&#x6B64;&#x5916;&#xFF0C;DataMax&#x8282;&#x70B9;&#x5728;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x6E05;&#x7406;&#x65F6;&#xFF0C;&#x9664;&#x4E86;&#x4FDD;&#x7559;&#x4E0B;&#x6E38;Standby&#x8282;&#x70B9;&#x5C1A;&#x672A;&#x63A5;&#x6536;&#x7684;WAL&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x8FD8;&#x4F1A;&#x4FDD;&#x7559;&#x4E0A;&#x6E38;RW&#x8282;&#x70B9;&#x5C1A;&#x672A;&#x5220;&#x9664;&#x7684;WAL&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#xFF0C;&#x907F;&#x514D;RW&#x8282;&#x70B9;&#x5F02;&#x5E38;&#x540E;&#xFF0C;&#x5907;&#x4EFD;&#x7CFB;&#x7EDF;&#x65E0;&#x6CD5;&#x83B7;&#x53D6;&#x5230;RW&#x8282;&#x70B9;&#x76F8;&#x8F83;&#x4E8E;DataMax&#x8282;&#x70B9;&#x591A;&#x51FA;&#x7684;&#x65E5;&#x5FD7;&#x4FE1;&#x606F;&#xFF0C;&#x4FDD;&#x8BC1;&#x96C6;&#x7FA4;&#x6570;&#x636E;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
+<p><img src="pic/56-HA-with-DataMax.png" alt="Cluster HA with DataMax" width="600"></p>
+<p>&#x82E5;DataMax&#x8282;&#x70B9;&#x5F02;&#x5E38;&#xFF0C;&#x5219;&#x4F18;&#x5148;&#x5C1D;&#x8BD5;&#x91CD;&#x542F;&#x8FDB;&#x884C;&#x6062;&#x590D;&#x3002;&#x82E5;&#x91CD;&#x542F;&#x5931;&#x8D25;&#x5219;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x91CD;&#x5EFA;&#xFF0C;&#x56E0;DataMax&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x5B58;&#x50A8;&#x5F7C;&#x6B64;&#x9694;&#x79BB;&#xFF0C;&#x56E0;&#x6B64;&#x4E24;&#x8005;&#x6570;&#x636E;&#x5E76;&#x4E0D;&#x4E92;&#x76F8;&#x5F71;&#x54CD;&#xFF0C;&#x6B64;&#x5916;DataMax&#x8282;&#x70B9;&#x53EF;&#x540C;&#x6837;&#x91C7;&#x53D6;&#x8BA1;&#x7B97;&#x5B58;&#x50A8;&#x5206;&#x79BB;&#x67B6;&#x6784;&#xFF0C;&#x786E;&#x4FDD;DataMax&#x8282;&#x70B9;&#x7684;&#x5F02;&#x5E38;&#x4E0D;&#x4F1A;&#x5BFC;&#x81F4;&#x5176;&#x5B58;&#x50A8;&#x7684;WAL&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x4E22;&#x5931;&#x3002;</p>
+<p><img src="pic/57-HA-with-DataMax-2.png" alt="Cluster HA with DataMax 2" width="600"></p>
+<p>&#x7C7B;&#x4F3C;&#x5730;&#xFF0C;DataMax&#x8282;&#x70B9;&#x5B9E;&#x73B0;&#x4E86;&#x5982;&#x4E0B;&#x51E0;&#x79CD;&#x65E5;&#x5FD7;&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x6839;&#x636E;&#x5177;&#x4F53;&#x4E1A;&#x52A1;&#x9700;&#x6C42;&#x8FDB;&#x884C;&#x76F8;&#x5E94;&#x914D;&#x7F6E;&#xFF1A;</p>
+<ul>
+<li>&#x6700;&#x5927;&#x4FDD;&#x62A4;&#x6A21;&#x5F0F;<ul>
+<li>&#x8BE5;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;DataMax&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x5F3A;&#x540C;&#x6B65;&#xFF0C;&#x786E;&#x4FDD;RPO=0&#x3002;</li>
+<li>&#x82E5;DataMax&#x8282;&#x70B9;&#x56E0;&#x7F51;&#x7EDC;&#x6216;&#x786C;&#x4EF6;&#x6545;&#x969C;&#x65E0;&#x6CD5;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#xFF0C;RW&#x8282;&#x70B9;&#x4E5F;&#x4F1A;&#x56E0;&#x6B64;&#x963B;&#x585E;&#x800C;&#x65E0;&#x6CD5;&#x5BF9;&#x5916;&#x63D0;&#x4F9B;&#x670D;&#x52A1;&#x3002;</li>
+</ul>
+</li>
+<li>&#x6700;&#x5927;&#x6027;&#x80FD;&#x6A21;&#x5F0F;<ul>
+<li>&#x8BE5;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;DataMax&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x5F02;&#x6B65;&#x6D41;&#x590D;&#x5236;&#xFF0C;DataMax&#x8282;&#x70B9;&#x4E0D;&#x5BF9;RW&#x8282;&#x70B9;&#x6027;&#x80FD;&#x5E26;&#x6765;&#x5F71;&#x54CD;&#xFF0C;DataMax&#x8282;&#x70B9;&#x5F02;&#x5E38;&#x4E5F;&#x4E0D;&#x4F1A;&#x5F71;&#x54CD;RW&#x8282;&#x70B9;&#x7684;&#x670D;&#x52A1;&#x3002;</li>
+<li>&#x82E5;RW&#x8282;&#x70B9;&#x4E0B;&#x7684;&#x5B58;&#x50A8;&#x6216;&#x5BF9;&#x5E94;&#x7684;&#x96C6;&#x7FA4;&#x53D1;&#x751F;&#x6545;&#x969C;&#xFF0C;&#x5219;&#x53EF;&#x80FD;&#x5BFC;&#x81F4;&#x4E22;&#x5931;&#x8F83;&#x591A;&#x6570;&#x636E;&#xFF0C;&#x65E0;&#x6CD5;&#x786E;&#x4FDD;RPO=0&#x3002;</li>
+</ul>
+</li>
+<li>&#x6700;&#x5927;&#x9AD8;&#x53EF;&#x7528;&#x6A21;&#x5F0F;<ul>
+<li>&#x8BE5;&#x6A21;&#x5F0F;&#x4E0B;&#xFF0C;&#x5F53;DataMax&#x8282;&#x70B9;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#x65F6;&#xFF0C;DataMax&#x8282;&#x70B9;&#x4E0E;RW&#x8282;&#x70B9;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x5F3A;&#x540C;&#x6B65;&#xFF0C;&#x5373;&#x4E3A;&#x6700;&#x5927;&#x4FDD;&#x62A4;&#x6A21;&#x5F0F;&#x3002;</li>
+<li>&#x82E5;DataMax&#x8282;&#x70B9;&#x5F02;&#x5E38;&#xFF0C;RW&#x8282;&#x70B9;&#x81EA;&#x52A8;&#x5C06;&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#x964D;&#x7EA7;&#x4E3A;&#x6700;&#x5927;&#x6027;&#x80FD;&#x6A21;&#x5F0F;&#xFF0C;&#x4FDD;&#x8BC1;RW&#x8282;&#x70B9;&#x670D;&#x52A1;&#x7684;&#x6301;&#x7EED;&#x53EF;&#x7528;&#x3002;</li>
+<li>&#x5F53;DataMax&#x8282;&#x70B9;&#x6062;&#x590D;&#x6B63;&#x5E38;&#x540E;&#xFF0C;RW&#x8282;&#x70B9;&#x5219;&#x518D;&#x6B21;&#x5C06;&#x5F02;&#x6B65;&#x6A21;&#x5F0F;&#x63D0;&#x5347;&#x4E3A;&#x6700;&#x5927;&#x4FDD;&#x62A4;&#x6A21;&#x5F0F;&#xFF0C;&#x907F;&#x514D;&#x65E5;&#x5FD7;&#x6570;&#x636E;&#x51FA;&#x73B0;&#x8F83;&#x591A;&#x4E22;&#x5931;&#x3002;</li>
+</ul>
+</li>
+</ul>
+<p>&#x901A;&#x8FC7;DataMax&#x65E5;&#x5FD7;&#x4E2D;&#x7EE7;&#x8282;&#x70B9;&#x964D;&#x4F4E;&#x65E5;&#x5FD7;&#x540C;&#x6B65;&#x5EF6;&#x8FDF;&#x3001;&#x5206;&#x6D41;RW&#x8282;&#x70B9;&#x7684;&#x65E5;&#x5FD7;&#x4F20;&#x8F93;&#x538B;&#x529B;&#xFF0C;&#x53EF;&#x5728;&#x6027;&#x80FD;&#x7A33;&#x5B9A;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x4FDD;&#x969C;&#x8DE8;AZ/&#x8DE8;&#x57DF;&#x9AD8;&#x53EF;&#x7528;&#x7684;RPO=0&#x3002;</p>
+<h3 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h3>
+<p>PolarDB&#x901A;&#x8FC7;DataMax&#x8282;&#x70B9;&#xFF0C;&#x5728;&#x5B9E;&#x73B0;RPO=0&#x7684;&#x540C;&#x65F6;&#x964D;&#x4F4E;&#x4E86;&#x8BE5;&#x8FC7;&#x7A0B;&#x5BF9;&#x4E3B;&#x5B9E;&#x4F8B;&#x7684;&#x6027;&#x80FD;&#x5F71;&#x54CD;&#x3002;&#x4EE5;&#x4E0A;&#x5BF9;DataMax&#x7684;&#x8BBE;&#x8BA1;&#x80CC;&#x666F;&#x3001;DataMax&#x5177;&#x4F53;&#x5B9E;&#x73B0;&#x3001;DataMax&#x4E0B;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x67B6;&#x6784;&#x53CA;&#x96C6;&#x7FA4;&#x9AD8;&#x53EF;&#x7528;&#x5B9E;&#x73B0;&#x8FDB;&#x884C;&#x4E86;&#x5206;&#x6790;&#x3002;&#x9664;&#x4E86;&#x672C;&#x6587;&#x4ECB;&#x7ECD;&#x7684;&#x9AD8;&#x53EF;&#x7528;&#x90E8;&#x7F72;&#x65B9;&#x5F0F;&#xFF0C;DataMax&#x8FD8;&#x53EF;&#x5E94;&#x7528;&#x4E8E;DMA&#x67B6;&#x6784;&#x4E2D;&#xFF0C;&#x4F7F;&#x5F97;&#x6570;&#x636E;&#x5E93;&#x96C6;&#x7FA4;&#x672C;&#x8EAB;&#x5177;&#x5907;&#x81EA;&#x4E3B;&#x9AD8;&#x53EF;&#x7528;&#x6216;&#x81EA;&#x8FD0;&#x7EF4;&#x7684;&#x80FD;&#x529B;&#x3002;</p>
+<h2 id="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;">&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h2>
+<h3 id="&#x8282;&#x70B9;&#x914D;&#x7F6E;">&#x8282;&#x70B9;&#x914D;&#x7F6E;</h3>
+<h4 id="rw&#x8282;&#x70B9;&#x914D;&#x7F6E;">RW&#x8282;&#x70B9;&#x914D;&#x7F6E;</h4>
+<p>&#x5728;RW&#x8282;&#x70B9;&#x914D;&#x7F6E;postgresql.conf&#xFF0C;&#x8BBE;&#x7F6E;&#x4E0B;&#x6E38;DataMax&#x8282;&#x70B9;&#x7684;&#x4E0D;&#x540C;&#x65E5;&#x5FD7;&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#xFF1A;</p>
+<ul>
+<li>&#x6700;&#x5927;&#x4FDD;&#x62A4;&#x6A21;&#x5F0F;&#xFF0C;&#x5176;&#x4E2D;datamax1&#x4E3A;RW&#x8282;&#x70B9;&#x521B;&#x5EFA;&#x7684;slot&#x540D;&#x79F0;</li>
+</ul>
+<pre><code class="lang-c">polar_enable_transaction_sync_mode = on
+synchronous_commit = on
+synchronous_standby_names = &apos;datamax1&apos;
+</code></pre>
+<ul>
+<li>&#x6700;&#x5927;&#x6027;&#x80FD;&#x6A21;&#x5F0F;</li>
+</ul>
+<pre><code class="lang-c">polar_enable_transaction_sync_mode = off
+synchronous_commit = off
+</code></pre>
+<ul>
+<li><p>&#x6700;&#x5927;&#x9AD8;&#x53EF;&#x7528;&#x6A21;&#x5F0F;</p>
+<ul>
+<li><p>&#x53C2;&#x6570;<code>polar_sync_replication_timeout</code>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x540C;&#x6B65;&#x8D85;&#x65F6;&#x65F6;&#x95F4;&#x9608;&#x503C;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;&#x6BEB;&#x79D2;&#x3002;&#x7B49;&#x5F85;&#x540C;&#x6B65;&#x590D;&#x5236;&#x9501;&#x8D85;&#x8FC7;&#x6B64;&#x9608;&#x503C;&#x65F6;&#xFF0C;&#x540C;&#x6B65;&#x590D;&#x5236;&#x5C06;&#x964D;&#x7EA7;&#x4E3A;&#x5F02;&#x6B65;&#x590D;&#x5236;&#x3002;</p>
+</li>
+<li><p>&#x53C2;&#x6570;<code>polar_sync_rep_timeout_break_lsn_lag</code>&#x7528;&#x4E8E;&#x8BBE;&#x7F6E;&#x540C;&#x6B65;&#x6062;&#x590D;&#x5EF6;&#x8FDF;&#x9608;&#x503C;&#xFF0C;&#x5355;&#x4F4D;&#x4E3A;byte&#x3002;&#x5F53;&#x5F02;&#x6B65;&#x590D;&#x5236;&#x5EF6;&#x8FDF;&#x9608;&#x503C;&#x5C0F;&#x4E8E;&#x6B64;&#x9608;&#x503C;&#x65F6;&#x5F02;&#x6B65;&#x590D;&#x5236;&#x5C06;&#x91CD;&#x65B0;&#x6062;&#x590D;&#x4E3A;&#x540C;&#x6B65;&#x590D;&#x5236;&#x3002;</p>
+<pre><code class="lang-c">polar_enable_transaction_sync_mode = on
+synchronous_commit = on
+synchronous_standby_names = &apos;datamax1&apos;
+polar_sync_replication_timeout = 10s
+polar_sync_rep_timeout_break_lsn_lag = 8kB
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="datamax&#x8282;&#x70B9;&#x914D;&#x7F6E;">DataMax&#x8282;&#x70B9;&#x914D;&#x7F6E;</h4>
+<p>&#x6700;&#x5927;&#x4FDD;&#x62A4;&#x3001;&#x6700;&#x5927;&#x6027;&#x80FD;&#x3001;&#x6700;&#x5927;&#x9AD8;&#x53EF;&#x7528;&#x6A21;&#x5F0F;&#x4E0B;DataMax&#x8282;&#x70B9;&#x914D;&#x7F6E;&#x76F8;&#x540C;&#xFF1A;</p>
+<ul>
+<li><p>recovery.conf</p>
+<ul>
+<li><p><strong>&#x5FC5;&#x9009;</strong>&#x914D;&#x7F6E;&#x9879;&#xFF1A;&#x914D;&#x7F6E;<code>polar_datamax_mode</code>&#x53C2;&#x6570;&#x5F00;&#x542F;DataMax&#x6A21;&#x5F0F;&#x3002;&#x8BE5;&#x914D;&#x7F6E;&#x4E0E;standby_mode&#x53CA;polar_replica&#x914D;&#x7F6E;&#x4E92;&#x65A5;&#xFF0C;&#x5F53;&#x6709;&#x4E92;&#x65A5;&#x914D;&#x7F6E;&#x65F6;&#x4F1A;&#x62A5;&#x9519;&#x3002;</p>
+<pre><code class="lang-c">polar_datamax_mode = standalone
+recovery_target_timeline=&apos;latest&apos;
+primary_slot_name=&apos;datamax1&apos;
+primary_conninfo=&apos;host=[&#x4E3B;&#x8282;&#x70B9;&#x7684;IP] port=5432 user=[$USER] dbname=postgres application_name=datamax1&apos;
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>postgresql.conf&#xFF08;<strong>&#x53EF;&#x9009;</strong>&#x914D;&#x7F6E;&#x9879;&#xFF09;</p>
+</li>
+<li><p>&#x82E5;&#x8981;&#x5728;DataMax&#x8282;&#x70B9;&#x5F00;&#x542F;&#x65E5;&#x5FD7;&#x5F52;&#x6863;&#x529F;&#x80FD;&#xFF0C;&#x9700;&#x914D;&#x7F6E;&#x5982;&#x4E0B;&#x53C2;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-c">  wal_level = replica
+  archive_mode = always
+  archive_command =&apos;cp %p [archivedir]%f&apos;
+  polar_datamax_archive_timeout = 60000
+</code></pre>
+<blockquote>
+<p>&#x5176;&#x4E2D;&#xFF1A;</p>
+<ul>
+<li>&#x53C2;&#x6570;<code>wal_level</code>&#x9700;&#x914D;&#x7F6E;&#x4E3A;replica&#xFF0C;logical&#x903B;&#x8F91;&#x590D;&#x5236;&#x76EE;&#x524D;DataMax&#x5C1A;&#x672A;&#x652F;&#x6301;&#xFF0C;&#x8BBE;&#x7F6E;&#x4E3A;minimal&#x65F6;&#x4E0D;&#x542F;&#x7528;archive_mode&#x3002;</li>
+<li>&#x53C2;&#x6570;<code>archive_mode</code>&#x914D;&#x7F6E;&#x4E3A;always&#x3002;</li>
+<li>&#x53C2;&#x6570;<code>archive_command</code>&#x4E3A;&#x5BF9;&#x5E94;&#x7684;&#x5F52;&#x6863;&#x547D;&#x4EE4;&#xFF0C;&#x201D;%p&#x201C;&#x6307;&#x4EE3;&#x9700;&#x8981;&#x5F52;&#x6863;&#x7684;WAL&#x5168;&#x8DEF;&#x5F84;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x201C;%f&#x201D;&#x8868;&#x793A;&#x4E0D;&#x5E26;&#x8DEF;&#x5F84;&#x7684;&#x6587;&#x4EF6;&#x540D;&#xFF0C;&#x5982;cp %p /mnt/server/archivedir/%f&#x3002;</li>
+<li>&#x53C2;&#x6570;<code>polar_datamax_archive_timeout</code>&#x4E3A;&#x5468;&#x671F;&#x6027;&#x8FDB;&#x884C;&#x65E5;&#x5FD7;&#x5F52;&#x6863;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;60000ms&#x3002;</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<ol>
+<li><p>DataMax&#x8282;&#x70B9;&#x82E5;&#x5F00;&#x542F;&#x65E5;&#x5FD7;&#x5F52;&#x6863;&#x64CD;&#x4F5C;&#xFF0C;&#x53EF;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x53C2;&#x6570;&#x914D;&#x7F6E;&#x5468;&#x671F;&#x6027;&#x6E05;&#x7406;&#x5DF2;&#x5F52;&#x6863;&#x65E5;&#x5FD7;&#x7684;&#x65F6;&#x95F4;&#xFF0C;&#x9ED8;&#x8BA4;&#x503C;&#x4E3A;60000ms&#x3002;</p>
+<pre><code>polar_datamax_remove_archivedone_wal_timeout = 60000
+</code></pre></li>
+</ol>
+<h3 id="&#x8282;&#x70B9;&#x90E8;&#x7F72;">&#x8282;&#x70B9;&#x90E8;&#x7F72;</h3>
+<h4 id="rw&#x8282;&#x70B9;&#x90E8;&#x7F72;">RW&#x8282;&#x70B9;&#x90E8;&#x7F72;</h4>
+<ul>
+<li>&#x53C2;&#x8003;<a href="NBD-Instance.html">&#x642D;&#x5EFA;&#x57FA;&#x4E8E;NBD&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x7684;&#x5B9E;&#x4F8B;</a>&#x4E2D;&#x7684;&#x201C;PolarDB for PG&#x5185;&#x6838;&#x7F16;&#x8BD1;&#x90E8;&#x7F72;&#x201D;&#x90E8;&#x5206;&#x3002;</li>
+<li>&#x53C2;&#x8003;&#x4E0A;&#x4E00;&#x5C0F;&#x8282;&#xFF0C;&#x5728;postgresql.conf&#x4E2D;&#x914D;&#x7F6E;DataMax&#x8282;&#x70B9;&#x7684;&#x65E5;&#x5FD7;&#x540C;&#x6B65;&#x6A21;&#x5F0F;&#xFF08;&#x6700;&#x5927;&#x4FDD;&#x62A4;&#x6A21;&#x5F0F;&#x3001;&#x6700;&#x5927;&#x6027;&#x80FD;&#x6A21;&#x5F0F;&#x3001;&#x6700;&#x5927;&#x9AD8;&#x53EF;&#x7528;&#x6A21;&#x5F0F;&#xFF09;&#x3002;</li>
+<li>&#x521B;&#x5EFA;DataMax&#x8282;&#x70B9;&#x7684;replication slot&#xFF0C;&#x7528;&#x4E8E;DataMax&#x8282;&#x70B9;&#x7684;&#x7269;&#x7406;&#x6D41;&#x590D;&#x5236;&#x3002;</li>
+</ul>
+<pre><code class="lang-c">$HOME/tmp_basedir_polardb_pg_1100_bld/bin/psql -p <span class="hljs-number">5432</span> -d postgres -c <span class="hljs-string">&quot;select pg_create_physical_replication_slot(&apos;datamax1&apos;);&quot;</span>
+</code></pre>
+<h4 id="datamax&#x8282;&#x70B9;&#x90E8;&#x7F72;">DataMax&#x8282;&#x70B9;&#x90E8;&#x7F72;</h4>
+<ul>
+<li>&#x5185;&#x6838;&#x7F16;&#x8BD1;</li>
+</ul>
+<pre><code class="lang-bash">./polardb_build.sh
+</code></pre>
+<ul>
+<li>&#x8282;&#x70B9;&#x521D;&#x59CB;&#x5316;&#xFF1A;&#x521D;&#x59CB;&#x5316;DataMax&#x8282;&#x70B9;&#x65F6;&#x9700;&#x8981;&#x6307;&#x5B9A;RW&#x8282;&#x70B9;&#x7684;system identifier</li>
+</ul>
+<pre><code class="lang-c">#&#x83B7;&#x53D6;rw&#x8282;&#x70B9;&#x7684;system identifier
+$HOME/tmp_basedir_polardb_pg_1100_bld/bin/pg_controldata -D $HOME/primary | grep &apos;system identifier&apos;
+
+#&#x521B;&#x5EFA;datamax&#x8282;&#x70B9;&#xFF0C;-i &#x53C2;&#x6570;&#x6307;&#x5B9A;&#x7684;[primary_system_identifier] &#x4E3A;&#x4E0A;&#x4E00;&#x6B65;&#x5F97;&#x5230;&#x7684;rw&#x8282;&#x70B9;system identifier
+$HOME/tmp_basedir_polardb_pg_1100_bld/bin/initdb -D datamax -i [primary_system_identifier]
+
+# &#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x521D;&#x59CB;&#x5316;
+sudo pfs -C disk mkdir /nvme0n1/dm_shared_data
+sudo /home/[$USER]/tmp_basedir_polardb_pg_1100_bld/bin/polar-initdb.sh /home/[$USER]/datamax/ /nvme0n1/dm_shared_data/
+</code></pre>
+<ul>
+<li>&#x6253;&#x5F00;postgresql.conf&#xFF0C;&#x589E;&#x52A0;&#x4EE5;&#x4E0B;&#x914D;&#x7F6E;&#x9879;&#xFF1A;</li>
+</ul>
+<pre><code class="lang-c">port=5433
+polar_hostid=2
+polar_enable_shared_storage_mode=on
+polar_disk_name=&apos;nvme0n1&apos;
+polar_datadir=&apos;/nvme0n1/dm_shared_data/&apos;
+polar_vfs.localfs_mode=off
+shared_preload_libraries=&apos;$libdir/polar_vfs,$libdir/polar_worker&apos;
+polar_storage_cluster_name=&apos;disk&apos;
+logging_collector=on
+log_line_prefix=&apos;%p\t%r\t%u\t%m\t&apos;
+log_directory=&apos;pg_log&apos;
+listen_addresses=&apos;*&apos;
+max_connections=1000
+polar_enable_promote_wait_for_walreceive_done=on
+</code></pre>
+<ul>
+<li>&#x542F;&#x52A8;&#xFF0C;&#x6682;&#x4E0D;&#x914D;&#x7F6E;recovery.conf&#xFF0C;&#x4EE5;&#x53EF;&#x5199;&#x8282;&#x70B9;&#x7684;&#x5F62;&#x5F0F;&#x62C9;&#x8D77;&#x5B9E;&#x4F8B;</li>
+</ul>
+<pre><code class="lang-c">$HOME/tmp_basedir_polardb_pg_1100_bld/bin/pg_ctl start -D $HOME/datamax
+</code></pre>
+<ul>
+<li>&#x68C0;&#x67E5;</li>
+</ul>
+<pre><code class="lang-c">$HOME/tmp_basedir_polardb_pg_1100_bld/bin/psql -p 5433 -d postgres -c &apos;select version();&apos;
+</code></pre>
+<ul>
+<li>&#x521B;&#x5EFA;&#x7BA1;&#x7406;&#x8D26;&#x53F7;&#x53CA;&#x63D2;&#x4EF6;</li>
+</ul>
+<pre><code class="lang-c">$HOME/tmp_basedir_polardb_pg_1100_bld/bin/psql -p 5433 -d postgres -c &apos;create user test superuser;&apos;
+$HOME/tmp_basedir_polardb_pg_1100_bld/bin/psql -p 5433 -d postgres -c &apos;create extension polar_monitor;&apos;
+</code></pre>
+<ul>
+<li>&#x5173;&#x95ED;&#x8282;&#x70B9;</li>
+</ul>
+<pre><code class="lang-c">$HOME/tmp_basedir_polardb_pg_1100_bld/bin/pg_ctl stop -D $HOME/datamax
+</code></pre>
+<ul>
+<li>&#x914D;&#x7F6E;recovery.conf</li>
+</ul>
+<pre><code class="lang-c">polar_datamax_mode = standalone
+recovery_target_timeline=&apos;latest&apos;
+primary_slot_name=&apos;datamax1&apos;
+primary_conninfo=&apos;host=[&#x4E3B;&#x8282;&#x70B9;&#x7684;IP] port=5432 user=[$USER] dbname=postgres application_name=datamax1&apos;
+</code></pre>
+<ul>
+<li>&#x542F;&#x52A8;</li>
+</ul>
+<pre><code class="lang-c">$HOME/tmp_basedir_polardb_pg_1100_bld/bin/pg_ctl start -D $HOME/datamax
+</code></pre>
+<ul>
+<li><p>DataMax&#x8282;&#x70B9;&#x68C0;&#x67E5;</p>
+<ul>
+<li><p>DataMax&#x81EA;&#x8EAB;&#x53EF;&#x901A;&#x8FC7;polar_get_datamax_info() &#x63A5;&#x53E3;&#x6765;&#x5224;&#x65AD;&#x5176;&#x8FD0;&#x884C;&#x662F;&#x5426;&#x6B63;&#x5E38;</p>
+<pre><code class="lang-bash"><span class="hljs-variable">$HOME</span>/tmp_basedir_polardb_pg_1100_bld/bin/psql -p 5433 <span class="hljs-_">-d</span> postgres -c <span class="hljs-string">&apos;select * from polar_get_datamax_info();&apos;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+</ul>
+<pre><code> - &#x5728;RW&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;pg_replication_slots&#x67E5;&#x770B;&#x5BF9;&#x5E94;slot&#x7684;&#x72B6;&#x6001;
+
+   ```bash
+   $HOME/tmp_basedir_polardb_pg_1100_bld/bin/psql -p 5432 -d postgres -c &apos;select * from pg_replication_slots;&apos;
+   ```
+</code></pre>
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="CSN.html" class="navigation navigation-prev " aria-label="Previous page: CSN">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="HA-with-Three-Nodes.html" class="navigation navigation-next " aria-label="Next page: 三节点高可用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"DataMax","level":"1.1.3.2.4","depth":4,"next":{"title":"三节点高可用","level":"1.1.3.2.5","depth":4,"path":"PolarDB-for-PostgreSQL/HA-with-Three-Nodes.md","ref":"PolarDB-for-PostgreSQL/HA-with-Three-Nodes.md","articles":[]},"previous":{"title":"CSN","level":"1.1.3.2.3","depth":4,"path":"PolarDB-for-PostgreSQL/CSN.md","ref":"PolarDB-for-PostgreSQL/CSN.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","code","expandable-chapters-small","page-toc-button","-sharing","-font-settings","-search","-lunr","auto-scroll-table@git+https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"hide-element":{"elements":[".toggle-dropdown",".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PolarDB for PostgreSQL","gitbook":"*"},"file":{"path":"PolarDB-for-PostgreSQL/DataMax.md","mtime":"2022-03-24T09:01:05.207Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-22T14:36:40.387Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

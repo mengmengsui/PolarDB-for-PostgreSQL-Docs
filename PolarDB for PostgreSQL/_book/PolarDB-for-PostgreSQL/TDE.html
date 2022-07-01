@@ -1,0 +1,2147 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>TDE · PolarDB for PostgreSQL</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="WAL-Pipeline.html" />
+    
+    
+    <link rel="prev" href="RO-OnlinePromote.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    关于PolarDB for PostgreSQL
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.1" data-path="../Introduction.html">
+            
+                <a href="../Introduction.html">
+            
+                    
+                    PolarDB for PostgreSQL简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2" data-path="Product-Architecture.html">
+            
+                <a href="Product-Architecture.html">
+            
+                    
+                    产品架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.1" data-path="Background.html">
+            
+                <a href="Background.html">
+            
+                    
+                    架构背景
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2" data-path="Overall-Architecture.html">
+            
+                <a href="Overall-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.2.2.1" data-path="Storage-Compute-Decoupled-Arch.html">
+            
+                <a href="Storage-Compute-Decoupled-Arch.html">
+            
+                    
+                    存储计算分离架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.2.2.2" data-path="HTAP-Architecture.html">
+            
+                <a href="HTAP-Architecture.html">
+            
+                    
+                    HTAP架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3" data-path="Features.html">
+            
+                <a href="Features.html">
+            
+                    
+                    功能特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1" data-path="basic-features.html">
+            
+                <a href="basic-features.html">
+            
+                    
+                    基本功能和特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.1.1" data-path="Flexibility.html">
+            
+                <a href="Flexibility.html">
+            
+                    
+                    极致弹性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.2" data-path="LogIndex.html">
+            
+                <a href="LogIndex.html">
+            
+                    
+                    毫秒级延迟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.3" data-path="HTAP.html">
+            
+                <a href="HTAP.html">
+            
+                    
+                    HTAP能力
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.4" data-path="Cloud-Native.html">
+            
+                <a href="Cloud-Native.html">
+            
+                    
+                    云原生
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.5" data-path="Reliability-and-HA.html">
+            
+                <a href="Reliability-and-HA.html">
+            
+                    
+                    金融级可靠性和可用性
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.1.6" data-path="PostgreSQL-Compatibility.html">
+            
+                <a href="PostgreSQL-Compatibility.html">
+            
+                    
+                    PostgreSQL生态兼容
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2" data-path="enterprise-features.html">
+            
+                <a href="enterprise-features.html">
+            
+                    
+                    企业级增强特性
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1.3.2.1" data-path="Buffer-Management.html">
+            
+                <a href="Buffer-Management.html">
+            
+                    
+                    Buffer管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.2" data-path="DDL-Synchronization.html">
+            
+                <a href="DDL-Synchronization.html">
+            
+                    
+                    DDL同步
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.3" data-path="CSN.html">
+            
+                <a href="CSN.html">
+            
+                    
+                    CSN
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.4" data-path="DataMax.html">
+            
+                <a href="DataMax.html">
+            
+                    
+                    DataMax
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.5" data-path="HA-with-Three-Nodes.html">
+            
+                <a href="HA-with-Three-Nodes.html">
+            
+                    
+                    三节点高可用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.6" data-path="Parallel-Replay.html">
+            
+                <a href="Parallel-Replay.html">
+            
+                    
+                    并行回放
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.7" data-path="RO-OnlinePromote.html">
+            
+                <a href="RO-OnlinePromote.html">
+            
+                    
+                    RO OnlinePromote
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.1.3.2.8" data-path="TDE.html">
+            
+                <a href="TDE.html">
+            
+                    
+                    TDE
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.3.2.9" data-path="WAL-Pipeline.html">
+            
+                <a href="WAL-Pipeline.html">
+            
+                    
+                    WAL Pipeline
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.1.4" data-path="../Component.html">
+            
+                <a href="../Component.html">
+            
+                    
+                    组件介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="Quick-Start.html">
+            
+                <a href="Quick-Start.html">
+            
+                    
+                    快速入门
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Alibaba-Cloud-Service.html">
+            
+                <a href="Alibaba-Cloud-Service.html">
+            
+                    
+                    阿里巴巴云服务部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Standalone-Deployment.html">
+            
+                <a href="Standalone-Deployment.html">
+            
+                    
+                    单机形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="Local-Storage-Instance.html">
+            
+                <a href="Local-Storage-Instance.html">
+            
+                    
+                    搭建基于单机本地存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="Cluster-Deployment.html">
+            
+                <a href="Cluster-Deployment.html">
+            
+                    
+                    集群形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="NBD-Instance.html">
+            
+                <a href="NBD-Instance.html">
+            
+                    
+                    搭建基于NBD共享存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="ceph-Instance.html">
+            
+                <a href="ceph-Instance.html">
+            
+                    
+                    搭建基于Ceph共享存储的实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="../DeployPFS.html">
+            
+                <a href="../DeployPFS.html">
+            
+                    
+                    安装部署PFS
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="PolarDB-Stack-Deployment.html">
+            
+                <a href="PolarDB-Stack-Deployment.html">
+            
+                    
+                    管控形态部署
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1" data-path="PolarDB-Stack-Instance.html">
+            
+                <a href="PolarDB-Stack-Instance.html">
+            
+                    
+                    搭建基于PolarDB Stack共享存储的实例
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.4.1.1" data-path="../PolarDB-Stack-Operator/Quick-Install.html">
+            
+                <a href="../PolarDB-Stack-Operator/Quick-Install.html">
+            
+                    
+                    一键安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4.1.2" data-path="../PolarDB-Stack-Operator/Manual-Install.html">
+            
+                <a href="../PolarDB-Stack-Operator/Manual-Install.html">
+            
+                    
+                    手动安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../User-Manual.html">
+            
+                <a href="../User-Manual.html">
+            
+                    
+                    使用指南
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.html">
+            
+                <a href="../PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.html">
+            
+                    
+                    PolarDB Stack管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="../PolarDB-Stack-Operator/PolarDB-Stack-Architecture.html">
+            
+                <a href="../PolarDB-Stack-Operator/PolarDB-Stack-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="../PolarDB-Stack-Operator/Resource-Management.html">
+            
+                <a href="../PolarDB-Stack-Operator/Resource-Management.html">
+            
+                    
+                    资源管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.2.1" data-path="../PolarDB-Stack-Operator/Create-PVC.html">
+            
+                <a href="../PolarDB-Stack-Operator/Create-PVC.html">
+            
+                    
+                    创建PVC
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.2" data-path="../PolarDB-Stack-Operator/Create-Instance-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Create-Instance-Cluster.html">
+            
+                    
+                    创建实例集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.3" data-path="../PolarDB-Stack-Operator/Delete-Instance-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Delete-Instance-Cluster.html">
+            
+                    
+                    删除实例集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.4" data-path="../PolarDB-Stack-Operator/Change-Configuration.html">
+            
+                <a href="../PolarDB-Stack-Operator/Change-Configuration.html">
+            
+                    
+                    变更配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.5" data-path="../PolarDB-Stack-Operator/Switch-RW-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Switch-RW-RO.html">
+            
+                    
+                    读写切换
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.6" data-path="../PolarDB-Stack-Operator/Change-Engine-Parameters.html">
+            
+                <a href="../PolarDB-Stack-Operator/Change-Engine-Parameters.html">
+            
+                    
+                    修改引擎参数（刷参）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.7" data-path="../PolarDB-Stack-Operator/Reboot-Instance.html">
+            
+                <a href="../PolarDB-Stack-Operator/Reboot-Instance.html">
+            
+                    
+                    重启实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.8" data-path="../PolarDB-Stack-Operator/Reboot-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Reboot-Cluster.html">
+            
+                    
+                    重启集群
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.9" data-path="../PolarDB-Stack-Operator/Update-Image-Version.html">
+            
+                <a href="../PolarDB-Stack-Operator/Update-Image-Version.html">
+            
+                    
+                    更新镜像版本
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.10" data-path="../PolarDB-Stack-Operator/Upgrade.html">
+            
+                <a href="../PolarDB-Stack-Operator/Upgrade.html">
+            
+                    
+                    小版本升级
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.11" data-path="../PolarDB-Stack-Operator/Rebuild-Cluster.html">
+            
+                <a href="../PolarDB-Stack-Operator/Rebuild-Cluster.html">
+            
+                    
+                    完整重建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.12" data-path="../PolarDB-Stack-Operator/Add-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Add-RO.html">
+            
+                    
+                    添加RO
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.13" data-path="../PolarDB-Stack-Operator/Migrate-RW.html">
+            
+                <a href="../PolarDB-Stack-Operator/Migrate-RW.html">
+            
+                    
+                    RW迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.14" data-path="../PolarDB-Stack-Operator/Migrate-RO.html">
+            
+                <a href="../PolarDB-Stack-Operator/Migrate-RO.html">
+            
+                    
+                    RO迁移
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.15" data-path="../PolarDB-Stack-Operator/Expand-Storage.html">
+            
+                <a href="../PolarDB-Stack-Operator/Expand-Storage.html">
+            
+                    
+                    存储扩容
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.16" data-path="../PolarDB-Stack-Operator/Retry-Failed-Operation.html">
+            
+                <a href="../PolarDB-Stack-Operator/Retry-Failed-Operation.html">
+            
+                    
+                    失败重试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2.17" data-path="../PolarDB-Stack-Operator/Engine-Parameters.html">
+            
+                <a href="../PolarDB-Stack-Operator/Engine-Parameters.html">
+            
+                    
+                    引擎参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3" data-path="../PolarDB-Stack-Operator/Lifecycle-Management.html">
+            
+                <a href="../PolarDB-Stack-Operator/Lifecycle-Management.html">
+            
+                    
+                    生命周期管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.3.1" data-path="../PolarDB-Stack-Common/Stack-Lifecycle-Basic-Concept.html">
+            
+                <a href="../PolarDB-Stack-Common/Stack-Lifecycle-Basic-Concept.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.2" data-path="../PolarDB-Stack-Workflow/Workflow-Engine.html">
+            
+                <a href="../PolarDB-Stack-Workflow/Workflow-Engine.html">
+            
+                    
+                    工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.3.3" data-path="../PolarDB-Stack-Workflow/Use-Workflow-Engine.html">
+            
+                <a href="../PolarDB-Stack-Workflow/Use-Workflow-Engine.html">
+            
+                    
+                    使用工作流引擎
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4" data-path="../PolarDB-Stack-Storage/Shared-Storage-Management.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Management.html">
+            
+                    
+                    共享存储管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.4.1" data-path="../PolarDB-Stack-Storage/Shared-Storage-Basic-Concept.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Basic-Concept.html">
+            
+                    
+                    功能概述
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.2" data-path="../PolarDB-Stack-Storage/Shared-Storage-Architecture.html">
+            
+                <a href="../PolarDB-Stack-Storage/Shared-Storage-Architecture.html">
+            
+                    
+                    整体架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.3" data-path="../PolarDB-Stack-Storage/Build-API-Doc.html">
+            
+                <a href="../PolarDB-Stack-Storage/Build-API-Doc.html">
+            
+                    
+                    构建接口文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.4.4" data-path="../PolarDB-Stack-Storage/Other-Descriptions.html">
+            
+                <a href="../PolarDB-Stack-Storage/Other-Descriptions.html">
+            
+                    
+                    问题说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5" data-path="../PolarDB-Stack-Daemon/Network-Management.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Network-Management.html">
+            
+                    
+                    网络管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.5.1" data-path="../PolarDB-Stack-Daemon/Code-Structure.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Code-Structure.html">
+            
+                    
+                    代码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5.2" data-path="../PolarDB-Stack-Daemon/Daemon-Roadmap.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Daemon-Roadmap.html">
+            
+                    
+                    版本规划
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.5.3" data-path="../PolarDB-Stack-Daemon/Build-Run-Instance.html">
+            
+                <a href="../PolarDB-Stack-Daemon/Build-Run-Instance.html">
+            
+                    
+                    搭建和运行实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6" data-path="../PolarDB-ClusterManager/Cluster-Management.html">
+            
+                <a href="../PolarDB-ClusterManager/Cluster-Management.html">
+            
+                    
+                    集群管理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.6.1" data-path="../PolarDB-ClusterManager/ClusterManager-Code-Structure.html">
+            
+                <a href="../PolarDB-ClusterManager/ClusterManager-Code-Structure.html">
+            
+                    
+                    代码结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.6.2" data-path="../PolarDB-ClusterManager/ClusterManager-Install-Deploy.html">
+            
+                <a href="../PolarDB-ClusterManager/ClusterManager-Install-Deploy.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../PolarDB-NodeAgent/PolarDB-NodeAgent.html">
+            
+                <a href="../PolarDB-NodeAgent/PolarDB-NodeAgent.html">
+            
+                    
+                    监控采集
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.2.1" data-path="../PolarDB-NodeAgent/Architecture.html">
+            
+                <a href="../PolarDB-NodeAgent/Architecture.html">
+            
+                    
+                    基本架构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.2" data-path="../PolarDB-NodeAgent/Install.html">
+            
+                <a href="../PolarDB-NodeAgent/Install.html">
+            
+                    
+                    安装部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.3" data-path="../PolarDB-NodeAgent/Configuration.html">
+            
+                <a href="../PolarDB-NodeAgent/Configuration.html">
+            
+                    
+                    采集配置
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2.4" data-path="../PolarDB-NodeAgent/Metrics.html">
+            
+                <a href="../PolarDB-NodeAgent/Metrics.html">
+            
+                    
+                    指标说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../PolarDB-ImageBuilder/PolarDB-ImageBuilder.html">
+            
+                <a href="../PolarDB-ImageBuilder/PolarDB-ImageBuilder.html">
+            
+                    
+                    构建镜像
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.3.1" data-path="../PolarDB-ImageBuilder/Principle.html">
+            
+                <a href="../PolarDB-ImageBuilder/Principle.html">
+            
+                    
+                    基本原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.2" data-path="../PolarDB-ImageBuilder/Build-Image.html">
+            
+                <a href="../PolarDB-ImageBuilder/Build-Image.html">
+            
+                    
+                    本地构建镜像
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3.3" data-path="../PolarDB-ImageBuilder/Image-Functions.html">
+            
+                <a href="../PolarDB-ImageBuilder/Image-Functions.html">
+            
+                    
+                    镜像功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../Best-Practices/Best-Practices.html">
+            
+                <a href="../Best-Practices/Best-Practices.html">
+            
+                    
+                    最佳实践
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../Best-Practices/Deploy-Instance-with-Three-Nodes.html">
+            
+                <a href="../Best-Practices/Deploy-Instance-with-Three-Nodes.html">
+            
+                    
+                    部署开源PolarDB for PostgreSQL三节点实例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../Best-Practices/Accelerate-TPC-H-with-HTAP.html">
+            
+                <a href="../Best-Practices/Accelerate-TPC-H-with-HTAP.html">
+            
+                    
+                    利用PolarDB HTAP加速TPC-H
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../Tools.html">
+            
+                <a href="../Tools.html">
+            
+                    
+                    常用工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../PFSTools.html">
+            
+                <a href="../PFSTools.html">
+            
+                    
+                    PFS工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.1" data-path="../PolarDB-FileSystem/PFS-File-System-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-System-Operation.html">
+            
+                    
+                    文件系统操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2" data-path="../PolarDB-FileSystem/PFS-File-Directory-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-Directory-Operation.html">
+            
+                    
+                    文件目录操作
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1.2.1" data-path="../PolarDB-FileSystem/PFS-Parameter-Description.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Parameter-Description.html">
+            
+                    
+                    参数说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.2" data-path="../PolarDB-FileSystem/PFS-Common-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Common-Operation.html">
+            
+                    
+                    通用操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.3" data-path="../PolarDB-FileSystem/PFS-File-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-File-Operation.html">
+            
+                    
+                    文件操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.1.2.4" data-path="../PolarDB-FileSystem/PFS-Directory-Operation.html">
+            
+                <a href="../PolarDB-FileSystem/PFS-Directory-Operation.html">
+            
+                    
+                    目录操作
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../Contributing/Contribute-to-Community.html">
+            
+                <a href="../Contributing/Contribute-to-Community.html">
+            
+                    
+                    社区贡献
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1.1" data-path="../Contributing/Code-of-Conduct.html">
+            
+                <a href="../Contributing/Code-of-Conduct.html">
+            
+                    
+                    贡献者盟约行为守则
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.2" data-path="../Contributing/How-to-Contribute.html">
+            
+                <a href="../Contributing/How-to-Contribute.html">
+            
+                    
+                    如何贡献
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.3" data-path="../Contributing/Style.html">
+            
+                <a href="../Contributing/Style.html">
+            
+                    
+                    编码风格
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.1.4" data-path="../Contributing/Contact-Us.html">
+            
+                <a href="../Contributing/Contact-Us.html">
+            
+                    
+                    联系我们
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../Software-License.html">
+            
+                <a href="../Software-License.html">
+            
+                    
+                    软件许可说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../Acknowledgments.html">
+            
+                <a href="../Acknowledgments.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" >
+            
+                <a target="_blank" href="https://polardbpg.com">
+            
+                    
+                    官方网站
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >TDE</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="tde">TDE</h1>
+<h2 id="&#x529F;&#x80FD;&#x7B80;&#x4ECB;">&#x529F;&#x80FD;&#x7B80;&#x4ECB;</h2>
+<p>TDE&#xFF08;Transparent Data Encryption&#xFF0C;&#x5373;&#x900F;&#x660E;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#xFF09;&#x901A;&#x8FC7;&#x5728;&#x6570;&#x636E;&#x5E93;&#x5C42;&#x6267;&#x884C;&#x9759;&#x6B62;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#xFF0C;&#x963B;&#x6B62;&#x53EF;&#x80FD;&#x7684;&#x653B;&#x51FB;&#x8005;&#x7ED5;&#x8FC7;&#x6570;&#x636E;&#x5E93;&#x76F4;&#x63A5;&#x4ECE;&#x5B58;&#x50A8;&#x8BFB;&#x53D6;&#x654F;&#x611F;&#x4FE1;&#x606F;&#x3002;&#x7ECF;&#x8FC7;&#x6570;&#x636E;&#x5E93;&#x8EAB;&#x4EFD;&#x9A8C;&#x8BC1;&#x7684;&#x5E94;&#x7528;&#x548C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x7EE7;&#x7EED;&#x900F;&#x660E;&#x5730;&#x8BBF;&#x95EE;&#x5E94;&#x7528;&#x6570;&#x636E;&#xFF08;&#x4E0D;&#x9700;&#x8981;&#x66F4;&#x6539;&#x5E94;&#x7528;&#x4EE3;&#x7801;&#x6216;&#x914D;&#x7F6E;&#xFF09;&#xFF0C;&#x800C;&#x5C1D;&#x8BD5;&#x8BFB;&#x53D6;&#x6570;&#x636E;&#x5E93;&#x6587;&#x4EF6;&#x4E2D;&#x654F;&#x611F;&#x6570;&#x636E;&#x7684;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x7528;&#x6237;&#x4EE5;&#x53CA;&#x5C1D;&#x8BD5;&#x8BFB;&#x53D6;&#x78C1;&#x76D8;&#x6216;&#x5907;&#x4EFD;&#x4FE1;&#x606F;&#x7684;&#x672A;&#x7ECF;&#x8BA4;&#x8BC1;&#x7684;&#x7528;&#x6237;&#x5C06;&#x4E0D;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x660E;&#x6587;&#x6570;&#x636E;&#x3002;</p>
+<p>&#x4E3A;&#x6EE1;&#x8DB3;&#x652F;&#x6301;&#x5168;&#x96C6;&#x7FA4;&#x7EA7;&#x522B;&#x7684;&#x52A0;&#x5BC6;&#x3001;&#x6570;&#x636E;&#x548C;&#x5907;&#x4EFD;&#x7EA7;&#x7684;&#x52A0;&#x5BC6;&#x3001;AES&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3001;&#x5728;&#x7EBF;&#x5BC6;&#x94A5;&#x66F4;&#x6362;&#x3001;&#x963F;&#x91CC;&#x4E91;KMS&#x8F93;&#x5165;&#x5BC6;&#x94A5;&#x7B49;&#x9700;&#x6C42;&#xFF0C;PolarDB for PostgreSQL&#x5B9E;&#x73B0;&#x4E86;&#x900F;&#x660E;&#x52A0;&#x5BC6;&#x529F;&#x80FD;&#x3002;</p>
+<h2 id="&#x5B9E;&#x73B0;&#x539F;&#x7406;">&#x5B9E;&#x73B0;&#x539F;&#x7406;</h2>
+<p>&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x4F7F;&#x7528;&#x53CC;&#x5C42;&#x5BC6;&#x94A5;&#x7ED3;&#x6784;&#xFF0C;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x5E93;&#x6570;&#x636E;&#xFF0C;&#x9876;&#x5C42;&#x5BC6;&#x94A5;&#x52A0;&#x5BC6;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x3002;&#x9876;&#x5C42;&#x5BC6;&#x94A5;&#x901A;&#x8FC7;&#x8BF7;&#x6C42;&#x5916;&#x754C;&#x8F93;&#x5165;&#xFF0C;&#x652F;&#x6301;&#x963F;&#x91CC;&#x4E91;&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x670D;&#x52A1;&#x3002;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x901A;&#x8FC7;&#x5185;&#x6838;&#x4EA7;&#x751F;&#x540E;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x5230;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x4E2D;&#x3002;&#x66F4;&#x6362;&#x5BC6;&#x94A5;&#x53EA;&#x9700;&#x8981;&#x66F4;&#x6362;&#x9876;&#x5C42;&#x5BC6;&#x94A5;&#xFF0C;&#x66F4;&#x65B0;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#xFF0C;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x4FDD;&#x6301;&#x4E0D;&#x53D8;&#xFF0C;&#x53EF;&#x5B9E;&#x73B0;&#x5728;&#x7EBF;&#x5BC6;&#x94A5;&#x66F4;&#x6362;&#x3002;</p>
+<p>&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x6570;&#x636E;&#x4F7F;&#x7528;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x6309;&#x7167;&#x9875;&#x9762;&#x7EA7;&#x522B;&#x4F7F;&#x7528;AES&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x5199;&#x5165;&#x78C1;&#x76D8;&#x4E4B;&#x524D;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x5728;&#x6570;&#x636E;&#x4ECE;&#x78C1;&#x76D8;&#x8BFB;&#x5165;&#x5185;&#x5B58;&#x65F6;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;&#x3002;</p>
+<p>&#x6570;&#x636E;&#x5E93;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x5728;&#x78C1;&#x76D8;&#x4E0A;&#xFF0C;&#x5176;&#x5907;&#x4EFD;&#x5230;&#x5176;&#x4ED6;&#x4ECB;&#x8D28;&#x4E0A;&#x7684;&#x5907;&#x4EFD;&#x6570;&#x636E;&#x4E5F;&#x81EA;&#x52A8;&#x662F;&#x52A0;&#x5BC6;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x6574;&#x4F53;&#x6784;&#x67B6;&#x56FE;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="pic/25-TDE-Architecture.png" alt="TDE Architecture" width="600"></p>
+<p>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;TDE&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x5185;&#x6838;&#x8981;&#x5B9E;&#x73B0;&#x4E09;&#x4E2A;&#x5B50;&#x6A21;&#x5757;&#x7684;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li>&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x6A21;&#x5757;&#xFF1A;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x5BC6;&#x94A5;&#x5206;&#x914D;&#x3001;&#x5BC6;&#x94A5;&#x52A0;&#x5BC6;&#x3001;&#x5BC6;&#x94A5;&#x89E3;&#x5BC6;&#x3001;&#x5BC6;&#x94A5;&#x66F4;&#x6362;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x6A21;&#x5757;&#xFF1A;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x5982;&#x4F55;&#x52A0;&#x5BC6;&#x548C;&#x52A0;&#x5BC6;&#x54EA;&#x4E9B;&#x6587;&#x4EF6;&#x3002;</li>
+<li>&#x6570;&#x636E;&#x89E3;&#x5BC6;&#x6A21;&#x5757;&#xFF1A;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x89E3;&#x5BC6;&#x3002;</li>
+</ul>
+<h3 id="&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x6A21;&#x5757;">&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x6A21;&#x5757;</h3>
+<p>&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x6A21;&#x5757;&#x4E3B;&#x8981;&#x5B9E;&#x73B0;&#x5BC6;&#x94A5;&#x5206;&#x914D;&#x3001;&#x5BC6;&#x94A5;&#x52A0;&#x5BC6;&#x3001;&#x5BC6;&#x94A5;&#x89E3;&#x5BC6;&#x548C;&#x5BC6;&#x94A5;&#x66F4;&#x6362;&#x529F;&#x80FD;&#x3002;</p>
+<h4 id="&#x5BC6;&#x94A5;&#x7ED3;&#x6784;">&#x5BC6;&#x94A5;&#x7ED3;&#x6784;</h4>
+<p>&#x91C7;&#x7528;&#x53CC;&#x5C42;&#x5BC6;&#x94A5;&#x7ED3;&#x6784;&#xFF0C;&#x4E24;&#x79CD;&#x5BC6;&#x94A5;&#x5206;&#x522B;&#x662F;&#xFF1A;</p>
+<ul>
+<li>&#x8868;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#xFF08;Relation Data Encryption Keys&#xFF0C;&#x4E0B;&#x6587;&#x7EDF;&#x4E00;&#x7B80;&#x79F0;&#x4E3A;RDEK&#xFF09;&#x548C;&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#xFF08;WAL Data Encryption Keys&#xFF0C;&#x4E0B;&#x6587;&#x7EDF;&#x4E00;&#x7B80;&#x79F0;&#x4E3A;WDEK&#xFF09;&#xFF0C;&#x4E3A;&#x53CC;&#x5C42;&#x5BC6;&#x94A5;&#x7ED3;&#x6784;&#x4E2D;&#x7684;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#xFF0C;&#x7528;&#x6765;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x548C;&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x3002;</li>
+<li>&#x5BC6;&#x94A5;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#xFF08;Key Encryption Key&#xFF0C;&#x4E0B;&#x6587;&#x7EDF;&#x4E00;&#x7B80;&#x79F0;&#x4E3A;KEK&#xFF09;&#xFF0C;&#x4E3A;&#x9876;&#x5C42;&#x5BC6;&#x94A5;&#xFF0C;&#x7528;&#x6765;&#x52A0;&#x5BC6;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x3002;</li>
+</ul>
+<h4 id="&#x5BC6;&#x94A5;&#x5206;&#x914D;">&#x5BC6;&#x94A5;&#x5206;&#x914D;</h4>
+<p>&#x9876;&#x5C42;&#x5BC6;&#x94A5;KEK&#x4E0D;&#x4F1A;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x5230;&#x78C1;&#x76D8;&#xFF0C;&#x6BCF;&#x6B21;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x5B89;&#x5168;&#x7F51;&#x7EDC;&#x5916;&#x90E8;&#x83B7;&#x53D6;&#xFF0C;&#x5373;&#x8FD0;&#x884C;&#x5BC6;&#x94A5;&#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x83B7;&#x5F97;&#xFF0C;&#x8FD9;&#x4FDD;&#x8BC1;&#x4E86;KEK&#x662F;&#x5B89;&#x5168;&#x800C;&#x4E14;&#x65E0;&#x6CD5;&#x4ECE;&#x5B58;&#x50A8;&#x4E2D;&#x6CC4;&#x9732;&#x3002;&#x5BC6;&#x94A5;&#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4EFB;&#x4F55;KMS&#x670D;&#x52A1;&#x63A5;&#x53E3;&#x547D;&#x4EE4;&#xFF0C;&#x6D4B;&#x8BD5;&#x7684;&#x65F6;&#x5019;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x901A;&#x8FC7;&#x8FD0;&#x884C;<code>echo passphrase</code>&#x83B7;&#x53D6;&#x3002;&#x8FD0;&#x884C;&#x8BE5;&#x547D;&#x4EE4;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x901A;&#x8FC7;&#x5B89;&#x5168;&#x6563;&#x5217;&#x7B97;&#x6CD5;&#xFF08;Secure Hash Algorithm &#xFF0C;&#x7B80;&#x79F0;&#x4E3A;SHA&#xFF0C;&#x5305;&#x542B;SHA 256&#x548C;SHA 512&#xFF0C;&#x8FD9;&#x91CC;&#x6307;SHA 512&#xFF09;&#x5F97;&#x5230;64&#x5B57;&#x8282;&#x7684;&#x7ED3;&#x679C;&#xFF0C;&#x5176;&#x4E2D;&#x524D;32&#x5B57;&#x8282;&#x4E3A;KEK&#xFF0C;&#x540E;32&#x5B57;&#x8282;&#x4E3A;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x7684;&#x6D88;&#x606F;&#x6458;&#x8981;&#xFF08;&#x4E0B;&#x6587;&#x7B80;&#x79F0;&#x4E3A;HMACK&#xFF09;&#x3002;</p>
+<p>&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x91C7;&#x7528;&#x5185;&#x90E8;&#x7684;&#x968F;&#x673A;&#x6570;&#x5B57;&#x7B97;&#x6CD5;&#x751F;&#x6210;&#xFF0C;&#x5176;&#x4E2D;&#x6839;&#x636E;&#x9009;&#x62E9;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x7684;&#x4E0D;&#x540C;&#xFF0C;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x7684;&#x957F;&#x5EA6;&#x4E0D;&#x540C;&#xFF0C;&#x5982;&#x679C;&#x9009;&#x62E9;AES-128&#xFF0C;&#x5219;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x4E3A;16&#x5B57;&#x8282;&#xFF1B;&#x5982;&#x679C;&#x9009;&#x62E9;AES-256&#xFF0C;&#x5219;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x4E3A;32&#x5B57;&#x8282;&#x3002;</p>
+<p>&#x81F3;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x83B7;&#x53D6;&#x4E86;&#x9876;&#x5C42;&#x5BC6;&#x94A5;KEK&#x548C;&#x5176;&#x4FE1;&#x606F;&#x6458;&#x8981;HMACK&#x3001;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;RDEK&#x548C;WDEK&#x3002;&#x5176;&#x4E2D;KEK&#x3001;RDEK&#x548C;WDEK&#x5728;&#x6570;&#x636E;&#x5E93;&#x8FD0;&#x884C;&#x4E2D;&#x4F1A;&#x4E00;&#x76F4;&#x4FDD;&#x5B58;&#x5728;&#x5171;&#x4EAB;&#x5185;&#x5B58;&#x4E2D;&#xFF0C;&#x5176;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x58F0;&#x660E;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">static</span> <span class="hljs-keyword">keydata_t</span> keyEncKey[TDE_KEK_SIZE];
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">keydata_t</span> relEncKey[TDE_MAX_DEK_SIZE];
+<span class="hljs-keyword">static</span> <span class="hljs-keyword">keydata_t</span> walEncKey[TDE_MAX_DEK_SIZE];
+</code></pre>
+<h4 id="&#x5BC6;&#x94A5;&#x52A0;&#x5BC6;">&#x5BC6;&#x94A5;&#x52A0;&#x5BC6;</h4>
+<p>&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x5C06;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x6301;&#x4E45;&#x5316;&#x5B58;&#x50A8;&#x5E76;&#x4E14;&#x4FDD;&#x8BC1;&#x5176;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x5BF9;&#x5176;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x3002;&#x6211;&#x4EEC;&#x5C06;&#x52A0;&#x5BC6;&#x5B58;&#x50A8;&#x540E;&#x7684;&#x6587;&#x4EF6;&#x79F0;&#x4E3A;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#xFF0C;&#x5176;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> KmgrFileData
+{
+   <span class="hljs-comment">/* version of the kmgr file*/</span>
+   uint32   kmgr_version_no;
+   <span class="hljs-comment">/* Whether the data pages are encrypted? Set it to 0 if encryption is disabled*/</span>
+   uint32   data_encryption_cipher;
+   <span class="hljs-comment">/*
+    * Wrapped Key information for data encryption
+    */</span>
+   WrappedEncKeyWithHmac tde_rdek;
+   WrappedEncKeyWithHmac tde_wdek;
+   <span class="hljs-comment">/* CRC of all above ... MUST BE LAST!*/</span>
+   pg_crc32c crc;
+} KmgrFileData;
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF0C;<code>kmgr_version_no</code>&#x8868;&#x793A;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x7684;&#x7248;&#x672C;&#x53F7;&#xFF1B;<code>data_encryption_cipher</code>&#x8868;&#x793A;&#x4F7F;&#x7528;&#x7684;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5728;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;&#x96C6;&#x7FA4;&#x7684;&#x65F6;&#x5019;&#x6307;&#x5B9A;&#x5177;&#x4F53;&#x7684;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x76EE;&#x524D;&#x652F;&#x6301;AES&#x7B97;&#x6CD5;&#x4E14;&#x5BC6;&#x94A5;&#x957F;&#x5EA6;&#x4E3A;128&#x4F4D;&#x6216;256&#x4F4D;&#xFF1B;<code>tde_rdek</code>&#x8868;&#x793A;RDEK&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x5BC6;&#x6587;&#x52A0;&#x4FE1;&#x606F;&#x6458;&#x8981;&#xFF1B;<code>tde_wdek</code>&#x8868;&#x793A;WDEK&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x5BC6;&#x6587;&#x52A0;&#x4FE1;&#x606F;&#x6458;&#x8981;&#xFF1B;<code>crc</code>&#x8868;&#x793A;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x7684;&#x6821;&#x9A8C;&#x503C;&#xFF0C;&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
+<p>&#x5BC6;&#x94A5;&#x5BC6;&#x6587;&#x52A0;&#x4FE1;&#x606F;&#x6458;&#x8981;&#x5B58;&#x50A8;&#x5728;WrappedEncKeyWithHmac&#x7ED3;&#x6784;&#x4F53;&#x4E2D;&#xFF0C;&#x5176;&#x5B57;&#x6BB5;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> WrappedEncKeyWithHmac
+{
+   <span class="hljs-keyword">keydata_t</span> key[TDE_MAX_WRAPPED_DEK_SIZE];
+   <span class="hljs-keyword">keydata_t</span> hmac[TDE_HMAC_SIZE];
+} WrappedEncKeyWithHmac;
+</code></pre>
+<p>&#x5176;&#x4E2D;&#xFF0C;<code>key</code>&#x8868;&#x793A;&#x52A0;&#x5BC6;&#x540E;&#x7684;&#x5BC6;&#x94A5;&#xFF0C;<code>hmac</code>&#x8868;&#x793A;&#x5BC6;&#x94A5;&#x5BC6;&#x6587;&#x7684;&#x4FE1;&#x606F;&#x6458;&#x8981;&#x3002;</p>
+<p>RDEK&#x548C;WDEK&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x57FA;&#x4E8E;AES&#x7684;&#x5BC6;&#x94A5;&#x5C01;&#x88C5;&#x7B97;&#x6CD5;&#x8FDB;&#x884C;&#x5C01;&#x88C5;&#x52A0;&#x5BC6;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x7ED3;&#x679C;&#x88AB;&#x8D4B;&#x503C;&#x7ED9;WrappedEncKeyWithHmac&#x7ED3;&#x6784;&#x4E2D;&#x7684;key&#xFF08;&#x4E0B;&#x6587;&#x7B80;&#x79F0;&#x4E3A;ENC_RDEK &#x548C;ENC_WDEK&#xFF09;&#xFF0C;&#x540C;&#x65F6;&#x4F7F;&#x7528;&#x5BC6;&#x94A5;&#x5206;&#x914D;&#x4E2D;&#x5F97;&#x5230;&#x7684;HMACK&#x4F5C;&#x4E3A;&#x5BC6;&#x94A5;&#x4F7F;&#x7528;&#x5B89;&#x5168;&#x6563;&#x5217;&#x7B97;&#x6CD5;&#xFF08;Secure Hash Algorithm &#xFF0C;&#x7B80;&#x79F0;&#x4E3A;SHA&#xFF0C;&#x5305;&#x542B;SHA 256&#x548C;SHA 512&#xFF0C;&#x8FD9;&#x91CC;&#x6307;SHA 256&#xFF09;&#x5F97;&#x5230;&#x5BF9;&#x5E94;&#x5BC6;&#x94A5;&#x7684;&#x5BC6;&#x6587;&#x7ED3;&#x679C;&#x7684;&#x6458;&#x8981;&#x4FE1;&#x606F;&#xFF08;&#x4E0B;&#x6587;&#x7B80;&#x79F0;&#x4E3A;ENC_RDEK_HMAC&#x548C;ENC_WDEK_HMAC&#xFF09;&#x3002;</p>
+<p>&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x5728;&#x521D;&#x59CB;&#x5316;&#x6570;&#x636E;&#x5E93;&#x96C6;&#x7FA4;&#x7684;&#x65F6;&#x5019;&#x4EA7;&#x751F;&#x4E14;&#x88AB;&#x5B58;&#x50A8;&#x5728;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#x5185;&#xFF0C;&#x6587;&#x4EF6;&#x4F4D;&#x7F6E;&#x4E3A;global/pg_kmgr&#x3002;&#x8BE5;&#x6587;&#x4EF6;&#x5C0F;&#x4E8E;512&#x5B57;&#x8282;&#xFF0C;&#x6240;&#x4EE5;&#x53EF;&#x4EE5;&#x4FDD;&#x8BC1;&#x5176;&#x539F;&#x5B50;&#x6027;&#xFF0C;&#x4E0D;&#x5B58;&#x5728;&#x90E8;&#x5206;&#x5199;&#x7684;&#x95EE;&#x9898;&#x3002;&#x5907;&#x5E93;&#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x4E3B;&#x5E93;&#x548C;&#x5907;&#x5E93;&#x662F;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5BC6;&#x94A5;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x548C;&#x89E3;&#x5BC6;&#xFF0C;&#x800C;&#x4E3B;&#x8282;&#x70B9;&#x548C;&#x5907;&#x8282;&#x70B9;&#x91C7;&#x7528;&#x540C;&#x4E00;&#x4EFD;&#x5171;&#x4EAB;&#x5B58;&#x50A8;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x662F;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5BC6;&#x94A5;&#x3002;</p>
+<p>&#x5BC6;&#x94A5;&#x4EA7;&#x751F;&#x548C;&#x52A0;&#x5BC6;&#x7684;&#x5177;&#x4F53;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="pic/26-Generate-and-Encrypt-Key.png" alt="Generate and Encrypt Key" width="600"></p>
+<h4 id="&#x5BC6;&#x94A5;&#x89E3;&#x5BC6;">&#x5BC6;&#x94A5;&#x89E3;&#x5BC6;</h4>
+<p>&#x5728;&#x6570;&#x636E;&#x5E93;&#x6B63;&#x5E38;&#x542F;&#x52A8;&#x6216;&#x5D29;&#x6E83;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x89E3;&#x5BC6;&#x51FA;&#x5BF9;&#x5E94;&#x7684;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#xFF0C;&#x5176;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><p>&#x8BFB;&#x53D6;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x83B7;&#x53D6;ENC_RDEK&#x3001;ENC_WDEK&#x3001;ENC_RDEK_HMAC&#x548C;ENC_WDEK_HMAC&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x6BD4;&#x8F83;&#x6821;&#x9A8C;&#x503C;&#x9A8C;&#x8BC1;&#x6587;&#x4EF6;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
+</li>
+<li><p>&#x8FD0;&#x884C;&#x5BC6;&#x94A5;&#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x5F97;&#x5230;64&#x5B57;&#x8282;&#x5185;&#x5BB9;&#xFF0C;&#x5176;&#x4E2D;&#x524D;32&#x5B57;&#x8282;&#x4E3A;KEK&#xFF0C;&#x540E;32&#x5B57;&#x8282;&#x4E3A;HMACK&#x3002;</p>
+</li>
+<li><p>ENC_RDEK&#x548C;ENC_WDEK&#x4EE5;HMACK&#x4F5C;&#x4E3A;&#x5BC6;&#x94A5;&#x4F7F;&#x7528;SHA 256&#x7B97;&#x6CD5;&#x5F97;&#x5230;&#x7684;&#x4FE1;&#x606F;&#x6458;&#x8981;ENC_RDEK_HMAC&apos; &#x548C;ENC_WDEK_HMAC&apos; &#xFF0C;&#x6BD4;&#x8F83;&#x5176;&#x548C;&#x6B65;&#x9AA4;1&#x4E2D;&#x7684;ENC_RDEK_HMAC&#x3001;ENC_WDEK_HMAC&#x662F;&#x5426;&#x76F8;&#x540C;&#x3002;&#x5982;&#x679C;&#x76F8;&#x540C;&#xFF0C;&#x5219;&#x7EE7;&#x7EED;&#x4E0B;&#x4E00;&#x6B65;&#xFF0C;&#x5982;&#x679C;&#x4E0D;&#x540C;&#x5219;&#x8BF4;&#x660E;&#x5BC6;&#x94A5;&#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x83B7;&#x5F97;&#x7684;&#x5BC6;&#x94A5;&#x4E0D;&#x6B63;&#x786E;&#xFF0C;&#x62A5;&#x9519;&#x9000;&#x51FA;&#x3002;</p>
+</li>
+<li><p>&#x4F7F;&#x7528;KEK&#x89E3;&#x5BC6;ENC_RDEK&#x548C;ENC_WDEK&#x5F97;&#x5230;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x7684;&#x5BC6;&#x94A5;RDEK&#x548C;WDEK&#x3002;</p>
+</li>
+</ol>
+<p>&#x5BC6;&#x94A5;&#x89E3;&#x5BC6;&#x7684;&#x5177;&#x4F53;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="pic/27-Decrypt-Key.png" alt="Decrypt Key" width="600"></p>
+<h4 id="&#x5BC6;&#x94A5;&#x66F4;&#x6362;">&#x5BC6;&#x94A5;&#x66F4;&#x6362;</h4>
+<p>&#x5BC6;&#x94A5;&#x66F4;&#x6362;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x7528;&#x65B0;&#x7684;&#x9876;&#x5C42;&#x5BC6;&#x94A5;KEK&#x91CD;&#x65B0;&#x751F;&#x6210;&#x65B0;&#x7684;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x3002;&#x5176;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><p>&#x8FD0;&#x884C;&#x65B0;&#x7684;&#x5BC6;&#x94A5;&#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x5F97;&#x5230;64&#x5B57;&#x8282;&#x5185;&#x5BB9;&#xFF0C;&#x5176;&#x4E2D;&#x524D;32&#x5B57;&#x8282;&#x4E3A;&#x65B0;&#x7684;KEK&#xFF0C;&#x540E;32&#x5B57;&#x8282;&#x4E3A;&#x65B0;&#x7684;HMACK&#x3002;</p>
+</li>
+<li><p>&#x5BF9;&#x5185;&#x5B58;&#x4E2D;&#x7684;RDEK&#x548C;WDEK&#x4F7F;&#x7528;&#x65B0;&#x7684;KEK&#x8FDB;&#x884C;&#x91CD;&#x65B0;&#x52A0;&#x5BC6;&#xFF0C;&#x5F97;&#x5230;&#x7684;&#x52A0;&#x5BC6;&#x7ED3;&#x679C;ENC_RDEK&#x548C;ENC_WDEK&#x4F7F;&#x7528;&#x65B0;&#x7684;HMACK&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x65B0;&#x7684;&#x6458;&#x8981;&#x4FE1;&#x606F;ENC_RDEK_HMAC&#x548C;ENC_WDEK_HMAC&#x3002;</p>
+</li>
+<li><p>&#x5C06;&#x65B0;&#x7684;ENC_RDEK&#x3001;ENC_WDEK&#x3001;ENC_RDEK_HMAC&#x3001;ENC_WDEK_HMAC&#x4EE5;&#x53CA;&#x6821;&#x9A8C;&#x503C;&#x7EC4;&#x6210;&#x7684;KmgrFileData&#x7ED3;&#x6784;&#x751F;&#x6210;&#x65B0;&#x7684;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x4E2D;&#x3002;</p>
+</li>
+</ol>
+<p>&#x53EF;&#x4EE5;&#x53D1;&#x73B0;&#xFF0C;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x5E76;&#x672A;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x4F46;&#x662F;&#x9876;&#x5C42;&#x5BC6;&#x94A5;&#x5DF2;&#x7ECF;&#x66F4;&#x6362;&#xFF0C;&#x8BE5;&#x8FC7;&#x7A0B;&#x5B8C;&#x5168;&#x53EF;&#x4EE5;&#x5728;&#x7EBF;&#x64CD;&#x4F5C;&#xFF0C;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x8FD0;&#x884C;&#x72B6;&#x6001;&#x6CA1;&#x6709;&#x5F71;&#x54CD;&#x3002;&#x6570;&#x636E;&#x5E93;&#x5D29;&#x6E83;&#x6216;&#x8005;&#x91CD;&#x542F;&#x4E4B;&#x540E;&#xFF0C;&#x6570;&#x636E;&#x5E93;&#x4F1A;&#x91CD;&#x65B0;&#x8BFB;&#x53D6;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#xFF0C;&#x89E3;&#x5BC6;&#x51FA;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x3002;</p>
+<p>&#x5BC6;&#x94A5;&#x66F4;&#x6362;&#x7684;&#x5177;&#x4F53;&#x8FC7;&#x7A0B;&#x5982;&#x4E0B;&#xFF1A;</p>
+<p><img src="pic/28-Change-Key.png" alt="Change Key" width="600"></p>
+<h3 id="&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x6A21;&#x5757;">&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x6A21;&#x5757;</h3>
+<p>&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x6A21;&#x5757;&#x5B9E;&#x73B0;&#x5BF9;&#x54EA;&#x4E9B;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x548C;&#x5982;&#x4F55;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x5176;&#x4E2D;&#x6D89;&#x53CA;&#x52A0;&#x5BC6;&#x6240;&#x6709;&#x542B;&#x6709;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7684;&#x6570;&#x636E;&#x3001;&#x6309;&#x7167;&#x4E00;&#x5B9A;&#x7C92;&#x5EA6;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3001;&#x9009;&#x62E9;&#x4E0D;&#x6539;&#x53D8;&#x6570;&#x636E;&#x5927;&#x5C0F;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x3001;&#x52A0;&#x5BC6;&#x76F8;&#x540C;&#x7684;&#x6570;&#x636E;&#x5F97;&#x5230;&#x4E0D;&#x540C;&#x7684;&#x5BC6;&#x6587;&#x7ED3;&#x679C;&#x548C;&#x5728;&#x6570;&#x636E;&#x843D;&#x5165;&#x78C1;&#x76D8;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;</p>
+<h4 id="&#x52A0;&#x5BC6;&#x6587;&#x4EF6;&#x8303;&#x56F4;">&#x52A0;&#x5BC6;&#x6587;&#x4EF6;&#x8303;&#x56F4;</h4>
+<p>&#x7406;&#x8BBA;&#x4E0A;&#xFF0C;&#x6240;&#x6709;&#x542B;&#x6709;&#x7528;&#x6237;&#x6570;&#x636E;&#x7684;&#x6570;&#x636E;&#x6587;&#x4EF6;&#x90FD;&#x5E94;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;&#x5F53;&#x524D;PolarDB&#x4E2D;&#x5404;&#x79CD;&#x6587;&#x4EF6;&#x5177;&#x4F53;&#x5206;&#x6790;&#x5982;&#x4E0B;&#x8868;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th>&#x6587;&#x4EF6;&#x540D;&#x79F0;</th>
+<th>&#x662F;&#x5426;&#x542B;&#x6709;&#x7528;&#x6237;&#x6570;&#x636E;</th>
+<th>&#x6587;&#x4EF6;&#x7528;&#x9014;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>PG_VERSION</td>
+<td>&#x5426;</td>
+<td>PolarDB&#x7248;&#x672C;&#x517C;&#x5BB9;PostgreSQL&#x7248;&#x672C;&#x53F7;</td>
+</tr>
+<tr>
+<td><strong>base/NNNNN/NNNNN</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x8868;&#x6570;&#x636E;</strong></td>
+</tr>
+<tr>
+<td>base/NNNNN/NNNNN_vm</td>
+<td>&#x5426;</td>
+<td>&#x53EF;&#x89C1;&#x6027;&#x5224;&#x65AD;&#x8F85;&#x52A9;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>base/NNNNN/NNNNN_fsm</td>
+<td>&#x5426;</td>
+<td>&#x6587;&#x4EF6;&#x7A7A;&#x95F2;&#x7A7A;&#x95F4;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>base/NNNNN/NNNNN_init</td>
+<td>&#x5426;</td>
+<td>&#x521D;&#x59CB;&#x7248;&#x672C;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>base/NNNNN/PG_VERSION</td>
+<td>&#x5426;</td>
+<td>PolarDB&#x7248;&#x672C;&#x517C;&#x5BB9;PostgreSQL&#x7248;&#x672C;&#x53F7;</td>
+</tr>
+<tr>
+<td>base/NNNNN/pg_filenode.map</td>
+<td>&#x5426;</td>
+<td>&#x6587;&#x4EF6;&#x540D;&#x548C;&#x8868;&#x5217;&#x5E8F;&#x5217;&#x53F7;&#x7684;&#x5BF9;&#x5E94;&#x5173;&#x7CFB;</td>
+</tr>
+<tr>
+<td>base/NNNNN/pg_internal.init</td>
+<td>&#x5426;</td>
+<td>&#x8F85;&#x52A9;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td><strong>base/pgsql_tmp/<br>pgsql_tmpPID.tempFileCounter</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x6392;&#x5E8F;&#x6216;&#x8005;&#x8868;&#x8FDE;&#x63A5;&#x8D85;&#x8FC7;&#x5DE5;&#x4F5C;&#x5185;&#x5B58;&#x540E;&#x6301;&#x4E45;&#x5316;&#x7684;&#x4E34;&#x65F6;&#x6587;&#x4EF6;</strong></td>
+</tr>
+<tr>
+<td>current_logfiles</td>
+<td>&#x5426;</td>
+<td>&#x5F53;&#x524D;&#x5DE5;&#x4F5C;&#x7684;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x540D;</td>
+</tr>
+<tr>
+<td><strong>global/NNNN</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x6570;&#x636E;&#x5E93;&#x540D;&#x548C;&#x7528;&#x6237;&#x540D;</strong></td>
+</tr>
+<tr>
+<td>global/NNNN_vm</td>
+<td>&#x5426;</td>
+<td>&#x540C;base/NNNNN/NNNNN_vm</td>
+</tr>
+<tr>
+<td>global/NNNN_fsm</td>
+<td>&#x5426;</td>
+<td>&#x540C;base/NNNNN/NNNNN_fsm</td>
+</tr>
+<tr>
+<td>global/pg_control</td>
+<td>&#x5426;</td>
+<td>&#x6570;&#x636E;&#x5E93;&#x63A7;&#x5236;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>global/pg_filenode.map</td>
+<td>&#x5426;</td>
+<td>&#x540C;base/NNNNN/pg_filenode.map</td>
+</tr>
+<tr>
+<td>global/pg_internal.init</td>
+<td>&#x5426;</td>
+<td>&#x540C;base/NNNNN/pg_internal.init</td>
+</tr>
+<tr>
+<td>pg_commit_ts/0000</td>
+<td>&#x5426;</td>
+<td>&#x8BB0;&#x5F55;&#x4E8B;&#x52A1;&#x63D0;&#x4EA4;&#x65F6;&#x95F4;</td>
+</tr>
+<tr>
+<td>pg_dynshmem/mmap.NNNNNNN</td>
+<td>&#x5426;</td>
+<td>&#x8BB0;&#x5F55;&#x52A8;&#x6001;&#x5185;&#x5B58;&#x72B6;&#x6001;</td>
+</tr>
+<tr>
+<td>pg_logical/mappings/</td>
+<td>&#x5426;</td>
+<td>&#x903B;&#x8F91;&#x8BA2;&#x9605;&#x7684;&#x6620;&#x5C04;&#x5173;&#x7CFB;</td>
+</tr>
+<tr>
+<td>pg_logical/replorigin_checkpoint</td>
+<td>&#x5426;</td>
+<td>&#x903B;&#x8F91;&#x8BA2;&#x9605;&#x76F8;&#x5173;&#x7684;&#x68C0;&#x67E5;&#x70B9;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>pg_logical/snapshots/0-XXXXXXXX.snap</td>
+<td>&#x5426;</td>
+<td>&#x903B;&#x8F91;&#x8BA2;&#x9605;&#x7684;&#x5FEB;&#x7167;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>pg_multixact/members/0000</td>
+<td>&#x5426;</td>
+<td>&#x7EC4;&#x5408;&#x4E8B;&#x52A1;&#x7684;&#x6210;&#x5458;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>pg_multixact/offsets/0000</td>
+<td>&#x5426;</td>
+<td>&#x7EC4;&#x5408;&#x4E8B;&#x52A1;&#x7684;&#x504F;&#x79FB;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>pg_notify/0000</td>
+<td>&#x5426;</td>
+<td>&#x901A;&#x77E5;&#x4FE1;&#x606F;&#x6570;&#x636E;</td>
+</tr>
+<tr>
+<td>pg_replslot/Slotname/state</td>
+<td>&#x5426;</td>
+<td>&#x590D;&#x5236;&#x69FD;&#x72B6;&#x6001;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td><strong>pg_replslot/Slotname/xid-NNN-lsn-0-NNNNNNNN.snap</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x903B;&#x8F91;&#x590D;&#x5236;&#x89E3;&#x7801;&#x7684;&#x7528;&#x6237;&#x6570;&#x636E;</strong></td>
+</tr>
+<tr>
+<td>pg_serial/</td>
+<td>&#x5426;</td>
+<td>&#x5E8F;&#x5217;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td>pg_snapshots/NNNNNNNN-N</td>
+<td>&#x5426;</td>
+<td>&#x4E8B;&#x52A1;&#x5FEB;&#x7167;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td><strong>pg_stat/db_NNNNN.stat</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x6570;&#x636E;&#x5E93;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</strong></td>
+</tr>
+<tr>
+<td><strong>pg_stat/global.stat</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x5168;&#x5C40;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</strong></td>
+</tr>
+<tr>
+<td><strong>pg_stat_tmp/db_NNNNN.stat</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x6570;&#x636E;&#x5E93;&#x4E34;&#x65F6;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</strong></td>
+</tr>
+<tr>
+<td><strong>pg_stat_tmp/global.stat</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x5168;&#x5C40;&#x4E34;&#x65F6;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;</strong></td>
+</tr>
+<tr>
+<td>pg_subtrans/0000</td>
+<td>&#x5426;</td>
+<td>&#x5B50;&#x4E8B;&#x52A1;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td><strong>pg_tblspc/PG_NN_NNNNNNNN/NNNNN</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x8868;&#x7A7A;&#x95F4;&#x6570;&#x636E;&#x6587;&#x4EF6;</strong></td>
+</tr>
+<tr>
+<td>pg_twophase/NNNNNNNN</td>
+<td>&#x5426;</td>
+<td>&#x4E8C;&#x9636;&#x6BB5;&#x4E8B;&#x52A1;&#x4FE1;&#x606F;</td>
+</tr>
+<tr>
+<td><strong>pg_wal/NNNNNNNNNNNNNNNNNN</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td>&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;</td>
+</tr>
+<tr>
+<td>pg_wal/*.backup</td>
+<td>&#x5426;</td>
+<td>&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x5907;&#x4EFD;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>pg_wal/*.history</td>
+<td>&#x5426;</td>
+<td>&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x5386;&#x53F2;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td><strong>pg_wal/*.partial</strong></td>
+<td><strong>&#x662F;</strong></td>
+<td><strong>&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x90E8;&#x5206;&#x6587;&#x4EF6;</strong></td>
+</tr>
+<tr>
+<td>pg_wal/archive_status/<br>NNNNNNNNNNNNNNNNNN.done</td>
+<td>&#x5426;</td>
+<td>&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5F52;&#x6863;&#x5B8C;&#x6210;&#x72B6;&#x6001;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>pg_wal/archive_status/<br>NNNNNNNNNNNNNNNNNN.ready</td>
+<td>&#x5426;</td>
+<td>&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x6587;&#x4EF6;&#x5F52;&#x6863;&#x51C6;&#x5907;&#x5C31;&#x7EEA;&#x72B6;&#x6001;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>pg_xact/0000</td>
+<td>&#x5426;</td>
+<td>&#x4E8B;&#x52A1;&#x4FE1;&#x606F;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>postgresql.auto.conf</td>
+<td>&#x5426;</td>
+<td>&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>postmaster.opts</td>
+<td>&#x5426;</td>
+<td>&#x4E3B;&#x8FDB;&#x7A0B;&#x542F;&#x52A8;&#x53C2;&#x6570;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>postmaster.pid</td>
+<td>&#x5426;</td>
+<td>&#x8FDB;&#x7A0B;&#x53F7;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>postgresql.conf</td>
+<td>&#x5426;</td>
+<td>&#x6570;&#x636E;&#x5E93;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+<tr>
+<td>pg_hba.conf</td>
+<td>&#x5426;</td>
+<td>&#x7F51;&#x7EDC;&#x914D;&#x7F6E;&#x6587;&#x4EF6;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x5176;&#x4E2D;&#xFF0C;&#x4E0A;&#x8868;&#x52A0;&#x7C97;&#x5904;&#x7406;&#x7684;&#x6587;&#x4EF6;&#x4E2D;&#x542B;&#x6709;&#x7528;&#x6237;&#x6570;&#x636E;&#xFF0C;&#x53EF;&#x4EE5;&#x5206;&#x4E3A;&#x4EE5;&#x4E0B;&#x516D;&#x7C7B;&#xFF1A;</p>
+<ol>
+<li><p>&#x8868;&#x6570;&#x636E;&#xFF1A;&#x76F4;&#x63A5;&#x542B;&#x6709;&#x7528;&#x6237;&#x7684;&#x654F;&#x611F;&#x6570;&#x636E;&#xFF0C;&#x5FC5;&#x987B;&#x52A0;&#x5BC6;&#x3002;</p>
+</li>
+<li><p>&#x4E34;&#x65F6;&#x6587;&#x4EF6;&#xFF1A;&#x53EA;&#x662F;&#x5468;&#x671F;&#x6027;&#x4E34;&#x65F6;&#x5B58;&#x5728;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4E0D;&#x52A0;&#x5BC6;&#x3002;</p>
+</li>
+<li><p>&#x5171;&#x4EAB;&#x6570;&#x636E;&#xFF1A;&#x5305;&#x542B;&#x6570;&#x636E;&#x5E93;&#x540D;&#x548C;&#x7528;&#x6237;&#x540D;&#xFF0C;&#x4E00;&#x822C;&#x654F;&#x611F;&#x7A0B;&#x5EA6;&#x4E0D;&#x9AD8;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4E0D;&#x52A0;&#x5BC6;&#x3002;</p>
+</li>
+<li><p>&#x903B;&#x8F91;&#x590D;&#x5236;&#x6570;&#x636E;&#xFF1A;&#x53EA;&#x6709;&#x6253;&#x5F00;&#x903B;&#x8F91;&#x590D;&#x5236;&#x624D;&#x9700;&#x8981;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;&#x5F53;&#x524D;&#x7248;&#x672C;&#x4E3A;&#x4E86;&#x903B;&#x8F91;&#x590D;&#x5236;&#x7684;&#x76EE;&#x7684;&#x7AEF;&#x7684;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x6682;&#x65F6;&#x4E0D;&#x52A0;&#x5BC6;&#x3002;</p>
+</li>
+<li><p>&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF1A;&#x4E0D;&#x76F4;&#x63A5;&#x5305;&#x542B;&#x7528;&#x6237;&#x6570;&#x636E;&#xFF0C;&#x4F46;&#x662F;&#x5305;&#x542B;&#x7528;&#x6237;&#x6570;&#x636E;&#x7684;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#xFF0C;&#x53EF;&#x4EE5;&#x9009;&#x62E9;&#x4E0D;&#x52A0;&#x5BC6;&#x3002;&#x4F46;&#x662F;&#x9700;&#x8981;&#x6CE8;&#x610F;&#x67D0;&#x4E9B;&#x7EDF;&#x8BA1;&#x4FE1;&#x606F;&#x5BF9;&#x7528;&#x6237;&#x6765;&#x8BF4;&#x53EF;&#x80FD;&#x6BD4;&#x8F83;&#x654F;&#x611F;&#x3002;</p>
+</li>
+<li><p>&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#xFF1A;&#x901A;&#x8FC7;&#x4E00;&#x5B9A;&#x7684;&#x89E3;&#x5BC6;&#x53EF;&#x4EE5;&#x83B7;&#x53D6;&#x90E8;&#x5206;&#x7684;&#x6709;&#x6548;&#x6570;&#x636E;&#x3002;&#x5F53;&#x524D;&#x7248;&#x672C;&#x4E3A;&#x4E86;&#x590D;&#x5236;&#x7684;&#x76EE;&#x7684;&#x7AEF;&#x7684;&#x517C;&#x5BB9;&#x6027;&#xFF0C;&#x6682;&#x65F6;&#x4E0D;&#x52A0;&#x5BC6;&#xFF0C;&#x4F46;&#x662F;&#x4F1A;&#x5206;&#x914D;&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x7684;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#xFF0C;&#x5373;&#x4E0A;&#x6587;&#x4E2D;&#x7684;WDEK&#xFF0C;&#x4FBF;&#x4E8E;&#x540E;&#x671F;&#x517C;&#x5BB9;&#x3002;</p>
+</li>
+</ol>
+<blockquote>
+<p><strong>&#x6CE8;&#x610F;</strong>&#xFF1A;&#x540E;&#x671F;&#x5982;&#x679C;&#x589E;&#x52A0;&#x4E86;&#x5176;&#x4ED6;&#x542B;&#x6709;&#x7528;&#x6237;&#x4FE1;&#x606F;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x9700;&#x8981;&#x6309;&#x7167;&#x548C;&#x6570;&#x636E;&#x9875;&#x9762;&#x76F8;&#x540C;&#x7684;&#x65B9;&#x5F0F;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#x3002;</p>
+</blockquote>
+<h4 id="&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;">&#x52A0;&#x5BC6;&#x65B9;&#x6CD5;</h4>
+<p>&#x76EE;&#x524D;&#x9700;&#x8981;&#x52A0;&#x5BC6;&#x7684;&#x6570;&#x636E;&#x6BCF;&#x6B21;&#x8BFB;&#x53D6;&#x548C;&#x5199;&#x5165;&#x78C1;&#x76D8;&#x90FD;&#x662F;&#x901A;&#x8FC7;&#x9875;&#x9762;&#x5927;&#x5C0F;&#x6765;&#x7EC4;&#x7EC7;&#x3002;&#x540C;&#x6837;&#x5730;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x9009;&#x62E9;&#x9875;&#x9762;&#x5927;&#x5C0F;&#x7C92;&#x5EA6;&#x6765;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x8FD9;&#x6837;&#x53EF;&#x4EE5;&#x548C;&#x8BFB;&#x5199;/&#x5199;&#x5165;&#x7684;&#x7C92;&#x5EA6;&#x5B8C;&#x5168;&#x4E00;&#x6837;&#xFF0C;&#x66F4;&#x597D;&#x7EC4;&#x7EC7;&#x4E5F;&#x66F4;&#x597D;&#x5B9E;&#x73B0;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x52A0;&#x5BC6;&#x524D;&#x540E;&#x7684;&#x6570;&#x636E;&#x5927;&#x5C0F;&#x4FDD;&#x6301;&#x4E00;&#x81F4;&#xFF0C;&#x6211;&#x4EEC;&#x91C7;&#x7528;AES&#x7B97;&#x6CD5;&#x3002;&#x540C;&#x65F6;&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x76F8;&#x540C;&#x5185;&#x5BB9;&#x52A0;&#x5BC6;&#x7684;&#x7ED3;&#x679C;&#x4E0D;&#x4E00;&#x81F4;&#xFF0C;&#x63D0;&#x9AD8;&#x5B89;&#x5168;&#x6027;&#xFF0C;&#x6211;&#x4EEC;&#x5728;&#x6BCF;&#x4E2A;&#x9875;&#x9762;&#x52A0;&#x5BC6;&#x65F6;&#x9700;&#x8981;&#x91C7;&#x7528;&#x4E0D;&#x540C;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5411;&#x91CF;&#x3002;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x91C7;&#x7528;&#x7684;&#x662F;&#x9875;&#x9762;&#x5934;&#x90E8;&#x4FE1;&#x606F;PageHeaderData&#x4E2D;&#x7684;&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x504F;&#x79FB;&#x5E8F;&#x5217;&#x53F7;&#xFF0C;&#x5373;pd_lsn&#x548C;&#x9875;&#x9762;&#x7684;&#x9875;&#x9762;&#x53F7;&#x3002;&#x5176;&#x4E2D;&#xFF0C;PageHeaderData&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784;&#x5982;&#x4E0B;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-keyword">typedef</span> <span class="hljs-keyword">struct</span> PageHeaderData
+{
+   <span class="hljs-comment">/* XXX LSN is a member of any block, not only page-organized ones */</span>
+   PageXLogRecPtr pd_lsn;   <span class="hljs-comment">/* LSN: next byte after the last byte of the xlog record for last change to this page */</span>
+   uint16    pd_checksum; <span class="hljs-comment">/* checksum */</span>
+   uint16    pd_flags;    <span class="hljs-comment">/* flag bits, see below */</span>
+   LocationIndex pd_lower;    <span class="hljs-comment">/* offset to the start of the free space */</span>
+   LocationIndex pd_upper;    <span class="hljs-comment">/* offset to the end of the free space */</span>
+   LocationIndex pd_special;   <span class="hljs-comment">/* offset to the start of the special space */</span>
+   uint16    pd_pagesize_version;
+   TransactionId pd_prune_xid; <span class="hljs-comment">/* oldest prunable XID, or zero if none */</span>
+   ItemIdData   pd_linp[FLEXIBLE_ARRAY_MEMBER]; <span class="hljs-comment">/* line pointer array */</span>
+} PageHeaderData;
+</code></pre>
+<p>&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x9875;&#x9762;&#x6765;&#x8BF4;&#xFF0C;&#x5176;&#x9875;&#x9762;&#x5934;&#x90E8;&#x4FE1;&#x606F;&#x4E2D;pd_lsn&#x4E0D;&#x80FD;&#x52A0;&#x5BC6;&#xFF0C;&#x56E0;&#x4E3A;&#x8BE5;&#x4FE1;&#x606F;&#x8981;&#x5728;&#x89E3;&#x5BC6;&#x7684;&#x65F6;&#x5019;&#x4F5C;&#x4E3A;&#x521D;&#x59CB;&#x5316;&#x53D8;&#x91CF;&#x3002;&#x9664;&#x6B64;&#x4E4B;&#x5916;&#xFF0C;&#x4E3A;&#x4E86;&#x80FD;&#x591F;&#x8868;&#x660E;&#x9875;&#x9762;&#x662F;&#x52A0;&#x5BC6;&#x8FC7;&#x7684;&#xFF0C;&#x4F1A;&#x8BBE;&#x7F6E;pd_flags&#x5BF9;&#x5E94;&#x7684;&#x6807;&#x5FD7;&#x4F4D;0x8000&#xFF0C;&#x6240;&#x4EE5;pd_flags&#x4E5F;&#x4E0D;&#x80FD;&#x52A0;&#x5BC6;&#x3002;&#x540C;&#x65F6;pd_checksum&#x8868;&#x793A;&#x9875;&#x9762;&#x7684;&#x6821;&#x9A8C;&#x503C;&#xFF0C;&#x8FD9;&#x4E2A;&#x5B57;&#x6BB5;&#x4F1A;&#x5728;&#x9875;&#x9762;&#x4ECE;&#x78C1;&#x76D8;&#x4E2D;&#x8BFB;&#x53D6;&#x65F6;&#x8FDB;&#x884C;&#x9875;&#x9762;&#x5B8C;&#x6574;&#x6027;&#x6821;&#x9A8C;&#xFF0C;&#x6240;&#x4EE5;&#x4E5F;&#x4E0D;&#x80FD;&#x52A0;&#x5BC6;&#x3002;&#x8FD9;&#x4E9B;&#x672A;&#x52A0;&#x5BC6;&#x7684;&#x5B57;&#x6BB5;&#x90FD;&#x53EA;&#x662F;&#x6570;&#x636E;&#x5E93;&#x5185;&#x90E8;&#x4FE1;&#x606F;&#xFF0C;&#x5E76;&#x4E0D;&#x4F1A;&#x6CC4;&#x9732;&#x7528;&#x6237;&#x7684;&#x6570;&#x636E;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x52A0;&#x5BC6;&#x6570;&#x636E;&#x9875;&#x9762;&#x65F6;&#x5E76;&#x4E0D;&#x662F;&#x9875;&#x9762;&#x5185;&#x5BB9;&#x5168;&#x90E8;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x53EA;&#x9700;&#x8981;&#x52A0;&#x5BC6;&#x9875;&#x9762;&#x5934;&#x90E8;&#x4FE1;&#x606F;pd_checksum&#x540E;&#x7684;&#x90E8;&#x5206;&#xFF0C;&#x524D;&#x9762;&#x7684;&#x90E8;&#x5206;&#x65E0;&#x9700;&#x52A0;&#x5BC6;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x78C1;&#x76D8;&#x4E0A;&#x5B58;&#x50A8;&#x7684;&#x7528;&#x6237;&#x6570;&#x636E;&#x90FD;&#x662F;&#x5BC6;&#x6587;&#xFF0C;&#x9700;&#x8981;&#x5728;&#x6570;&#x636E;&#x9875;&#x9762;&#x5199;&#x5165;&#x78C1;&#x76D8;&#x4E4B;&#x524D;&#x8FDB;&#x884C;&#x52A0;&#x5BC6;&#xFF0C;&#x800C;&#x6570;&#x636E;&#x9875;&#x9762;&#x5728;&#x5199;&#x5165;&#x78C1;&#x76D8;&#x4E4B;&#x524D;&#x5FC5;&#x5B9A;&#x7ECF;&#x8FC7;&#x8BA1;&#x7B97;&#x6821;&#x9A8C;&#x503C;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x5373;&#x4F7F;&#x8BA1;&#x7B97;&#x6821;&#x9A8C;&#x503C;&#x7684;&#x5F00;&#x5173;&#x5173;&#x95ED;&#xFF0C;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;&#x5BF9;&#x5E94;&#x51FD;&#x6570;&#xFF0C;&#x5305;&#x62EC;PageSetChecksumCopy&#x548C;PageSetChecksumInplace&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8981;&#x5728;&#x6B64;&#x4E4B;&#x524D;&#x52A0;&#x5BC6;&#x5373;&#x53EF;&#x4FDD;&#x8BC1;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x9875;&#x9762;&#x5728;&#x5199;&#x5165;&#x78C1;&#x76D8;&#x4E4B;&#x524D;&#x5747;&#x4F1A;&#x88AB;&#x52A0;&#x5BC6;&#x3002;</p>
+<h3 id="&#x6570;&#x636E;&#x89E3;&#x5BC6;&#x6A21;&#x5757;">&#x6570;&#x636E;&#x89E3;&#x5BC6;&#x6A21;&#x5757;</h3>
+<p>&#x4E3A;&#x4E86;&#x4FDD;&#x8BC1;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6B63;&#x5E38;&#x8FD0;&#x884C;&#xFF0C;&#x89E3;&#x5BC6;&#x548C;&#x52A0;&#x5BC6;&#x6A21;&#x5757;&#x91C7;&#x53D6;&#x76F8;&#x540C;&#x7684;&#x7C92;&#x5EA6;&#xFF0C;&#x91C7;&#x53D6;&#x548C;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#x5BF9;&#x5E94;&#x7684;&#x89E3;&#x5BC6;&#x7B97;&#x6CD5;&#x548C;&#x5BC6;&#x94A5;&#xFF0C;&#x4E14;&#x9700;&#x8981;&#x4FDD;&#x8BC1;&#x9875;&#x9762;&#x8BFB;&#x5165;&#x5185;&#x5B58;&#x65F6;&#x8FDB;&#x884C;&#x89E3;&#x5BC6;&#x3002;</p>
+<p>&#x89E3;&#x5BC6;&#x65F6;&#x91C7;&#x7528;&#x7684;&#x4E5F;&#x662F;&#x6570;&#x636E;&#x9875;&#x9762;&#x7C92;&#x5EA6;&#xFF0C;&#x91C7;&#x7528;&#x7684;&#x662F;AES&#x7684;&#x89E3;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x800C;&#x5BC6;&#x94A5;&#x662F;&#x901A;&#x8FC7;&#x5185;&#x5B58;&#x4E2D;&#x83B7;&#x53D6;&#x548C;&#x52A0;&#x5BC6;&#x76F8;&#x540C;&#x7684;&#x5BC6;&#x94A5;&#x3002;</p>
+<p>&#x6BCF;&#x4E2A;&#x6570;&#x636E;&#x9875;&#x9762;&#x5728;&#x89E3;&#x5BC6;&#x7684;&#x65F6;&#x5019;&#x4F1A;&#x53BB;&#x68C0;&#x6D4B;&#x9875;&#x9762;&#x5934;&#x90E8;&#x4FE1;&#x606F;&#x4E2D;&#x7684;pd_flags&#x4E2D;&#x52A0;&#x5BC6;&#x6807;&#x5FD7;&#x4F4D;&#x662F;&#x5426;&#x4E3A;1&#x3002;&#x5982;&#x679C;&#x4E3A;1&#xFF0C;&#x5219;&#x8868;&#x660E;&#x8BE5;&#x9875;&#x9762;&#x662F;&#x7ECF;&#x8FC7;&#x4E86;&#x52A0;&#x5BC6;&#x7684;&#xFF0C;&#x5426;&#x5219;&#x4E0D;&#x662F;&#x3002;&#x540C;&#x65F6;&#x9875;&#x9762;&#x5934;&#x90E8;&#x4FE1;&#x606F;&#x4E2D;&#x7684;pd_lsn&#x548C;&#x9875;&#x9762;&#x53F7;&#x4F1A;&#x4F5C;&#x4E3A;&#x89E3;&#x5BC6;&#x65F6;&#x7684;&#x521D;&#x59CB;&#x5316;&#x5411;&#x91CF;&#x3002;</p>
+<p>&#x548C;&#x6570;&#x636E;&#x9875;&#x9762;&#x7684;&#x52A0;&#x5BC6;&#x7C7B;&#x4F3C;&#xFF0C;&#x6570;&#x636E;&#x9875;&#x9762;&#x8BFB;&#x5165;&#x5185;&#x5B58;&#x5FC5;&#x5B9A;&#x7ECF;&#x8FC7;&#x6821;&#x9A8C;&#x503C;&#x6821;&#x9A8C;&#xFF0C;&#x5373;&#x4F7F;&#x6821;&#x9A8C;&#x503C;&#x5F00;&#x5173;&#x5173;&#x95ED;&#xFF0C;&#x4E5F;&#x4F1A;&#x8C03;&#x7528;&#x5BF9;&#x5E94;&#x51FD;&#x6570;&#xFF0C;&#x5373;PageIsVerified&#x51FD;&#x6570;&#xFF0C;&#x6240;&#x4EE5;&#x53EA;&#x8981;&#x5728;&#x6B64;&#x4E4B;&#x540E;&#x89E3;&#x5BC6;&#x5373;&#x53EF;&#x4FDD;&#x8BC1;&#x6240;&#x6709;&#x7684;&#x6570;&#x636E;&#x9875;&#x9762;&#x5728;&#x8BFB;&#x5165;&#x5185;&#x5B58;&#x65F6;&#x5747;&#x4F1A;&#x88AB;&#x89E3;&#x5BC6;&#x3002;</p>
+<h3 id="&#x9002;&#x914D;&#x6027;&#x8BBE;&#x8BA1;">&#x9002;&#x914D;&#x6027;&#x8BBE;&#x8BA1;</h3>
+<ul>
+<li><p>&#x4E3A;&#x4E86;&#x517C;&#x5BB9;&#x4E4B;&#x524D;&#x7684;&#x8001;&#x7248;&#x672C;&#xFF0C;&#x6211;&#x4EEC;&#x628A;&#x5BC6;&#x94A5;&#x5B58;&#x50A8;&#x5728;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x800C;&#x4E0D;&#x662F;&#x63A7;&#x5236;&#x6587;&#x4EF6;&#x4E2D;&#xFF0C;&#x4F7F;&#x7528;&#x65E7;&#x7248;&#x672C;&#x7684;&#x5B9E;&#x4F8B;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x5347;&#x7EA7;&#x5185;&#x6838;&#x7248;&#x672C;&#x3002;</p>
+</li>
+<li><p>&#x4E3A;&#x4E86;&#x9002;&#x914D;&#x5404;&#x79CD;&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x670D;&#x52A1;&#xFF0C;&#x6211;&#x4EEC;&#x589E;&#x52A0;&#x4E86;<code>polar_cluster_passphrase_command</code>&#x53C2;&#x6570;&#xFF0C;&#x53EF;&#x4EE5;&#x63A5;&#x53D7;&#x4E0D;&#x540C;&#x5BC6;&#x94A5;&#x670D;&#x52A1;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+</li>
+<li><p>&#x4E3A;&#x4E86;&#x540E;&#x671F;&#x652F;&#x6301;&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x52A0;&#x5BC6;&#xFF0C;&#x6211;&#x4EEC;&#x9884;&#x7559;&#x4E86;&#x9884;&#x5199;&#x5F0F;&#x65E5;&#x5FD7;&#x7684;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x3002;</p>
+</li>
+<li><p>&#x52A0;&#x5BC6;&#x6A21;&#x5757;&#x4E3A;&#x4E86;&#x517C;&#x5BB9;&#x4E4B;&#x524D;&#x7684;&#x8001;&#x7248;&#x672C;&#xFF0C;&#x9875;&#x9762;&#x5934;&#x90E8;&#x4FE1;&#x606F;PageHeaderData&#x4E2D;&#x7684;pd_flags&#x589E;&#x52A0;&#x662F;&#x5426;&#x52A0;&#x5BC6;&#x7684;&#x6807;&#x5FD7;&#x4F4D; 0x8000&#xFF0C;&#x517C;&#x5BB9;&#x672A;&#x52A0;&#x5BC6;&#x9875;&#x9762;&#x7684;&#x8BFB;&#x5199;&#x3002;</p>
+</li>
+</ul>
+<h3 id="&#x7CFB;&#x7EDF;&#x5F71;&#x54CD;">&#x7CFB;&#x7EDF;&#x5F71;&#x54CD;</h3>
+<ul>
+<li><p>&#x52A0;&#x5BC6;&#x548C;&#x89E3;&#x5BC6;&#x4F1A;&#x589E;&#x52A0;&#x4E00;&#x5B9A;&#x7684;CPU&#x5F00;&#x9500;&#xFF0C;&#x4F46;&#x7ECF;&#x8FC7;&#x6D4B;&#x8BD5;&#xFF0C;&#x8BE5;&#x529F;&#x80FD;&#x9020;&#x6210;&#x7684;&#x6027;&#x80FD;&#x635F;&#x8017;&#x4E0D;&#x9AD8;&#x4E8E;10%&#x3002;</p>
+</li>
+<li><p>&#x5B58;&#x91CF;&#x5B9E;&#x4F8B;&#x76EE;&#x524D;&#x4E0D;&#x652F;&#x6301;&#x76F4;&#x63A5;&#x4ECE;&#x672A;&#x52A0;&#x5BC6;&#x7684;&#x72B6;&#x6001;&#x8F6C;&#x6362;&#x4E3A;&#x52A0;&#x5BC6;&#x7684;&#x72B6;&#x6001;&#x3002;&#x4F46;&#x662F;&#x5F53;&#x524D;&#x5B9E;&#x73B0;&#x4E2D;&#x6570;&#x636E;&#x5E93;&#x9875;&#x9762;&#x5934;&#x90E8;&#x4FE1;&#x606F;&#x4E2D;&#x652F;&#x6301;&#x6807;&#x8BB0;&#x5F53;&#x524D;&#x9875;&#x9762;&#x662F;&#x5426;&#x52A0;&#x5BC6;&#xFF0C;&#x517C;&#x5BB9;&#x672A;&#x52A0;&#x5BC6;&#x9875;&#x9762;&#x7684;&#x8BFB;&#x53D6;&#x548C;&#x5199;&#x5165;&#x3002;</p>
+</li>
+<li><p>&#x56E0;&#x4E3A;&#x542F;&#x52A8;&#x4F7F;&#x7528;&#x4F9D;&#x8D56;&#x901A;&#x8FC7;&#x5916;&#x90E8;&#x5BC6;&#x94A5;&#x7BA1;&#x7406;&#x670D;&#x52A1;&#x6765;&#x83B7;&#x53D6;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x7684;&#x5BC6;&#x94A5;&#xFF0C;&#x8BE5;&#x8FC7;&#x7A0B;&#x4F1A;&#x9020;&#x6210;&#x542F;&#x52A8;&#x8017;&#x65F6;&#x3002;&#x5176;&#x4E2D;&#xFF0C;&#x963F;&#x91CC;&#x4E91;KMS &#x5BF9;&#x5916;&#x63A5;&#x53E3;&#x5EF6;&#x8FDF;&#x627F;&#x8BFA;&#x4E0D;&#x4F1A;&#x8D85;&#x8FC7;1s&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x516C;&#x6709;&#x4E91;&#x4E0A;&#x8BE5;&#x8FC7;&#x7A0B;&#x8017;&#x65F6;&#x4E0D;&#x4F1A;&#x8D85;&#x8FC7;1s&#x3002;</p>
+</li>
+<li><p>&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x901A;&#x8FC7;&#x6587;&#x4EF6;&#x590D;&#x5236;&#x7ED9;&#x5907;&#x5E93;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF0C;&#x6240;&#x4EE5;&#x4E3B;&#x5E93;&#x548C;&#x5907;&#x5E93;&#x662F;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5BC6;&#x94A5;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x7684;&#x3002;&#x5373;&#x4F7F;&#x4E4B;&#x540E;&#x9876;&#x5C42;&#x5BC6;&#x94A5;&#x66F4;&#x6362;&#xFF0C;&#x5176;&#x5E95;&#x5C42;&#x5BC6;&#x94A5;&#x4E5F;&#x6CA1;&#x6709;&#x66F4;&#x65B0;&#xFF0C;&#x4ECD;&#x7136;&#x4F7F;&#x7528;&#x76F8;&#x540C;&#x7684;&#x5BC6;&#x94A5;&#x8FDB;&#x884C;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x3002;</p>
+</li>
+</ul>
+<h2 id="&#x4F7F;&#x7528;&#x65B9;&#x6CD5;">&#x4F7F;&#x7528;&#x65B9;&#x6CD5;</h2>
+<p>&#x60A8;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5982;&#x4E0B;&#x65B9;&#x5F0F;&#x4F7F;&#x7528;&#x900F;&#x660E;&#x52A0;&#x5BC6;&#x529F;&#x80FD;&#xFF1A;</p>
+<ul>
+<li><p>&#x6307;&#x5B9A;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x83B7;&#x53D6;&#x547D;&#x4EE4;&#x548C;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF1A;</p>
+<p>&#x6267;&#x884C;&#x521D;&#x59CB;&#x5316;&#x96C6;&#x7FA4;<code>initdb</code>&#x547D;&#x4EE4;&#x65F6;&#xFF0C;&#x589E;&#x52A0;<code>--cluster-passphrase-command &apos;xxx&apos; -e aes-256</code>&#x53C2;&#x6570;&#xFF0C;&#x5C31;&#x4F1A;&#x751F;&#x6210;&#x652F;&#x6301;TDE &#x7684;&#x6570;&#x636E;&#x5E93;&#x96C6;&#x7FA4;&#x3002;&#x5176;&#x4E2D;<code>cluster-passphrase-command</code>&#x53C2;&#x6570;&#x540E;&#x9762;&#x63A5;&#x83B7;&#x53D6;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x7684;&#x547D;&#x4EE4;&#xFF0C;&#x53EF;&#x4EE5;&#x662F;&#x5177;&#x4F53;&#x7684;KMS&#x83B7;&#x53D6;&#x660E;&#x6587;&#x5BC6;&#x94A5;&#x7684;&#x63A5;&#x53E3;&#x547D;&#x4EE4;&#xFF1B;<code>-e</code>&#x53C2;&#x6570;&#x63A5;&#x6570;&#x636E;&#x52A0;&#x5BC6;&#x6240;&#x91C7;&#x7528;&#x7684;&#x52A0;&#x5BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x652F;&#x6301;AES-128 &#x548C;AES-256&#x4E24;&#x79CD;&#xFF0C;&#x8868;&#x793A;&#x5BC6;&#x94A5;&#x4E3A;128&#x4F4D;&#x548C;256&#x4F4D;&#x7684;AES&#x7B97;&#x6CD5;&#x3002;</p>
+</li>
+<li><p>&#x66F4;&#x6362;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#xFF1A;</p>
+<p>&#x5728;&#x6570;&#x636E;&#x5E93;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x63D2;&#x4EF6;polar_tde_utils&#x5E76;&#x6267;&#x884C;SQL polar_tde_update_kmgr_file (text)&#x6765;&#x66F4;&#x6362;TDE&#x7684;&#x9876;&#x5C42;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#xFF0C;&#x5176;&#x4E2D;<code>text</code>&#x53C2;&#x6570;&#x8868;&#x793A;&#x65B0;&#x7684;&#x83B7;&#x53D6;&#x52A0;&#x5BC6;&#x5BC6;&#x94A5;&#x7684;&#x547D;&#x4EE4;&#x3002;</p>
+</li>
+<li><p>&#x67E5;&#x770B;&#x52A0;&#x5BC6;&#x4FE1;&#x606F;&#xFF1A;</p>
+<p>&#x5728;&#x6570;&#x636E;&#x5E93;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x63D2;&#x4EF6;polar_tde_utils&#x5E76;&#x6267;&#x884C;SQL&#x547D;&#x4EE4;<code>select polar_tde_kmgr_info_view ()</code>&#x6765;&#x67E5;&#x770B;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x4FE1;&#x606F;&#xFF0C;&#x4E3B;&#x8981;&#x5305;&#x62EC;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x7248;&#x672C;&#x3001;&#x5BC6;&#x94A5;&#x5BC6;&#x6587;&#x3002;</p>
+</li>
+<li><p>&#x68C0;&#x67E5;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x662F;&#x5426;&#x6B63;&#x786E;&#xFF1A;</p>
+<p>&#x5728;&#x6570;&#x636E;&#x5E93;&#x8FD0;&#x884C;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x53EF;&#x4EE5;&#x521B;&#x5EFA;&#x63D2;&#x4EF6;polar_tde_utils&#x5E76;&#x6267;&#x884C;SQL&#x547D;&#x4EE4;<code>select polar_tde_check_kmgr_file ()</code>&#x6765;&#x68C0;&#x67E5;&#x5BC6;&#x94A5;&#x6587;&#x4EF6;&#x548C;&#x5185;&#x5B58;&#x4E2D;&#x5BC6;&#x94A5;&#x662F;&#x5426;&#x4E00;&#x81F4;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x81F4;&#x5219;&#x8FD4;&#x56DE;true&#xFF0C;&#x5426;&#x5219;&#x8FD4;&#x56DE;false&#x3002;</p>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="RO-OnlinePromote.html" class="navigation navigation-prev " aria-label="Previous page: RO OnlinePromote">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="WAL-Pipeline.html" class="navigation navigation-next " aria-label="Next page: WAL Pipeline">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"TDE","level":"1.1.3.2.8","depth":4,"next":{"title":"WAL Pipeline","level":"1.1.3.2.9","depth":4,"path":"PolarDB-for-PostgreSQL/WAL-Pipeline.md","ref":"PolarDB-for-PostgreSQL/WAL-Pipeline.md","articles":[]},"previous":{"title":"RO OnlinePromote","level":"1.1.3.2.7","depth":4,"path":"PolarDB-for-PostgreSQL/RO-OnlinePromote.md","ref":"PolarDB-for-PostgreSQL/RO-OnlinePromote.md","articles":[]},"dir":"ltr"},"config":{"plugins":["hide-element","back-to-top-button","code","expandable-chapters-small","page-toc-button","-sharing","-font-settings","-search","-lunr","auto-scroll-table@git+https://github.com/ideamean/gitbook-plugin-auto-scroll-table.git","splitter","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"splitter":{},"auto-scroll-table":{},"code":{"copyButtons":true},"hide-element":{"elements":[".toggle-dropdown",".gitbook-link"]},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{"maxTocDepth":2,"minTocSize":2},"back-to-top-button":{},"expandable-chapters-small":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"PolarDB for PostgreSQL","gitbook":"*"},"file":{"path":"PolarDB-for-PostgreSQL/TDE.md","mtime":"2022-05-09T10:02:03.661Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2022-05-22T14:36:40.387Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-hide-element/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

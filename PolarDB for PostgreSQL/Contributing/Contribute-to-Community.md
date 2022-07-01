@@ -1,0 +1,5 @@
+# 社区贡献
+
+PolarDB for PostgreSQL是基于PostgreSQL和其他开源项目的开源产品。我们的主要目标是为PostgreSQL创建一个更大的社区。从长远来看，我们希望这个项目可以由阿里内部和外部的开发人员共同管理。
+
+我们非常欢迎并衷心感谢PolarDB for PostgreSQL的用户提交代码和想法，共同参与社区贡献。

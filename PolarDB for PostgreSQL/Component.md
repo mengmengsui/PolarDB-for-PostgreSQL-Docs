@@ -1,0 +1,11 @@
+# 组件介绍
+
+PolarDB主要包括以下5个组件：
+
+| 组件名称                                                     | 组件功能                                                     | GitHub                                                       |
+| ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| PolarDB-for-PostgreSQL                                       | 数据库内核                                                   | <https://github.com/ApsaraDB/PolarDB-for-PostgreSQL>         |
+| [PolarDB-FileSystem](DeployPFS.md)                           | 分布式文件系统。数据库通过该组件与操作系统交互，将数据写入共享盘中 | <https://github.com/ApsaraDB/PolarDB-FileSystem>             |
+| [PolarDB-Stack(*)](PolarDB-Stack-Operator/PolarDB-Stack-Management-Maintenance.md) | 轻量级PolarDB PaaS软件，包含5个模块：<br />1. [PolarDB-Stack-Common](PolarDB-Stack-Operator/Lifecycle-Management.md)：生命周期管理<br />2. [PolarDB-Stack-Workflow](PolarDB-Stack-Workflow/Workflow-Engine.md)：工作流引擎管理<br />3. [PolarDB-Stack-Storage](PolarDB-Stack-Storage/Shared-Storage-Management.md)：共享存储管理<br />4. [PolarDB-Stack-Daemon](PolarDB-Stack-Daemon/Network-Management.md)：网络管理<br />5. [PolarDB-Cluster-Manager](PolarDB-ClusterManager/Cluster-Management.md)：集群管理 | [PolarDB-Stack-Operator](https://github.com/ApsaraDB/PolarDB-Stack-Operator)<br />1. [PolarDB-Stack-Common](https://github.com/ApsaraDB/PolarDB-Stack-Common)<br />2. [PolarDB-Stack-Workflow](https://github.com/ApsaraDB/PolarDB-Stack-Workflow)<br />3. [PolarDB-Stack-Storage](https://github.com/ApsaraDB/PolarDB-Stack-Storage)<br />4. [PolarDB-Stack-Daemon](https://github.com/ApsaraDB/PolarDB-Stack-Daemon)<br />5. [PolarDB-Cluster-Manager](<https://github.com/ApsaraDB/PolarDB-ClusterManager>) |
+| [PolarDB-NodeAgent](PolarDB-NodeAgent/PolarDB-NodeAgent.md)  | 灵活的轻量级数据采集Agent，可以采集主机和实例的性能数据和日志数据 | <https://github.com/ApsaraDB/PolarDB-NodeAgent>              |
+| [PolarDB-ImageBuilder](PolarDB-ImageBuilder/PolarDB-ImageBuilder.md) | 构建PolarDB开源数据库镜像的打包工具                          | <https://github.com/ApsaraDB/PolarDB-ImageBuilder>           |
